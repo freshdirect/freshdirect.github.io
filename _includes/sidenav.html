@@ -1,0 +1,86 @@
+{% assign current = page.url | downcase | split: '/' %}
+
+<aside class="sidenav" id="menu-content">
+  <nav>
+    <ul class="usa-sidenav-list">
+      <li>
+        <a {% if current[1] == 'overview' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/overview/">Overview</a>
+      </li>
+      <!-- <li> -->
+        <!-- <a {% if current[1] == 'visual-style' %}class="usa-current"{% endif %} href="">Visual style <em class="em-yellow-bg em-badge">coming soon</em></a> -->
+        <!-- <a {% if current[1] == 'visual-style' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/visual-style/">Visual style</a>
+        <ul class="usa-sidenav-sub_list visual-style-sublist">
+          <li>
+            <a href="{{ site.baseurl }}/visual-style/#typography">Typography</a>
+            <ul class="usa-sidenav-sub_list">
+              <li>
+                <a href="{{ site.baseurl }}/visual-style/#typefaces">Typefaces</a>
+              </li>
+              <li>
+                <a href="{{ site.baseurl }}/visual-style/#pairings">Pairings and styles</a>
+              </li>
+              <li>
+                <a href="{{ site.baseurl }}/visual-style/#typesetting">Typesetting</a>
+              </li>
+              <li>
+                <a href="{{ site.baseurl }}/visual-style/#links">Links</a>
+              </li>
+              <li>
+                <a href="{{ site.baseurl }}/visual-style/#lists">Lists</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="{{ site.baseurl }}/visual-style/#colors">Colors</a>
+            <ul class="usa-sidenav-sub_list">
+              <li>
+                <a href="{{ site.baseurl }}/visual-style/#palette">Palette</a>
+              </li>
+              <li>
+                <a href="{{ site.baseurl }}/visual-style/#text-accessibility">Text accessibility</a>
+              </li>
+            </ul> 
+          </li>
+        </ul>-->
+      <!-- </li> --> 
+      <li>
+        <a {% if current[1] == 'buttons' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/buttons/">Buttons</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'textlinks' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/textlinks/">Text links</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'labels' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/labels/">Images</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'tables' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/tables/">Tables</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'alerts' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/alerts/">Alerts</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'accordions' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/accordions/">Accordions</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'form-controls' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/form-controls/">Form controls</a>
+        <ul class="usa-sidenav-sub_list form-controls-sublist">
+          <li>
+            <a href="{{ site.baseurl }}/form-controls/#text-inputs">Text inputs and area</a>
+          </li>
+          <li>
+            <a href="{{ site.baseurl }}/form-controls/#dropdown">Dropdown</a>
+          </li>
+          <li>
+            <a href="{{ site.baseurl }}/form-controls/#checkboxes">Checkboxes</a>
+          </li>
+          <li>
+            <a href="{{ site.baseurl }}/form-controls/#radiobuttons">Radio buttons</a>
+          </li>
+          <li>
+            <a href="{{ site.baseurl }}/form-controls/#date-input">Date input</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</aside>
