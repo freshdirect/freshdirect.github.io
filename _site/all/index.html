@@ -139,7 +139,7 @@
         <a  href="/textlinks/">Text links</a>
       </li>
       <li>
-        <a  href="/labels/">Images</a>
+        <a  href="/images/">Images</a>
       </li>
       <li>
         <a  href="/tables/">Tables</a>
@@ -1919,7 +1919,7 @@
     Documentation
   </button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
-    <h4 class="usa-heading">Implementation</h4>
+    <!-- <h4 class="usa-heading">Implementation</h4>
     <p>The examples demonstrate how to use button elements. To use a button style on an anchor link, add the <code>usa-button</code> class to your anchor link. 
     <p>To use a different style button on your anchor link, add the special button class in addition to <code>usa-button</code>:</p>
     <ul>
@@ -1932,14 +1932,15 @@
       <li><code>usa-button-big</code></li>
     </ul>
     <p>For example, a secondary button style would use the following code:
-    <code>&lt;a class="usa-button usa-button-secondary" href="/my-link"&gt;My button&lt;/a&gt;</code></p>
+    <code>&lt;a class="usa-button usa-button-secondary" href="/my-link"&gt;My button&lt;/a&gt;</code></p> -->
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
+      <li>Use <em class="em-yellow-bg"><code>&lt;button&gt;</code></em> tags to create buttons</li>
       <li>Buttons should display a visible focus state when users tab to them.</li>
-      <li>Avoid using <code>&lt;div&gt;</code> or <code>&lt;img&gt;</code> tags to create buttons. Screen readers don't automatically know either is an usable button.</li>
+      <li>Avoid using <em class="em-yellow-bg"><code>&lt;div&gt;</code></em> or <em class="em-yellow-bg"><code>&lt;img&gt;</code></em> tags to create buttons. Screen readers don't automatically know either is an usable button.</li>
       <li>When styling links to look like buttons, remember that screen readers handle links slightly differently than they do buttons. Pressing the Space key triggers a button, but pressing the Enter key triggers a link.</li>
     </ul>
-    <h4 class="usa-heading">Usability</h4>
+    <!-- <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>Use buttons for the most important actions you want users to take on your site, such as "download," "sign up," or "log out."</li>
@@ -1959,7 +1960,7 @@
       <li>Button labels should be as short as possible with “trigger words” that your users will recognize to clearly explain what will happen when the button is clicked (for example, “download,” “view” or “sign up”).</li>
       <li>Make the first word of the button’s label a verb. For example, instead of “Complaint Filing” label the button “File a complaint.”</li>
       <li>At times, consider adding an icon to signal specific actions (“download”, “open in a new window”, etc). </li>
-    </ul>
+    </ul> -->
   </div>
 </div>
 </p>
@@ -2330,16 +2331,8 @@
 </div>
 </p>
 
-	<h2>Labels</h2>
-	<p><div class="preview">
-
-  <h6>Small</h6>
-  <span class="usa-label">New</span>
-
-  <h6>Large</h6>
-  <span class="usa-label-big">New</span>
-
-</div>
+	<h2>Images</h2>
+	<p><!-- <div class="preview"></div> -->
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
@@ -2348,106 +2341,18 @@
   </button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Accessibility</h4>
-    <p>When labels are used to call out new content that is dynamically loaded onto a page, be sure to use ARIA live regions to alert screen readers of the change.</p>
+    <ul class="usa-content-list">
+      <li><strong>Images should be placed on the page with an <em class="em-yellow-bg"><code>&lt;img&gt;</code></em> tag. Only use CSS background-image property when the image is ornamental and/or structural. </strong></li>
+      <li>Alt tags and title tags should be added to the source code of the embedded images. It's better to leave the ALT tag blank (ALT="") then to enter a text description that's not useful or is redundant. For example an image with a caption below it does not need alt text that matches the caption, leave the alt text blank to avoid redundancy.</li>
+      <li>Images (navigational buttons, banners, and image maps) with descriptive text can borrow the text shown in the graphic and use this text for both ALT and title attributes.</li>
+    </ul>  
 
-    <h4 class="usa-heading">Usability</h4>
-    <h5>When to use</h5>
-    <ul class="usa-content-list">
-      <li>To draw attention to new, important content on a page that might otherwise be missed.</li>
-      <li>To filter results with one or more tags.</li>
-      <li>To indicate the number of new or unread items within a container. For example, to indicate the number of unread emails within a person’s inbox.</li>
-    </ul>
-    <h5>When to consider something else</h5>
-    <ul class="usa-content-list">
-      <li>When users are likely to confuse a static label with a button. For example, when the label appears in the same area of the page as buttons.</li>
-      <li>To call attention to new or updated content, consider changing the background color of the object itself or experiment with changing the font weight.</li>
-      <li>When users already expect content to be updated frequently. For example, on a site dedicated to breaking news. In this case placing the new content at the top may be enough.</li>
-    </ul>
-    <h5>Guidance</h5>
-    <ul class="usa-content-list">
-      <li>Users frequently confuse labels as buttons. Always conduct usability testing to make sure your particular implementation is not causing frustration.</li>
-      <li>If your labels are not interactive, be sure to disable hover, focus, and active styles.</li>
-      <li>Don’t mix interactive and static labels on your site. Once you establish a pattern for how labels behave, users will expect that behavior every time.</li>
-      <li>Don’t over do it — if everything on a page is called out as important, nothing is important.</li>
-    </ul>
   </div>
 </div>
 </p>
 
 	<h2>Tables</h2>
-	<p><div class="preview">
-
-  <h6>Bordered Table</h6>
-
-  <table>
-    <thead>
-      <tr>
-        <th scope='col'>Document title</th>
-        <th scope='col'>Description</th>
-        <th scope='col'>Year</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td scope='row'>Declaration of Independence</td>
-        <td>Statement adopted by the Continental Congress declaring independence from the British Empire.</td>
-        <td>1776</td>
-      </tr>
-      <tr>
-        <td scope='row'>Bill of Rights</td>
-        <td>The first ten amendments of the U.S. Constitution guaranteeing rights and freedoms.</td>
-        <td>1791</td>
-      </tr>
-      <tr>
-        <td scope='row'>Declaration of Sentiments</td>
-        <td>A document written during the Seneca Falls Convention outlining the rights that American women should be entitled to as citizens.</td>
-        <td>1848</td>
-      </tr>
-      <tr>
-        <td scope='row'>Emancipation Proclamation</td>
-        <td>An executive order granting freedom to slaves in designated southern states.</td>
-        <td>1863</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <h6>Borderless Table</h6>
-
-  <table class="usa-table-borderless">
-    <thead>
-      <tr>
-        <th scope='col'>Document Title</th>
-        <th scope='col'>Description</th>
-        <th scope='col'>Year</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td scope='row'>Declaration of Independence</td>
-        <td>Statement adopted by the Continental Congress declaring independence from the British Empire.</td>
-        <td>1776</td>
-      </tr>
-      <tr>
-        <td scope='row'>Bill of Rights</td>
-        <td>The first ten amendments of the U.S. Constitution guaranteeing rights and freedoms.</td>
-        <td>1791</td>
-      </tr>
-      <tr>
-        <td scope='row'>Declaration of Sentiments</td>
-        <td>MadeA document written during the Seneca Falls Convention outlining the rights that American women should be entitled to as citizens.</td>
-        <td>1848</td>
-      </tr>
-      <tr>
-        <td scope='row'>Emancipation Proclamation</td>
-        <td>An executive order granting freedom to slaves in designated southern states.</td>
-        <td>1863</td>
-      </tr>      
-    </tbody>
-  </table>
-
-</div>
-
-<div class="usa-accordion-bordered usa-accordion-docs">
+	<p><div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
       aria-expanded="true" aria-controls="collapsible-0">
     Documentation
@@ -2455,24 +2360,35 @@
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
-      <li>Simple tables can have two levels of headers. Each header cell should have <code>scope=<wbr>'col'</code> or <code>scope=<wbr>'row'</code>.</li>
-      <li>Complex tables are tables with more than two levels of headers. Each header should be given a unique <code>id</code> and each data cell should have a <code>headers</code> attribute with each related header cell’s <code>id</code> listed.</li>
-      <li>When adding a title to a table, include it in a <code>&lt;caption&gt;</code> tag inside of the <code>&lt;table&gt;</code> element.</li>
+      <li><strong>Use tables only to display tabular data.</strong></li>
+      <li>Simple tables can have two levels of headers. Each header cell should have <em class="em-yellow-bg"><code>scope=<wbr>'col'</code></em> or <em class="em-yellow-bg"><code>scope=<wbr>'row'</code></em>.</li>
+      <li>Complex tables are tables with more than two levels of headers. Each header should be given a unique <em class="em-yellow-bg"><code>id</code></em> and each data cell should have a <em class="em-yellow-bg"><code>headers</code></em> attribute with each related header cell’s <em class="em-yellow-bg"><code>id</code></em> listed.</li>
+      <li>When adding a title to a table, include it in a <em class="em-yellow-bg"><code>&lt;caption&gt;</code></em> tag inside of the <em class="em-yellow-bg"><code>&lt;table&gt;</code></em> element.</li>
     </ul>
 
-    <h4 class="usa-heading">Usability</h4>
-    <h5>When to use</h5>
+  </div>
+</div>
+</p>
+
+	<h2>Text Links</h2>
+	<p><!-- <div class="preview"></div> -->
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="collapsible-0">
+    Documentation
+  </button>
+  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+
+    <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
-      <li>When you need tabular information, such as statistical data.</li>
+      <li><strong>Use <em class="em-yellow-bg"><code>&lt;a&gt;</code></em> tags to create text links.</strong></li>
+      <li>Users should be able to tab to navigate between links.</li>
+      <li>Users should be able to activate a link when pressing ‘Enter’ on their keyboard.</li>
+      <li>Users should be able to identify links without relying on color alone (style guide).</li>
+      <li>Users should be able to activate hover and and focus states with both a mouse and a keyboard.</li>
     </ul>
-    <h5>When to consider something else</h5>
-    <ul class="usa-content-list">
-      <li>Depending on the type of content, consider using other presentation formats such as definition lists or hierarchical lists. </li>
-    </ul>
-    <h5>Guidance</h5>
-    <ul class="usa-content-list">
-      <li>Tables are great at displaying tabular data. Minimal visual styling helps surface this information more easily.</li>
-    </ul>
+
   </div>
 </div>
 </p>
