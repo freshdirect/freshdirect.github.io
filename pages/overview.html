@@ -56,9 +56,8 @@ lead: These guidelines are meant to help developers (and designers) build access
 <h4>General Rules</h4>
 
 <ol class="usa-content-list">
-  <li>All javascript-based navigation should include alternate navigational images or text links within <em class="em-yellow-bg"><code><span><</span>noscript<span>></span></em></code> tags.</li>
   <li>The href tag should be used for a direct link to content, either in the parent (target="_parent") window or a new (target="_blank" ) window, so non-javascript enabled browsers can access the content.</li>
-  <li>Using both keyboard-specific and mouse-specific events together ensures that content can be operated by a wide range of devices. Example: <code class="code-editorial"><span class="faux-tag"><</span>button <em class="em-yellow-bg">onclick="nextPage();" onkeypress="nextPage();"</em><span class="faux-tag">></span>Next Page<span class="faux-tag"><</span>/button<span class="faux-tag">></span></code></li>
+  <li>Using both keyboard-specific and mouse-specific events together (where applicable) ensures that content can be operated by a wide range of devices. Example: <code class="code-editorial"><span class="faux-tag"><</span>button <em class="em-yellow-bg">onclick="nextPage();" onkeypress="nextPage();"</em><span class="faux-tag">></span>Next Page<span class="faux-tag"><</span>/button<span class="faux-tag">></span></code></li>
   <li><a href="http://jimthatcher.com/webcoursea.htm#Webcourse10.1.5">Read about how to make Javascript "jump lists" accessible.</a> </li>
   <li>When using javascript event handlers, return false so the href link is not followed by javascript enabled browsers.</li>
   <li>Insert dynamic content into the DOM immediately following its trigger element. <strong>Screen-readers follow the order of the HTML or XHTML elements in the DOM as the default tab order.</strong></li>
