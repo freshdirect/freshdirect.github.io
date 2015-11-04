@@ -30,7 +30,7 @@ $(function(){
         '<div class="usa-accordion-bordered usa-code-sample">' +
           '<ul class="usa-unstyled-list">' +
             '<li>' +
-              '<button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-0">Code</button>' +
+              '<button class="usa-button-unstyled" aria-expanded="false" aria-controls="collapsible-0">CSS</button>' +
               '<div id="collapsible-0" aria-hidden="true" class="usa-accordion-content">' +
                 '<pre><code class="language-markup"></code></pre>' +
               '</div>' +
@@ -50,7 +50,7 @@ $(function(){
 
   }
 
-  generateCodeSnippets('.main-content', '.preview');
+  generateCodeSnippets('.main-content', '.css-preview');
 
 });
 

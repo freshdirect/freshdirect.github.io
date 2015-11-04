@@ -5,63 +5,133 @@ title: Buttons
 lead: Use buttons to signal actions. 
 ---
 
-<!-- <div class="preview">
-  
-  <h6>Primary Buttons</h6>
+<div class="preview">
+
+  <h6>Orange Primary Buttons</h6>
   <div class="button_wrapper">
-    <button>Default</button>
-    <button class="usa-button-active">Active</button>
-    <button class="usa-button-hover">Hover</button>
-  </div>
-  <div class="button_wrapper">
-    <button class="usa-button-primary-alt">Default</button>
-    <button class="usa-button-primary-alt usa-button-active">Active</button>
-    <button class="usa-button-primary-alt usa-button-hover">Hover</button>
+    <button class="fd-button-orange">Default</button>
+    <button class="fd-button-orange fd-button-orange-active">Active</button>
+    <button class="fd-button-orange fd-button-orange-hover">Hover</button>
   </div>
 
-  <h6>Secondary Buttons</h6>
+  <h6>Green Primary Buttons</h6>
   <div class="button_wrapper">
-    <button class="usa-button-secondary">Default</button>
-    <button class="usa-button-secondary usa-button-active">Active</button>
-    <button class="usa-button-secondary usa-button-hover">Hover</button>
-  </div>
-
-  <div class="button_wrapper">
-    <button class="usa-button-gray">Default</button>
-    <button class="usa-button-gray usa-button-active">Active</button>
-    <button class="usa-button-gray usa-button-hover">Hover</button>
-  </div>
-
-  <div class="button_wrapper">
-    <button class="usa-button-outline" type="button">Default</button>
-    <button class="usa-button-outline usa-button-active">Active</button>
-    <button class="usa-button-outline usa-button-hover">Hover</button>
-  </div>
-
-  <div class="button_wrapper button_wrapper-dark">
-    <button class="usa-button-outline-inverse" type="button">Default</button>
-    <button class="usa-button-outline-inverse usa-button-active">Active</button>
-    <button class="usa-button-outline-inverse usa-button-hover">Hover</button>
+    <button class="fd-button-green">Default</button>
+    <button class="fd-button-green fd-button-green-active">Active</button>
+    <button class="fd-button-green fd-button-green-hover">Hover</button>
   </div>
 
   <h6>Button Focus</h6>
   <div class="button_wrapper">
-    <button class="usa-button-focus">Default</button>
-    <button class="usa-button-primary-alt usa-button-focus">Default</button>
-    <button class="usa-button-secondary usa-button-focus">Default</button>
+    <button class="fd-button-green fd-button-focus">Default</button>
   </div>
 
   <h6>Disabled Button</h6>
   <div class="button_wrapper">
-    <button class="usa-button-disabled">Default</button>
+    <button class="fd-button-disabled">Default</button>
   </div>
 
-  <h6>Big Button</h6>
+  <h6>Button Sizes</h6>
   <div class="button_wrapper">
-    <button class="usa-button-big" type="button">Default</button>
-  </div>
+    <button class="fd-button-small fd-button-green">Small</button>
+    <button class="fd-button-green">Medium</button>
+    <button class="fd-button-large fd-button-green">Large</button>
+  </div> 
+</div>
 
-</div> -->
+<div class="css-preview">
+
+<style type="text/css">
+
+  /* Basic Button Styles */
+  button,
+  button:visited{
+    display: inline-block;
+    appearance: none;
+    border: 0;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: verdana;
+    line-height: 1;
+    margin: .5em;
+    outline: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    -webkit-font-smoothing: antialiased;  
+  }
+
+  /* Button Sizes */
+  .fd-button-large{
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+  .fd-button-small{
+    font-size: 12px;
+    padding: 7px 14px;
+  }  
+
+  /* Other Button States */
+  .fd-button-focus,
+  button:focus{
+    box-shadow: 0 0 6px #666666;
+  }
+
+  .fd-button-disabled{
+    background-color: #d6d7d9;
+    color: #666666;  
+  }
+
+  /* Green Button: Default, Hover, Active */
+  .fd-button-green{
+    background-color: #4fa157;  
+  }
+  .fd-button-green-hover,
+  .fd-button-green:hover{
+    background-color: #458d4e;
+  }
+  .fd-button-green-active,
+  .fd-button-green:active{
+    background-color: #3a7741;
+  }
+
+  /* Orange Button: Default, Hover, Active */
+  .fd-button-orange{
+    background-color: #ffba53;
+    color: #3c2400;
+  }
+  .fd-button-orange-hover,
+  .fd-button-orange:hover{
+    background-color: #ffa113;
+  }
+  .fd-button-orange-active,
+  .fd-button-orange:active{
+    background-color: #ed8f00;
+  }
+
+  /* Alt Orange Button: Default, Hover, Active */
+  .fd-button-orange-alt{
+    background-color: #f59300;
+    color: #ffffff;
+  }
+  .fd-button-orange-alt-hover,
+  .fd-button-orange-alt:hover{
+    background-color: #ffa113;
+  }
+  .fd-button-orange-alt-active,
+  .fd-button-orange-alt:active{
+    background-color: #de8600;
+  }
+
+</style>
+
+</div>
+
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"

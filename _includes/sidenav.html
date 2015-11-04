@@ -5,6 +5,17 @@
     <ul class="usa-sidenav-list">
       <li>
         <a {% if current[1] == 'overview' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/overview/">Overview</a>
+        <ul class="usa-sidenav-sub_list overview-sublist">
+          <li>
+            <a href="{{ site.baseurl }}/overview/#css-section">CSS</a>
+          </li>
+          <li>
+            <a href="{{ site.baseurl }}/overview/#html-section">HTML</a>
+          </li>
+          <li>
+            <a href="{{ site.baseurl }}/overview/#js-section">Javascript</a>
+          </li>
+        </ul>
       </li>
       <li>
         <a {% if current[1] == 'buttons' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/buttons/">Buttons</a>
