@@ -21,6 +21,13 @@ lead: Use buttons to signal actions.
     <button class="fd-button-green fd-button-green-hover">Hover</button>
   </div>
 
+  <h6>Grey Buttons</h6>
+  <div class="button_wrapper">
+    <button class="fd-button-grey">Default</button>
+    <button class="fd-button-grey fd-button-grey-active">Active</button>
+    <button class="fd-button-grey fd-button-grey-hover">Hover</button>
+  </div>
+
   <h6>Button Focus</h6>
   <div class="button_wrapper">
     <button class="fd-button-green fd-button-focus">Default</button>
@@ -91,6 +98,19 @@ lead: Use buttons to signal actions.
   .fd-button-green-active,
   .fd-button-green:active{
     background-color: #3a7741;
+  }
+
+  /* Grey Button: Default, Hover, Active */
+  .fd-button-grey{
+    background-color: #7a7877;  
+  }
+  .fd-button-grey-hover,
+  .fd-button-grey:hover{
+    background-color: #686665;
+  }
+  .fd-button-grey-active,
+  .fd-button-grey:active{
+    background-color: #5d5b5a;
   }
 
   /* Button Sizes */
