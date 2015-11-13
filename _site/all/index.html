@@ -1845,11 +1845,11 @@
     <button class="fd-button-green fd-button-green-hover">Hover</button>
   </div>
 
-  <h6>Grey Buttons</h6>
+  <h6>Secondary (Ghost) Button</h6>
   <div class="button_wrapper">
-    <button class="fd-button-grey">Default</button>
-    <button class="fd-button-grey fd-button-grey-active">Active</button>
-    <button class="fd-button-grey fd-button-grey-hover">Hover</button>
+    <button class="fd-button-ghost">Default</button>
+    <button class="fd-button-ghost fd-button-ghost-active">Active</button>
+    <button class="fd-button-ghost fd-button-ghost-hover">Hover</button>
   </div>
 
   <h6>Button Focus</h6>
@@ -1894,13 +1894,21 @@
     text-align: center;
     text-decoration: none;
     width: auto;
-    -webkit-font-smoothing: antialiased;  
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+  }
+  .fd-button-focus,
+  button:focus{
+    box-shadow: 0 0 10px #aaaaaa;
   }
 
-  /* Orange Button: Default, Hover, Active */
+  /* Orange Button: Default, Hover, Active, Focus */
   .fd-button-orange{
-    background-color: #f68139;
     color: #ffffff;
+    background-color: #f68139;
+    border: 1px solid #f68139;
   }
   .fd-button-orange-hover,
   .fd-button-orange:hover{
@@ -1910,10 +1918,15 @@
   .fd-button-orange:active{
     background-color: #fc8e46;
   }
+  .fd-button-orange-focus,
+  .fd-button-orange:focus{
+    border: 1px solid #e77630;
+  }
 
-  /* Green Button: Default, Hover, Active */
+  /* Green Button: Default, Hover, Active, Focus */
   .fd-button-green{
-    background-color: #4fa157;  
+    background-color: #4fa157;
+    border: 1px solid #4fa157;  
   }
   .fd-button-green-hover,
   .fd-button-green:hover{
@@ -1921,20 +1934,29 @@
   }
   .fd-button-green-active,
   .fd-button-green:active{
-    background-color: #3a7741;
+    background-color: #5fb067;
+  }
+  .fd-button-green-focus,
+  .fd-button-green:focus{
+    border: 1px solid #458d4e;
   }
 
-  /* Grey Button: Default, Hover, Active */
-  .fd-button-grey{
-    background-color: #7a7877;  
+  /* Secondary Button: Default, Hover, Active */
+  .fd-button-ghost{
+    color: #458b4c;
+    background-color: #ffffff;
+    border: 1px solid #4fa157;
   }
-  .fd-button-grey-hover,
-  .fd-button-grey:hover{
-    background-color: #686665;
+  .fd-button-ghost-hover,
+  .fd-button-ghost:hover{
+    color: #458b4c;
+    background-color: #f1f8f2;
+    border: 1px solid #4fa157;
   }
-  .fd-button-grey-active,
-  .fd-button-grey:active{
-    background-color: #5d5b5a;
+  .fd-button-ghost-active,
+  .fd-button-ghost:active{
+    color: #458b4c;
+    background-color: #ffffff;
   }
 
   /* Button Sizes */
@@ -1947,15 +1969,15 @@
     padding: 7px 14px;
   }  
 
-  /* Other Button States */
-  .fd-button-focus,
-  button:focus{
-    box-shadow: 0 0 6px #666666;
-  }
-
+  /* Disabled Button: Default, Focus */
   .fd-button-disabled{
-    background-color: #d6d7d9;
-    color: #666666;  
+    color: #858585;  
+    background-color: #e8e8ea;
+    border: 1px solid #e8e8ea;
+  }
+  .fd-button-disabled-focus,
+  .fd-button-disabled:focus{
+    border: 1px solid #cccccc;
   }
 
 </style>
