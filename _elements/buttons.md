@@ -40,10 +40,18 @@ lead: Use buttons to signal actions.
 
   <h6>Button Sizes</h6>
   <div class="button_wrapper">
-    <button class="fd-button-small fd-button-green">Small</button>
+    <button class="fd-button-green fd-button-small">Small</button>
     <button class="fd-button-green">Medium</button>
-    <button class="fd-button-large fd-button-green">Large</button>
+    <button class="fd-button-green fd-button-large">Large</button>
   </div> 
+
+  <h6>Wide Buttons</h6>
+  <div class="button_wrapper">
+    <button class="fd-button-green fd-button-small fd-button-wide">Small</button>
+    <button class="fd-button-green fd-button-wide">Medium</button>
+    <button class="fd-button-green fd-button-large fd-button-wide">Large</button>
+  </div>
+
 </div>
 
 <div class="css-preview">
@@ -127,7 +135,7 @@ lead: Use buttons to signal actions.
   .fd-button-ghost-hover,
   .fd-button-ghost:hover{
     color: #458b4c;
-    background-color: #f1f8f2;
+    background-color: #dceddf;
     border: 1px solid #4fa157;
   }
   .fd-button-ghost-active,
@@ -144,6 +152,23 @@ lead: Use buttons to signal actions.
   .fd-button-small{
     font-size: 12px;
     padding: 7px 14px;
+  }
+
+  /* Wide Buttons */
+  .fd-button-wide{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .fd-button-small.fd-button-wide{
+    padding-left: 30px;
+    padding-right: 30px;
+  }  
+  .fd-button-large.fd-button-wide{
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  .fd-button-screen-wide{
+    width: 100%;
   }  
 
   /* Disabled Button: Default, Focus */
