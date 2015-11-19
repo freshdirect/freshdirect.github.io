@@ -134,13 +134,10 @@ lead: Use buttons to signal actions.
   }
   .fd-button-ghost-hover,
   .fd-button-ghost:hover{
-    color: #458b4c;
-    background-color: #dceddf;
-    border: 1px solid #4fa157;
+    background-color: #edf5ee;
   }
   .fd-button-ghost-active,
   .fd-button-ghost:active{
-    color: #458b4c;
     background-color: #ffffff;
   }
 
@@ -194,12 +191,11 @@ lead: Use buttons to signal actions.
   </button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <!-- <h4 class="usa-heading">Implementation</h4>
-    <p>The examples demonstrate how to use button elements. To use a button style on an anchor link, add the <code>usa-button</code> class to your anchor link. 
-    <p>To use a different style button on your anchor link, add the special button class in addition to <code>usa-button</code>:</p>
+    <p>The button examples above can be applied to any <em class="em-yellow-bg"><code>&lt;button&gt;</code></em> by using the following CSS classes:</p>
     <ul>
-      <li><code>usa-button-primary-alt</code></li>
-      <li><code>usa-button-secondary</code></li>
-      <li><code>usa-button-gray</code></li>
+      <li><code>fd-button-orange</code></li>
+      <li><code>fd-button-green</code></li>
+      <li><code>fd-button-ghost</code></li>
       <li><code>usa-button-outline</code></li>
       <li><code>usa-button-outline-inverse</code></li>
       <li><code>usa-button-disabled</code></li>
