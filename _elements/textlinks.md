@@ -2,7 +2,7 @@
 layout: styleguide
 type: element
 title: Text Links
-lead: Use text links to lead users through the site. 
+lead: Text Links are used to trigger actions or lead users through the site. They can also be used as a tooltip to reveal details about our services.
 ---
 
 <div class="preview">
@@ -15,7 +15,7 @@ lead: Use text links to lead users through the site.
   <p><a class="fd-link-visited" href="#">This is a visited link</a> inside a paragraph.</p>
 
   <h4>Tooltip</h4>
-  <a class="tooltip" href="#" info="This is some information about freshness. Disregard the styling for this overlay.">Our Freshness Guarantee</a>
+  <a class="tooltip" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">Our Freshness Guarantee</a>
 
 <!--   <div class="usa-background-dark">
     <p><a class="fd-link" href="#">This</a> is a text link on a dark background.</p>
