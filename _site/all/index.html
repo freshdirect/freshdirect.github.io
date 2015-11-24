@@ -1864,6 +1864,7 @@
 
   <h6>Button Sizes</h6>
   <div class="button_wrapper">
+    <button class="fd-button-ghost fd-button-small">Add Tip</button>
     <button class="fd-button-green fd-button-small">Small</button>
     <button class="fd-button-green">Medium</button>
     <button class="fd-button-green fd-button-large">Large</button>
@@ -2238,11 +2239,14 @@
 	<p><div class="preview">
 
   <h4>Text Link</h4>
-  <div><a class="fd-link" href="#">Grocery</a>  >  <a class="fd-link" href="#">Beverages</a>  >  <a class="fd-link" href="#">Water & Seltzer</a></div>
+  <div><a class="fd-link" href="#">Grocery</a> &nbsp>&nbsp <a class="fd-link" href="#">Beverages</a> &nbsp>&nbsp <a class="fd-link" href="#">Water & Seltzer</a></div>
   
   <h4>Text Link in a Paragraph</h4>
   <p>Text Links in a paragraph <a class="fd-link" href="#">look like this</a>. With pretty stories for which there's little good evidence quasar. Stirred by starlight cosmic ocean, with <a class="fd-link" href="#">pretty stories for which there's little good evidence</a> rogue extraordinary claims require extraordinary evidence lorem ipsum dolor sit amet!</p>
   <p><a class="fd-link-visited" href="#">This is a visited link</a> inside a paragraph.</p>
+
+  <h4>Tooltip</h4>
+  <a class="tooltip" href="#" info="This is some information about freshness. Disregard the styling for this overlay.">Our Freshness Guarantee</a>
 
 <!--   <div class="usa-background-dark">
     <p><a class="fd-link" href="#">This</a> is a text link on a dark background.</p>
@@ -2281,6 +2285,43 @@
   }
   .usa-background-dark .fd-link:hover{
     color: #b1d9b6;
+  }
+
+  /* Text link in Dark BG: Default, Hover */
+  a.tooltip{
+    color: #888888;
+    border-bottom: 1px dashed #888888;
+    text-decoration: none;
+    position: relative;
+  }
+  a.tooltip:hover{
+    color: #333333;
+    border-bottom: 1px dashed #333333;
+    text-decoration: none;
+  }
+  a.tooltip:hover:after{
+    background: #444;
+    border-radius: 5px;
+    bottom: 30px;
+    color: #fff;
+    content: attr(info);
+    left: -5%;
+    padding: 13px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  a.tooltip:hover:before{
+    border: solid;
+    border-color: #444 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 24px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
   }
 
 </style>
