@@ -56,7 +56,7 @@ lead: Use text links to lead users through the site.
     color: #b1d9b6;
   }
 
-  /* Text link in Dark BG: Default, Hover */
+  /* Tooltip: Default, Hover */
   a.tooltip{
     color: #888888;
     border-bottom: 1px dashed #888888;
@@ -67,30 +67,6 @@ lead: Use text links to lead users through the site.
     color: #333333;
     border-bottom: 1px dashed #333333;
     text-decoration: none;
-  }
-  a.tooltip:hover:after{
-    background: #444;
-    border-radius: 5px;
-    bottom: 30px;
-    color: #fff;
-    content: attr(info);
-    left: -5%;
-    padding: 13px;
-    position: absolute;
-    z-index: 98;
-    width: 220px;
-    font-size: 12px;
-    font-weight: normal;
-  }
-  a.tooltip:hover:before{
-    border: solid;
-    border-color: #444 transparent;
-    border-width: 6px 6px 0 6px;
-    bottom: 24px;
-    content: "";
-    left: 50%;
-    position: absolute;
-    z-index: 99;
   }
 
 </style>
@@ -115,3 +91,30 @@ lead: Use text links to lead users through the site.
 
   </div>
 </div>
+
+<style type="text/css">
+    a.tooltip:hover:after{
+    background: #444;
+    border-radius: 5px;
+    bottom: 30px;
+    color: #fff;
+    content: attr(info);
+    left: -5%;
+    padding: 13px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  a.tooltip:hover:before{
+    border: solid;
+    border-color: #444 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 24px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+  }
+</style>
