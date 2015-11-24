@@ -86,7 +86,7 @@ lead: Use buttons to signal actions.
   }
   .fd-button-focus,
   button:focus{
-    box-shadow: 0 0 10px #999999;
+    box-shadow: 0 0 8px #666666;
   }
 
   /* Orange Button: Default, Hover, Active, Focus */
@@ -169,14 +169,13 @@ lead: Use buttons to signal actions.
   }  
 
   /* Disabled Button: Default, Focus */
-  .fd-button-disabled{
+  .fd-button-disabled,
+  .fd-button-disabled:focus{
     color: #858585;  
     background-color: #e8e8ea;
     border: 1px solid #e8e8ea;
-  }
-  .fd-button-disabled-focus,
-  .fd-button-disabled:focus{
-    border: 1px solid #cccccc;
+    cursor: not-allowed;
+    box-shadow: none;    
   }
 
 </style>

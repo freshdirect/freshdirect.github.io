@@ -7,15 +7,16 @@ lead: Use text links to lead users through the site.
 
 <div class="preview">
 
-  <a class="fd-link" href="#">This is a link without surrounding text.</a>
+  <h4>Text Link</h4>
+  <div><a class="fd-link" href="#">Grocery</a>  >  <a class="fd-link" href="#">Beverages</a>  >  <a class="fd-link" href="#">Water & Seltzer</a></div>
   
-  <p><a class="fd-link" href="#">This</a> is a text link on a light background.</p>
-  
-  <p><a class="fd-link-visited" href="#">This</a> is a visited link.</p>
+  <h4>Text Link in a Paragraph</h4>
+  <p>Text Links in a paragraph <a class="fd-link" href="#">look like this</a>. With pretty stories for which there's little good evidence quasar. Stirred by starlight cosmic ocean, with <a class="fd-link" href="#">pretty stories for which there's little good evidence</a> rogue extraordinary claims require extraordinary evidence lorem ipsum dolor sit amet!</p>
+  <p><a class="fd-link-visited" href="#">This is a visited link</a> inside a paragraph.</p>
 
-  <div class="usa-background-dark">
+<!--   <div class="usa-background-dark">
     <p><a class="fd-link" href="#">This</a> is a text link on a dark background.</p>
-  </div>
+  </div> -->
 
 </div>
 
