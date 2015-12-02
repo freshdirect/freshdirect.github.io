@@ -7,11 +7,14 @@ lead: Use buttons to signal actions.
 
 <div class="preview">
 
+  <h3>Button States</h3>
+
   <h6>Orange Primary Buttons</h6>
   <div class="button_wrapper">
     <button class="fd-button-orange">Default</button>
     <button class="fd-button-orange fd-button-orange-active">Active</button>
     <button class="fd-button-orange fd-button-orange-hover">Hover</button>
+    <button class="fd-button-orange fd-button-orange-focus">Focus</button>
   </div>
 
   <h6>Green Primary Buttons</h6>
@@ -19,6 +22,7 @@ lead: Use buttons to signal actions.
     <button class="fd-button-green">Default</button>
     <button class="fd-button-green fd-button-green-active">Active</button>
     <button class="fd-button-green fd-button-green-hover">Hover</button>
+    <button class="fd-button-green fd-button-green-focus">Focus</button>
   </div>
 
   <h6>Secondary (Ghost) Button</h6>
@@ -26,17 +30,10 @@ lead: Use buttons to signal actions.
     <button class="fd-button-ghost">Default</button>
     <button class="fd-button-ghost fd-button-ghost-active">Active</button>
     <button class="fd-button-ghost fd-button-ghost-hover">Hover</button>
+    <button class="fd-button-ghost fd-button-ghost-focus">Focus</button>
   </div>
 
-  <h6>Button Focus</h6>
-  <div class="button_wrapper">
-    <button class="fd-button-green fd-button-focus">Default</button>
-  </div>
-
-  <h6>Disabled Button</h6>
-  <div class="button_wrapper">
-    <button class="fd-button-disabled">Default</button>
-  </div>
+  <h3>Button Variations</h3>
 
   <h6>Button Sizes</h6>
   <div class="button_wrapper">
@@ -50,6 +47,11 @@ lead: Use buttons to signal actions.
     <button class="fd-button-green fd-button-small fd-button-wide">Small</button>
     <button class="fd-button-green fd-button-wide">Medium</button>
     <button class="fd-button-green fd-button-large fd-button-wide">Large</button>
+  </div>
+
+  <h6>Disabled Button</h6>
+  <div class="button_wrapper">
+    <button class="fd-button-disabled">Default</button>
   </div>
 
 </div>
@@ -105,7 +107,8 @@ lead: Use buttons to signal actions.
   }
   .fd-button-orange-focus,
   .fd-button-orange:focus{
-    border: 1px solid #e77630;
+    border: 1px solid #c35917;
+    box-shadow: 0 0 10px #aaaaaa;
   }
 
   /* Green Button: Default, Hover, Active, Focus */
@@ -123,10 +126,11 @@ lead: Use buttons to signal actions.
   }
   .fd-button-green-focus,
   .fd-button-green:focus{
-    border: 1px solid #458d4e;
+    border: 1px solid #3a7743;
+    box-shadow: 0 0 10px #aaaaaa;
   }
 
-  /* Secondary Button: Default, Hover, Active */
+  /* Secondary/Ghost Button: Default, Hover, Active */
   .fd-button-ghost{
     color: #458b4c;
     background-color: #ffffff;
@@ -139,6 +143,10 @@ lead: Use buttons to signal actions.
   .fd-button-ghost-active,
   .fd-button-ghost:active{
     background-color: #ffffff;
+  }
+  .fd-button-ghost-focus,
+  .fd-button-ghost:focus{
+    box-shadow: 0 0 10px #aaaaaa;
   }
 
   /* Button Sizes */

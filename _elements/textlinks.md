@@ -93,7 +93,7 @@ lead: Text Links are used to trigger actions or lead users through the site. The
 </div>
 
 <style type="text/css">
-    a.tooltip:hover:after{
+  a.tooltip:hover:after{
     background: #444;
     border-radius: 5px;
     bottom: 30px;
