@@ -88,7 +88,8 @@ lead: Use buttons to signal actions.
   }
   .fd-button-focus,
   button:focus{
-    box-shadow: 0 0 8px #666666;
+    cursor: pointer;
+    transition: background-color 0s ease-in-out 0s;
   }
 
   /* Orange Button: Default, Hover, Active, Focus */
@@ -107,8 +108,8 @@ lead: Use buttons to signal actions.
   }
   .fd-button-orange-focus,
   .fd-button-orange:focus{
-    border: 1px solid #c35917;
-    box-shadow: 0 0 10px #aaaaaa;
+    border: 1px solid #a84c14;
+    background-color: #fc8e46;
   }
 
   /* Green Button: Default, Hover, Active, Focus */
@@ -126,8 +127,8 @@ lead: Use buttons to signal actions.
   }
   .fd-button-green-focus,
   .fd-button-green:focus{
-    border: 1px solid #3a7743;
-    box-shadow: 0 0 10px #aaaaaa;
+    border: 1px solid #306238;
+    background-color: #5fb067;
   }
 
   /* Secondary/Ghost Button: Default, Hover, Active */
@@ -146,7 +147,8 @@ lead: Use buttons to signal actions.
   }
   .fd-button-ghost-focus,
   .fd-button-ghost:focus{
-    box-shadow: 0 0 10px #aaaaaa;
+    border: 1px solid #306238;
+    background-color: #edf5ee;
   }
 
   /* Button Sizes */
