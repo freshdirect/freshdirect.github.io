@@ -103,9 +103,12 @@ lead: Text Links are used to trigger actions or lead users through the site. The
     position: relative;
     top: -10px;
   }
-  a.tooltip-small:hover,
+  a.tooltip-small:hover{
+    background-color: #444444;
+  }
   a.tooltip-small:focus{
     background-color: #444444;
+    box-shadow: 0 0 3px #999999, 0 0 7px #999999;
   }
 
 </style>
@@ -162,6 +165,7 @@ lead: Text Links are used to trigger actions or lead users through the site. The
     line-height: 14px;
     height: auto;
     background-color: #444;
+    outline: 0;
     border-radius: 5px;
     bottom: 25px;
     color: #fff;
