@@ -1831,30 +1831,20 @@
 	<h2>Buttons</h2>
 	<p><div class="preview">
 
-  <h3>Button States</h3>
+  <h3>Primary Button</h3>
 
-  <h6>Orange Primary Buttons</h6>
-  <div class="button_wrapper">
-    <button class="fd-button-orange">Default</button>
-    <button class="fd-button-orange fd-button-orange-active">Active</button>
-    <button class="fd-button-orange fd-button-orange-hover">Hover</button>
-    <button class="fd-button-orange fd-button-orange-focus">Focus</button>
-  </div>
-
-  <h6>Green Primary Buttons</h6>
+  <h6>Green Primary and Secondary Buttons</h6>
   <div class="button_wrapper">
     <button class="fd-button-green">Default</button>
     <button class="fd-button-green fd-button-green-active">Active</button>
     <button class="fd-button-green fd-button-green-hover">Hover</button>
     <button class="fd-button-green fd-button-green-focus">Focus</button>
   </div>
-
-  <h6>Secondary (Ghost) Button</h6>
   <div class="button_wrapper">
-    <button class="fd-button-ghost">Default</button>
-    <button class="fd-button-ghost fd-button-ghost-active">Active</button>
-    <button class="fd-button-ghost fd-button-ghost-hover">Hover</button>
-    <button class="fd-button-ghost fd-button-ghost-focus">Focus</button>
+    <button class="fd-button-ghost-green">Default</button>
+    <button class="fd-button-ghost-green fd-button-ghost-green-active">Active</button>
+    <button class="fd-button-ghost-green fd-button-ghost-green-hover">Hover</button>
+    <button class="fd-button-ghost-green fd-button-ghost-green-focus">Focus</button>
   </div>
 
   <h3>Button Variations</h3>
@@ -1873,10 +1863,44 @@
     <button class="fd-button-green fd-button-large fd-button-wide">Large</button>
   </div>
 
+  <h6>Large Button W/ Arrow</h6>
+  <div class="button_wrapper">
+    <button class="fd-button-orange fd-button-large-arrow fd-button-wide">Checkout</button>
+  </div> 
+
+  <h3>Special Buttons</h3>
+
+  <h6>Orange Button</h6>
+  <p>Use mainly for <strong>Checkout</strong> or <strong>Place Order</strong> actions.</p>
+  <div class="button_wrapper">
+    <button class="fd-button-orange">Default</button>
+    <button class="fd-button-orange fd-button-orange-active">Active</button>
+    <button class="fd-button-orange fd-button-orange-hover">Hover</button>
+    <button class="fd-button-orange fd-button-orange-focus">Focus</button>
+  </div>
+
+  <h6>Purple Button</h6>
+  <p>Use in <strong>Reorder section</strong>, and related actions like <strong>Add to List</strong>.</p>
+  <div class="button_wrapper">
+    <button class="fd-button-ghost-purple">Default</button>
+    <button class="fd-button-ghost-purple fd-button-ghost-purple-active">Active</button>
+    <button class="fd-button-ghost-purple fd-button-ghost-purple-hover">Hover</button>
+    <button class="fd-button-ghost-purple fd-button-ghost-purple-focus">Focus</button>
+  </div>
+
+  <h6>Red/Destructive Button</h6>
+  <p><strong>Only use this button in edge cases where the customer will delete data or cancel a service.</strong></p>
+  <div class="button_wrapper">
+    <button class="fd-button-ghost-red">Default</button>
+    <button class="fd-button-ghost-red fd-button-ghost-red-active">Active</button>
+    <button class="fd-button-ghost-red fd-button-ghost-red-hover">Hover</button>
+    <button class="fd-button-ghost-red fd-button-ghost-red-focus">Focus</button>
+  </div>
+
   <h6>Disabled Button</h6>
   <div class="button_wrapper">
     <button class="fd-button-disabled">Default</button>
-  </div>
+  </div> 
 
 </div>
 
@@ -1910,88 +1934,72 @@
     box-sizing: border-box;
     transition: background-color 0.12s ease-in-out 0s;
   }
-  .fd-button-focus,
   button:focus{
-    cursor: pointer;
     transition: background-color 0s ease-in-out 0s;
   }
 
-  /* Orange Button: Default, Hover, Active, Focus */
-  .fd-button-orange{
-    color: #ffffff;
-    background-color: #f68139;
-    border: 1px solid #f68139;
-  }
-  .fd-button-orange-hover,
-  .fd-button-orange:hover{
-    background-color: #e77630;
-    border-color: #e77630;
-  }
-  .fd-button-orange-active,
-  .fd-button-orange:active{
-    background-color: #fc8e46;
-    border-color: #fc8e46;
-  }
-  .fd-button-orange-focus,
-  .fd-button-orange:focus{
-    background-color: #fc8e46;
-    border-color: #a84c14;
-    box-shadow: 0 0 1px #aaaaaa, 0 0 8px #aaaaaa;
-  }
+
 
   /* Green Button: Default, Hover, Active, Focus */
   .fd-button-green{
     background-color: #4fa157;
     border: 1px solid #4fa157;  
   }
-  .fd-button-green-hover,
   .fd-button-green:hover{
     background-color: #458d4e;
     border-color: #458d4e;
   }
-  .fd-button-green-active,
   .fd-button-green:active{
     background-color: #5fb067;
     border-color: #5fb067;
   }
-  .fd-button-green-focus,
   .fd-button-green:focus{
     background-color: #5fb067;
     border-color: #306238;
     box-shadow: 0 0 1px #aaaaaa, 0 0 8px #aaaaaa;
-}
+  }
 
-  /* Secondary/Ghost Button: Default, Hover, Active */
-  .fd-button-ghost{
+  
+
+  /* Secondary Green Ghost Button: Default, Hover, Active, Focus */
+  .fd-button-ghost-green{
     color: #458b4c;
     background-color: #ffffff;
     border: 1px solid #4fa157;
     padding: 10px 20px;
   }
-  .fd-button-ghost-hover,
-  .fd-button-ghost:hover{
+  .fd-button-ghost-green:hover{
     background-color: #edf5ee;
   }
-  .fd-button-ghost-active,
-  .fd-button-ghost:active{
+  .fd-button-ghost-green:active{
     background-color: #ffffff;
   }
-  .fd-button-ghost-focus,
-  .fd-button-ghost:focus{
-    background-color: #edf5ee;
+  .fd-button-ghost-green:focus{
+    background-color: #ffffff;
     border-color: #458b4c;
     box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
   }
+
+
 
   /* Button Sizes */
   .fd-button-large{
     font-size: 16px;
     padding: 15px 30px;
   }
+  .fd-button-large-arrow{
+    font-size: 16px;
+    padding: 15px 30px;
+    background-image: url('../assets/img/arrow-wht.png');
+    background-position: 95% center;
+    background-repeat: no-repeat; 
+  }
   .fd-button-small{
     font-size: 12px;
     padding: 7px 14px;
   }
+
+
 
   /* Wide Buttons */
   .fd-button-wide{
@@ -2006,9 +2014,81 @@
     padding-left: 110px;
     padding-right: 110px;
   }
+  .fd-button-large-arrow.fd-button-wide{
+    padding-left: 110px;
+    padding-right: 110px;
+  }
   .fd-button-screen-wide{
     width: 100%;
-  }  
+  } 
+  
+
+
+  /* Orange Button: Default, Hover, Active, Focus */
+  .fd-button-orange{
+    color: #ffffff;
+    background-color: #f68139;
+    border: 1px solid #f68139;
+  }
+  .fd-button-orange:hover{
+    background-color: #e77630;
+    border-color: #e77630;
+  }
+  .fd-button-orange:active{
+    background-color: #fc8e46;
+    border-color: #fc8e46;
+  }
+  .fd-button-orange:focus{
+    background-color: #fc8e46;
+    border-color: #a84c14;
+    box-shadow: 0 0 1px #aaaaaa, 0 0 8px #aaaaaa;
+  }
+
+
+
+  /* Secondary Purple Ghost Button: Default, Hover, Active, Focus */
+  .fd-button-ghost-purple{
+    color: #a367ab;
+    background-color: #ffffff;
+    border: 1px solid #a367ab;
+    padding: 10px 20px;
+  }
+  .fd-button-ghost-purple:hover{
+    background-color: #f7f2f8;
+  }
+  .fd-button-ghost-purple:active{
+    background-color: #ffffff;
+  }
+  .fd-button-ghost-purple:focus{
+    background-color: #ffffff;
+    border-color: #a367ab;
+    box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
+  }
+
+
+
+  /* Secondary Red Button: Default, Hover, Active, Focus */
+  .fd-button-ghost-red{
+    color: #b93d3f;
+    background-color: #f8ebeb;
+    border: 1px solid #b93d3f;
+    padding: 10px 20px;
+  }
+  .fd-button-ghost-red:hover{
+    color: #ffffff;
+    background-color: #b93d3f;
+  }
+  .fd-button-ghost-red:active{
+    background-color: #ffffff;
+  }
+  .fd-button-ghost-red:focus{
+    color: #ffffff;
+    background-color: #b93d3f;
+    border-color: #892e2f;
+    box-shadow: 0 0 1px #aaaaaa, 0 0 8px #999999;
+  } 
+
+  
 
   /* Disabled Button: Default, Focus */
   .fd-button-disabled,
@@ -2073,6 +2153,81 @@
     </ul> -->
   </div>
 </div>
+
+<style type="text/css">
+
+  /* Orange Button: Default, Hover, Active, Focus */
+  .fd-button-orange-hover{
+    background-color: #e77630;
+    border-color: #e77630;
+  }
+  .fd-button-orange-active{
+    background-color: #fc8e46;
+    border-color: #fc8e46;
+  }
+  .fd-button-orange-focus{
+    background-color: #fc8e46;
+    border-color: #a84c14;
+    box-shadow: 0 0 1px #aaaaaa, 0 0 8px #aaaaaa;
+  }
+
+  /* Green Button: Default, Hover, Active, Focus */
+  .fd-button-green-hover{
+    background-color: #458d4e;
+    border-color: #458d4e;
+  }
+  .fd-button-green-active{
+    background-color: #5fb067;
+    border-color: #5fb067;
+  }
+  .fd-button-green-focus{
+    background-color: #5fb067;
+    border-color: #306238;
+    box-shadow: 0 0 1px #aaaaaa, 0 0 8px #aaaaaa;
+  }
+
+  /* Secondary Green Ghost Button: Default, Hover, Active, Focus */
+  .fd-button-ghost-green-hover{
+    background-color: #edf5ee;
+  }
+  .fd-button-ghost-green-active{
+    background-color: #ffffff;
+  }
+  .fd-button-ghost-green-focus{
+    background-color: #ffffff;
+    border-color: #458b4c;
+    box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
+  }
+
+  /* Secondary Purple Ghost Button: Default, Hover, Active, Focus */
+  .fd-button-ghost-purple-hover{
+    background-color: #f7f2f8;
+  }
+  .fd-button-ghost-purple-active{
+    background-color: #ffffff;
+  }
+  .fd-button-ghost-purple-focus{
+    background-color: #ffffff;
+    border-color: #a367ab;
+    box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
+  }
+
+  /* Secondary Red Button: Default, Hover, Active, Focus */
+  .fd-button-ghost-red-hover{
+    color: #ffffff;
+    background-color: #b93d3f;
+  }
+  .fd-button-ghost-red-active{
+    background-color: #ffffff;
+  }
+  .fd-button-ghost-red-focus{
+    color: #ffffff;
+    background-color: #b93d3f;
+    border-color: #892e2f;
+    box-shadow: 0 0 1px #aaaaaa, 0 0 8px #999999;
+  }
+
+</style>
 </p>
 
 	<h2>Form controls</h2>
@@ -2096,6 +2251,140 @@
 
 <p class="usa-font-lead">Text inputs allow people to enter any combination of letters, numbers, or symbols of their choosing (unless otherwise restricted). Text input boxes can span single or multiple lines.</p>
 
+<div class="preview">
+
+  <h6>Text Input</h6>
+  <div class="box">
+    <label for="input-type-text">Default</label>
+    <input id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful">
+  </div>
+  <div class="box">
+    <label for="input-type-text">Focused</label>
+    <input class="focus" id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful">
+  </div>
+  <div class="box">
+    <label for="input-type-text">Disabled</label>
+    <input id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful" disabled>
+  </div>
+
+  <h6>Text Area</h6>  
+  <div class="box">
+    <label class="optional" for="input-type-text">Default</label>
+    <textarea id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area"></textarea>
+  </div>
+  <div class="box">
+    <label class="optional" for="input-type-text">Focused</label>
+    <textarea class="focus" id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area"></textarea>
+  </div>
+  <div class="box">
+    <label class="optional" for="input-type-text">Disabled</label>
+    <textarea id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area" disabled></textarea>
+  </div>
+</div>
+
+<div class="css-preview">
+
+<style type="text/css">
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="url"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="search"],
+  input[type="file"],
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  textarea,
+  select  {
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #c2c2c2;
+    border-left: 2px solid #ffffff;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #444444; 
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+    min-width: 40%;
+    width: 100%;
+    box-shadow: none;
+    height: 34px;
+    margin-bottom: 28px;
+    outline: none;
+    padding: 12px 8px;
+    appearance: none;
+  }
+
+
+  textarea{
+    height: auto;
+    min-height: 54px;
+    overflow: auto;
+  }
+
+
+  input:focus,
+  input.focus,
+  textarea:focus,
+  textarea.focus{
+    border-top: 2px solid #68aa6d;
+    border-right: 2px solid #68aa6d;
+    border-bottom: 2px solid #68aa6d;
+    border-left: 2px solid #68aa6d;
+    box-shadow: none;
+    outline: none;
+  }
+
+
+  input:disabled,
+  textarea:disabled{
+    background-color: #eeeeee;
+    border-top: 2px solid #eeeeee;
+    border-right: 2px solid #eeeeee;
+    border-bottom: 2px solid #c2c2c2;
+    border-left: 2px solid #eeeeee;
+    cursor: not-allowed;
+  }
+
+
+  label{
+    font-size: 16px;
+    font-weight: bold;
+    color: #444444;
+  }
+
+  .preview .box{
+    display: inline-block;
+    width: 45%;
+    margin: 0 40px 0 0;
+  }
+
+  .optional{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
+  .optional:after {
+    content: "Optional";
+    display: block;
+    position: absolute;
+    color: #999999;
+    font-weight: normal;
+    right: 0px;
+    top: 0px;
+  }
+
+
+</style>
+
+</div>
+
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
       aria-expanded="true" aria-controls="collapsible-0">
@@ -2112,9 +2401,74 @@
   </div>
 </div>
 
+<style type="text/css">
+
+  input.focus,
+  textarea.focus{
+    border-top: 2px solid #68aa6d;
+    border-right: 2px solid #68aa6d;
+    border-bottom: 2px solid #68aa6d;
+    border-left: 2px solid #68aa6d;
+    box-shadow: none;
+    outline: none;
+  }
+
+</style>
+
 <h2 class="usa-heading" id="dropdown">Dropdown</h2>
 
 <p class="usa-font-lead">A dropdown allows users to select one option from a list.</p>
+
+<div class="preview">
+
+  <label for="default">Default</label>
+  <select id="default">
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+
+  <label for="focused">Focused</label>
+  <select id="focused" class="focus">
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+
+  <label for="focused">Disabled</label>
+  <select id="focused" disabled>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+
+</div>
+
+<div class="css-preview">
+
+<style type="text/css">
+
+  select{
+    -webkit-appearance: none;
+    background: transparent url('../assets/img/input-arrow-down.png') 97% center no-repeat;
+    display: block;
+    height: 38px;
+    width: 30px;
+    padding: 6px 8px;
+    border: 2px solid #c2c2c2;
+  }
+  select:focus,
+  select.focus{
+    border: 2px solid #68aa6d;
+  }
+  select:disabled{
+    background-color: #eeeeee;
+    cursor: not-allowed;
+  }
+
+</style>
+
+</div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
@@ -2134,6 +2488,72 @@
 <h2 class="usa-heading" id="checkboxes">Checkboxes</h2>
 
 <p class="usa-font-lead">Checkboxes allow users to select one or more options from a visible list.</p>
+
+<div class="preview">
+
+  <ul class="usa-unstyled-list">
+      <li>
+        <input id="apple-pie" type="checkbox" name="apple-pie" value="apple-pie" checked>
+        <label for="apple-pie">Selected</label>
+      </li>
+      <li>
+        <input id="key-lime-pie" type="checkbox" name="key-lime-pie" value="key-lime-pie">
+        <label for="key-lime-pie">Oranges</label>
+      </li>
+      <li>
+        <input id="peach-pie" type="checkbox" name="peach-pie" value="peach-pie">
+        <label for="peach-pie">Pears</label>
+      </li>
+      <li>
+        <input id="disabled" type="checkbox" disabled="">
+        <label for="disabled">Disabled</label>
+      </li>
+  </ul>
+
+</div>
+
+<div class="css-preview">
+
+<style type="text/css">
+
+  input[type="checkbox"]{
+    position: absolute;
+    left: -999em;
+  }
+  input[type="checkbox"] + label{
+    font-weight: normal;
+    cursor: pointer;
+  }
+  input[type="checkbox"] + label::before{
+    background: #fafafa;
+    box-shadow: 0 0 0 1px #c2c2c2;
+    content: '\a0';
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+    line-height: 14px;
+    margin-right: 10px;
+    vertical-align: 2px;
+  }
+  input[type="checkbox"]:checked + label::before {
+    background: #4fa157 url('../assets/img/check.png') center center no-repeat;
+    box-shadow: 0 0 0 1px #4fa157;
+  }
+  input[type="checkbox"]:disabled + label {
+    color: #858585;
+  }
+  input[type="checkbox"]:disabled + label::before{
+    background: #dddddd;
+    box-shadow: 0 0 0 1px #c2c2c2;
+    cursor: not-allowed;
+  }
+  input[type="checkbox"]:focus + label::before {
+    box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #4fa157;
+  }
+
+</style>
+
+</div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
@@ -2156,6 +2576,73 @@
 <h2 class="usa-heading" id="radiobuttons">Radio buttons</h2>
 
 <p class="usa-font-lead">Radio buttons allow users to see all available choices at once and select exactly one option.</p>
+
+<div class="preview">
+
+  <ul class="usa-unstyled-list">
+      <li>
+        <input id="pea-soup" type="radio" checked="" name="soup" value="pea">
+        <label for="pea-soup">Selected</label>
+      </li>
+      <li>
+        <input id="chicken-noodle" type="radio" name="soup" value="chicken-noodle">
+        <label for="chicken-noodle">Sushi</label>
+      </li>
+      <li>
+        <input id="tomato" type="radio" name="soup" value="tomato">
+        <label for="tomato">Pasta</label>
+      </li>
+      <li>
+        <input id="tomatoe" type="radio" name="soup" value="tomatoe" disabled>
+        <label for="tomatoe">Disabled</label>
+      </li>      
+    </ul>
+
+</div>
+
+<div class="css-preview">
+
+<style type="text/css">
+
+  input[type="radio"]{
+    position: absolute;
+    left: -999em;
+  }
+  input[type="radio"] + label{
+    font-weight: normal;
+    cursor: pointer;
+  }
+  input[type="radio"] + label::before{
+    background: #fafafa;
+    box-shadow: 0 0 0 1px #c2c2c2;
+    content: '\a0';
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border-radius: 9px;
+    line-height: 14px;
+    margin-right: 10px;
+    vertical-align: 2px;
+  }
+  input[type="radio"]:checked + label::before {
+    background: #4fa157;
+    box-shadow: 0 0 0 1px #4fa157;
+  }
+  input[type="radio"]:disabled + label {
+    color: #858585;
+  }
+  input[type="radio"]:disabled + label::before{
+    background: #dddddd;
+    box-shadow: 0 0 0 1px #c2c2c2;
+    cursor: not-allowed;
+  }
+  input[type="radio"]:focus + label::before {
+    box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #4fa157;
+  }
+
+</style>
+
+</div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
@@ -2264,7 +2751,7 @@
 
   <h4>Tooltip</h4>
   <a class="tooltip" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">Our Freshness Guarantee</a>
-  <p>Our Freshness Guarantee <a class="tooltip-small" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">?</a></p>
+  <p><strong>Security Code</strong> <a class="tooltip-small" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">?</a></p>
 
 <!--   <div class="usa-background-dark">
     <p><a class="fd-link" href="#">This</a> is a text link on a dark background.</p>
@@ -2292,8 +2779,9 @@
     outline-width: thick;  
   }
 
+
+
   /* Visited Text Link: Default, Hover */
-  .fd-link-visited,
   .fd-link:visited{
     color: #777777;
   }
@@ -2301,10 +2789,14 @@
     color: #5fb069;
   }
 
+ 
+
   /* Text Link in Sentence */
   p .fd-link{
     text-decoration: underline;
   }
+
+
 
   /* Text link in Dark BG: Default, Hover */
   .usa-background-dark .fd-link{
@@ -2313,6 +2805,8 @@
   .usa-background-dark .fd-link:hover{
     color: #b1d9b6;
   }
+
+
 
   /* Tooltip: Default, Hover */
   a.tooltip{
@@ -2338,12 +2832,12 @@
     display: inline-block;
     font-family: arial;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 12px;
     color: #ffffff;
     text-decoration: none;
     text-align: center;
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
     margin: 0;
     padding: 0;
     background-color: #888888;
@@ -2352,10 +2846,10 @@
     top: -10px;
   }
   a.tooltip-small:hover{
-    background-color: #444444;
+    background-color: #4fa157;
   }
   a.tooltip-small:focus{
-    background-color: #444444;
+    background-color: #4fa157;
     box-shadow: 0 0 3px #999999, 0 0 7px #999999;
   }
 
@@ -2435,6 +2929,9 @@
     left: 18%;
     position: absolute;
     z-index: 99;
+  }
+  .fd-link-visited{
+    color: #777777;
   }
 </style>
 </p>

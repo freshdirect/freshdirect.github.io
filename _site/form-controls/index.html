@@ -173,6 +173,140 @@
 
 <p class="usa-font-lead">Text inputs allow people to enter any combination of letters, numbers, or symbols of their choosing (unless otherwise restricted). Text input boxes can span single or multiple lines.</p>
 
+<div class="preview">
+
+  <h6>Text Input</h6>
+  <div class="box">
+    <label for="input-type-text">Default</label>
+    <input id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful">
+  </div>
+  <div class="box">
+    <label for="input-type-text">Focused</label>
+    <input class="focus" id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful">
+  </div>
+  <div class="box">
+    <label for="input-type-text">Disabled</label>
+    <input id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful" disabled>
+  </div>
+
+  <h6>Text Area</h6>  
+  <div class="box">
+    <label class="optional" for="input-type-text">Default</label>
+    <textarea id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area"></textarea>
+  </div>
+  <div class="box">
+    <label class="optional" for="input-type-text">Focused</label>
+    <textarea class="focus" id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area"></textarea>
+  </div>
+  <div class="box">
+    <label class="optional" for="input-type-text">Disabled</label>
+    <textarea id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area" disabled></textarea>
+  </div>
+</div>
+
+<div class="css-preview">
+
+<style type="text/css">
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="url"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="search"],
+  input[type="file"],
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  textarea,
+  select  {
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #c2c2c2;
+    border-left: 2px solid #ffffff;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #444444; 
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+    min-width: 40%;
+    width: 100%;
+    box-shadow: none;
+    height: 34px;
+    margin-bottom: 28px;
+    outline: none;
+    padding: 12px 8px;
+    appearance: none;
+  }
+
+
+  textarea{
+    height: auto;
+    min-height: 54px;
+    overflow: auto;
+  }
+
+
+  input:focus,
+  input.focus,
+  textarea:focus,
+  textarea.focus{
+    border-top: 2px solid #68aa6d;
+    border-right: 2px solid #68aa6d;
+    border-bottom: 2px solid #68aa6d;
+    border-left: 2px solid #68aa6d;
+    box-shadow: none;
+    outline: none;
+  }
+
+
+  input:disabled,
+  textarea:disabled{
+    background-color: #eeeeee;
+    border-top: 2px solid #eeeeee;
+    border-right: 2px solid #eeeeee;
+    border-bottom: 2px solid #c2c2c2;
+    border-left: 2px solid #eeeeee;
+    cursor: not-allowed;
+  }
+
+
+  label{
+    font-size: 16px;
+    font-weight: bold;
+    color: #444444;
+  }
+
+  .preview .box{
+    display: inline-block;
+    width: 45%;
+    margin: 0 40px 0 0;
+  }
+
+  .optional{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
+  .optional:after {
+    content: "Optional";
+    display: block;
+    position: absolute;
+    color: #999999;
+    font-weight: normal;
+    right: 0px;
+    top: 0px;
+  }
+
+
+</style>
+
+</div>
+
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
       aria-expanded="true" aria-controls="collapsible-0">
@@ -189,9 +323,74 @@
   </div>
 </div>
 
+<style type="text/css">
+
+  input.focus,
+  textarea.focus{
+    border-top: 2px solid #68aa6d;
+    border-right: 2px solid #68aa6d;
+    border-bottom: 2px solid #68aa6d;
+    border-left: 2px solid #68aa6d;
+    box-shadow: none;
+    outline: none;
+  }
+
+</style>
+
 <h2 class="usa-heading" id="dropdown">Dropdown</h2>
 
 <p class="usa-font-lead">A dropdown allows users to select one option from a list.</p>
+
+<div class="preview">
+
+  <label for="default">Default</label>
+  <select id="default">
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+
+  <label for="focused">Focused</label>
+  <select id="focused" class="focus">
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+
+  <label for="focused">Disabled</label>
+  <select id="focused" disabled>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+
+</div>
+
+<div class="css-preview">
+
+<style type="text/css">
+
+  select{
+    -webkit-appearance: none;
+    background: transparent url('../assets/img/input-arrow-down.png') 97% center no-repeat;
+    display: block;
+    height: 38px;
+    width: 30px;
+    padding: 6px 8px;
+    border: 2px solid #c2c2c2;
+  }
+  select:focus,
+  select.focus{
+    border: 2px solid #68aa6d;
+  }
+  select:disabled{
+    background-color: #eeeeee;
+    cursor: not-allowed;
+  }
+
+</style>
+
+</div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
@@ -211,6 +410,72 @@
 <h2 class="usa-heading" id="checkboxes">Checkboxes</h2>
 
 <p class="usa-font-lead">Checkboxes allow users to select one or more options from a visible list.</p>
+
+<div class="preview">
+
+  <ul class="usa-unstyled-list">
+      <li>
+        <input id="apple-pie" type="checkbox" name="apple-pie" value="apple-pie" checked>
+        <label for="apple-pie">Selected</label>
+      </li>
+      <li>
+        <input id="key-lime-pie" type="checkbox" name="key-lime-pie" value="key-lime-pie">
+        <label for="key-lime-pie">Oranges</label>
+      </li>
+      <li>
+        <input id="peach-pie" type="checkbox" name="peach-pie" value="peach-pie">
+        <label for="peach-pie">Pears</label>
+      </li>
+      <li>
+        <input id="disabled" type="checkbox" disabled="">
+        <label for="disabled">Disabled</label>
+      </li>
+  </ul>
+
+</div>
+
+<div class="css-preview">
+
+<style type="text/css">
+
+  input[type="checkbox"]{
+    position: absolute;
+    left: -999em;
+  }
+  input[type="checkbox"] + label{
+    font-weight: normal;
+    cursor: pointer;
+  }
+  input[type="checkbox"] + label::before{
+    background: #fafafa;
+    box-shadow: 0 0 0 1px #c2c2c2;
+    content: '\a0';
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+    line-height: 14px;
+    margin-right: 10px;
+    vertical-align: 2px;
+  }
+  input[type="checkbox"]:checked + label::before {
+    background: #4fa157 url('../assets/img/check.png') center center no-repeat;
+    box-shadow: 0 0 0 1px #4fa157;
+  }
+  input[type="checkbox"]:disabled + label {
+    color: #858585;
+  }
+  input[type="checkbox"]:disabled + label::before{
+    background: #dddddd;
+    box-shadow: 0 0 0 1px #c2c2c2;
+    cursor: not-allowed;
+  }
+  input[type="checkbox"]:focus + label::before {
+    box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #4fa157;
+  }
+
+</style>
+
+</div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
@@ -233,6 +498,73 @@
 <h2 class="usa-heading" id="radiobuttons">Radio buttons</h2>
 
 <p class="usa-font-lead">Radio buttons allow users to see all available choices at once and select exactly one option.</p>
+
+<div class="preview">
+
+  <ul class="usa-unstyled-list">
+      <li>
+        <input id="pea-soup" type="radio" checked="" name="soup" value="pea">
+        <label for="pea-soup">Selected</label>
+      </li>
+      <li>
+        <input id="chicken-noodle" type="radio" name="soup" value="chicken-noodle">
+        <label for="chicken-noodle">Sushi</label>
+      </li>
+      <li>
+        <input id="tomato" type="radio" name="soup" value="tomato">
+        <label for="tomato">Pasta</label>
+      </li>
+      <li>
+        <input id="tomatoe" type="radio" name="soup" value="tomatoe" disabled>
+        <label for="tomatoe">Disabled</label>
+      </li>      
+    </ul>
+
+</div>
+
+<div class="css-preview">
+
+<style type="text/css">
+
+  input[type="radio"]{
+    position: absolute;
+    left: -999em;
+  }
+  input[type="radio"] + label{
+    font-weight: normal;
+    cursor: pointer;
+  }
+  input[type="radio"] + label::before{
+    background: #fafafa;
+    box-shadow: 0 0 0 1px #c2c2c2;
+    content: '\a0';
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border-radius: 9px;
+    line-height: 14px;
+    margin-right: 10px;
+    vertical-align: 2px;
+  }
+  input[type="radio"]:checked + label::before {
+    background: #4fa157;
+    box-shadow: 0 0 0 1px #4fa157;
+  }
+  input[type="radio"]:disabled + label {
+    color: #858585;
+  }
+  input[type="radio"]:disabled + label::before{
+    background: #dddddd;
+    box-shadow: 0 0 0 1px #c2c2c2;
+    cursor: not-allowed;
+  }
+  input[type="radio"]:focus + label::before {
+    box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #4fa157;
+  }
+
+</style>
+
+</div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"

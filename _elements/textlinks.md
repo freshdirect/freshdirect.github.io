@@ -16,7 +16,7 @@ lead: Text Links are used to trigger actions or lead users through the site. The
 
   <h4>Tooltip</h4>
   <a class="tooltip" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">Our Freshness Guarantee</a>
-  <p>Our Freshness Guarantee <a class="tooltip-small" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">?</a></p>
+  <p><strong>Security Code</strong> <a class="tooltip-small" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">?</a></p>
 
 <!--   <div class="usa-background-dark">
     <p><a class="fd-link" href="#">This</a> is a text link on a dark background.</p>
@@ -44,8 +44,9 @@ lead: Text Links are used to trigger actions or lead users through the site. The
     outline-width: thick;  
   }
 
+
+
   /* Visited Text Link: Default, Hover */
-  .fd-link-visited,
   .fd-link:visited{
     color: #777777;
   }
@@ -53,10 +54,14 @@ lead: Text Links are used to trigger actions or lead users through the site. The
     color: #5fb069;
   }
 
+ 
+
   /* Text Link in Sentence */
   p .fd-link{
     text-decoration: underline;
   }
+
+
 
   /* Text link in Dark BG: Default, Hover */
   .usa-background-dark .fd-link{
@@ -65,6 +70,8 @@ lead: Text Links are used to trigger actions or lead users through the site. The
   .usa-background-dark .fd-link:hover{
     color: #b1d9b6;
   }
+
+
 
   /* Tooltip: Default, Hover */
   a.tooltip{
@@ -90,12 +97,12 @@ lead: Text Links are used to trigger actions or lead users through the site. The
     display: inline-block;
     font-family: arial;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 12px;
     color: #ffffff;
     text-decoration: none;
     text-align: center;
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
     margin: 0;
     padding: 0;
     background-color: #888888;
@@ -104,10 +111,10 @@ lead: Text Links are used to trigger actions or lead users through the site. The
     top: -10px;
   }
   a.tooltip-small:hover{
-    background-color: #444444;
+    background-color: #4fa157;
   }
   a.tooltip-small:focus{
-    background-color: #444444;
+    background-color: #4fa157;
     box-shadow: 0 0 3px #999999, 0 0 7px #999999;
   }
 
@@ -187,5 +194,8 @@ lead: Text Links are used to trigger actions or lead users through the site. The
     left: 18%;
     position: absolute;
     z-index: 99;
+  }
+  .fd-link-visited{
+    color: #777777;
   }
 </style>

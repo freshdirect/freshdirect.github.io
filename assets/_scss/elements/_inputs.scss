@@ -1,5 +1,5 @@
 // Block form elements
-input,
+/*input,
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -117,13 +117,13 @@ legend {
   color: #757575;
   font-family: $font-sans;
   margin-bottom: 0;
-}
+}*/
 
 /**
  * Custom checkboxes
  */
 
-input[type="checkbox"],
+/*input[type="checkbox"],
 input[type="radio"] {
   @include sr-only();
 
@@ -326,3 +326,4 @@ input[type=range]:focus::-ms-thumb {
 .usa-form-group-year {
   width: 7rem;
 }
+*/
