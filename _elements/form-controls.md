@@ -32,12 +32,12 @@ lead: Form controls allow users to enter information into a page.
     <input id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful">
   </div>
   <div class="box">
-    <label for="input-type-text">Focused</label>
-    <input class="focus" id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful">
-  </div>
-  <div class="box">
     <label for="input-type-text">Disabled</label>
     <input id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful" disabled>
+  </div>
+  <div class="box">
+    <label for="input-type-text">Focused</label>
+    <input class="focus" id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful">
   </div>
 
   <h6>Text Area</h6>  
@@ -46,12 +46,12 @@ lead: Form controls allow users to enter information into a page.
     <textarea id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area"></textarea>
   </div>
   <div class="box">
-    <label class="optional" for="input-type-text">Focused</label>
-    <textarea class="focus" id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area"></textarea>
-  </div>
-  <div class="box">
     <label class="optional" for="input-type-text">Disabled</label>
     <textarea id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area" disabled></textarea>
+  </div>
+  <div class="box">
+    <label class="optional" for="input-type-text">Focused</label>
+    <textarea class="focus" id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area"></textarea>
   </div>
 </div>
 
@@ -59,6 +59,7 @@ lead: Form controls allow users to enter information into a page.
 
 <style type="text/css">
 
+  /* Basic Input Styles */
   input[type="text"],
   input[type="email"],
   input[type="password"],
@@ -95,6 +96,7 @@ lead: Form controls allow users to enter information into a page.
   }
 
 
+  /* Textarea */
   textarea{
     height: auto;
     min-height: 54px;
@@ -102,10 +104,29 @@ lead: Form controls allow users to enter information into a page.
   }
 
 
+  /* Label */
+  label{
+    font-size: 16px;
+    font-weight: bold;
+    color: #444444;
+  }
+
+
+  /* Label – Optional Tag */
+  .optional:after {
+    content: "Optional";
+    display: block;
+    position: absolute;
+    color: #999999;
+    font-weight: normal;
+    right: 0px;
+    top: 0px;
+  }
+
+
+  /* Text Input + Textarea Focused */
   input:focus,
-  input.focus,
-  textarea:focus,
-  textarea.focus{
+  textarea:focus{
     border-top: 2px solid #68aa6d;
     border-right: 2px solid #68aa6d;
     border-bottom: 2px solid #68aa6d;
@@ -115,6 +136,7 @@ lead: Form controls allow users to enter information into a page.
   }
 
 
+  /* Text Input + Textarea Disabled */
   input:disabled,
   textarea:disabled{
     background-color: #eeeeee;
@@ -123,34 +145,6 @@ lead: Form controls allow users to enter information into a page.
     border-bottom: 2px solid #c2c2c2;
     border-left: 2px solid #eeeeee;
     cursor: not-allowed;
-  }
-
-
-  label{
-    font-size: 16px;
-    font-weight: bold;
-    color: #444444;
-  }
-
-  .preview .box{
-    display: inline-block;
-    width: 45%;
-    margin: 0 40px 0 0;
-  }
-
-  .optional{
-    display: inline-block;
-    position: relative;
-    width: 100%;
-  }
-  .optional:after {
-    content: "Optional";
-    display: block;
-    position: absolute;
-    color: #999999;
-    font-weight: normal;
-    right: 0px;
-    top: 0px;
   }
 
 
@@ -176,6 +170,18 @@ lead: Form controls allow users to enter information into a page.
 
 <style type="text/css">
 
+  /* Nothing to see here */
+  .preview .box{
+    display: inline-block;
+    width: 45%;
+    margin: 0 40px 0 0;
+  }
+
+  .optional{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
   input.focus,
   textarea.focus{
     border-top: 2px solid #68aa6d;
@@ -184,6 +190,9 @@ lead: Form controls allow users to enter information into a page.
     border-left: 2px solid #68aa6d;
     box-shadow: none;
     outline: none;
+  }
+  select.focus{
+    border: 2px solid #68aa6d;
   }
 
 </style>
@@ -220,6 +229,7 @@ lead: Form controls allow users to enter information into a page.
 
 <style type="text/css">
 
+  /* Default */
   select{
     -webkit-appearance: none;
     background: transparent url('../assets/img/input-arrow-down.png') 97% center no-repeat;
@@ -229,10 +239,15 @@ lead: Form controls allow users to enter information into a page.
     padding: 6px 8px;
     border: 2px solid #c2c2c2;
   }
-  select:focus,
-  select.focus{
+
+
+  /* Focused */
+  select:focus{
     border: 2px solid #68aa6d;
   }
+
+
+  /* Disabled */
   select:disabled{
     background-color: #eeeeee;
     cursor: not-allowed;
@@ -287,6 +302,7 @@ lead: Form controls allow users to enter information into a page.
 
 <style type="text/css">
 
+  /* Default */
   input[type="checkbox"]{
     position: absolute;
     left: -999em;
@@ -306,10 +322,22 @@ lead: Form controls allow users to enter information into a page.
     margin-right: 10px;
     vertical-align: 2px;
   }
+
+
+  /* Selected */
   input[type="checkbox"]:checked + label::before {
     background: #4fa157 url('../assets/img/check.png') center center no-repeat;
     box-shadow: 0 0 0 1px #4fa157;
   }
+
+
+  /* Focused */
+  input[type="checkbox"]:focus + label::before {
+    box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #4fa157;
+  }
+
+
+  /* Disabled */
   input[type="checkbox"]:disabled + label {
     color: #858585;
   }
@@ -318,9 +346,7 @@ lead: Form controls allow users to enter information into a page.
     box-shadow: 0 0 0 1px #c2c2c2;
     cursor: not-allowed;
   }
-  input[type="checkbox"]:focus + label::before {
-    box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #4fa157;
-  }
+
 
 </style>
 
@@ -374,6 +400,7 @@ lead: Form controls allow users to enter information into a page.
 
 <style type="text/css">
 
+  /* Default */ 
   input[type="radio"]{
     position: absolute;
     left: -999em;
@@ -394,10 +421,22 @@ lead: Form controls allow users to enter information into a page.
     margin-right: 10px;
     vertical-align: 2px;
   }
+
+
+  /* Selected */
   input[type="radio"]:checked + label::before {
     background: #4fa157;
     box-shadow: 0 0 0 1px #4fa157;
   }
+
+
+  /* Focused */
+  input[type="radio"]:focus + label::before {
+    box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #4fa157;
+  }
+
+
+  /* Disabled */
   input[type="radio"]:disabled + label {
     color: #858585;
   }
@@ -405,9 +444,6 @@ lead: Form controls allow users to enter information into a page.
     background: #dddddd;
     box-shadow: 0 0 0 1px #c2c2c2;
     cursor: not-allowed;
-  }
-  input[type="radio"]:focus + label::before {
-    box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #4fa157;
   }
 
 </style>
