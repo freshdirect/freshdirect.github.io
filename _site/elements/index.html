@@ -1117,7 +1117,8 @@
 
   <h4>Tooltip</h4>
   <a class="tooltip" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">Our Freshness Guarantee</a>
-  <p><strong>Security Code</strong> <a class="tooltip-small" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">?</a></p>
+  <p><strong>Super Salmon</strong> <a class="tooltip-small" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">?</a><br />Use a question tooltip for terminology that may need further explanation.</p>
+  <p><strong>Sales Tax</strong> <a class="tooltip-small info" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">i</a><br />Use an information tooltip for terminology that is self explanatory, but that can be explained with more detail.</p>
 
 <!--   <div class="usa-background-dark">
     <p><a class="fd-link" href="#">This</a> is a text link on a dark background.</p>
@@ -1191,7 +1192,7 @@
     border-bottom: 1px dashed #222222;
     text-decoration: none;    
     outline-style: solid;
-    outline-color: white;
+    outline-color: #ffffff;
     outline-width: thick;     
   }
   a.tooltip-small{
@@ -1210,6 +1211,14 @@
     border-radius: 15px;
     position: relative;
     top: -10px;
+  }
+  a.tooltip-small.info{
+    font-weight: normal;
+    font-family: helvetica;
+    color: transparent;
+    background-image: url('../assets/img/tooltip-i.png');
+    background-position: center;
+    background-repeat: no-repeat;
   }
   a.tooltip-small:hover{
     background-color: #4fa157;
