@@ -15,7 +15,7 @@ lead: Text Links are used to trigger actions or lead users through the site. The
   <p><a class="fd-link-visited" href="#">This is a visited link</a> inside a paragraph.</p>
 
   <h4>Tooltip</h4>
-  <a class="tooltip" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">Our Freshness Guarantee</a>
+  <p><a class="tooltip" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">Our Freshness Guarantee</a><br />Use this tooltip style within a sentence.</p>
   <p><strong>Super Salmon</strong> <a class="tooltip-small" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">?</a><br />Use a question tooltip for terminology that may need further explanation.</p>
   <p><strong>Sales Tax</strong> <a class="tooltip-small info" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">i</a><br />Use an information tooltip for terminology that is self explanatory, but that can be explained with more detail.</p>
 
@@ -102,14 +102,15 @@ lead: Text Links are used to trigger actions or lead users through the site. The
     color: #ffffff;
     text-decoration: none;
     text-align: center;
-    width: 17px;
-    height: 17px;
+    width: 16px;
+    height: 16px;
     margin: 0;
     padding: 0;
-    background-color: #888888;
-    border-radius: 15px;
+    background-color: #9d9d9d;
+    border-radius: 16px;
     position: relative;
     top: -10px;
+    z-index: 98;
   }
   a.tooltip-small.info{
     font-weight: normal;
@@ -124,8 +125,9 @@ lead: Text Links are used to trigger actions or lead users through the site. The
   }
   a.tooltip-small:focus{
     background-color: #4fa157;
-    box-shadow: 0 0 3px #999999, 0 0 7px #999999;
+    box-shadow: 0 0 3px transparent;
   }
+
 
 </style>
 
@@ -175,34 +177,54 @@ lead: Text Links are used to trigger actions or lead users through the site. The
     position: absolute;
     z-index: 99;
   }
+  /* Tooltip:; Overlay */
   a.tooltip-small:hover:after{
     text-align: left;
     font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
-    line-height: 14px;
-    height: auto;
-    background-color: #444;
+    background-color: #ffffff;
     outline: 0;
-    border-radius: 5px;
+    border-radius: 3px;
+    border: 1px solid #999999;
+    box-shadow: 0 0 3px #aaaaaa, 0 0 3px #aaaaaa;
     bottom: 25px;
-    color: #fff;
+    color: #333333;
     content: attr(info);
-    left: -35%;
-    padding: 13px;
+    right: -6px;
+    bottom: -6px;
+    padding: 18px;
     position: absolute;
-    z-index: 98;
+    z-index: 4;
+    height: auto;
     width: 220px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
+    line-height: 120%;
   }
   a.tooltip-small:hover:before{
-    border: solid;
-    border-color: #444 transparent;
-    border-width: 6px 6px 0 6px;
-    bottom: 19px;
-    content: "";
-    left: 18%;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #9d9d9d;
+    border-radius: 16px;
+    position: relative;
+    content: "?";
+    right: 0;
+    bottom: 0;
     position: absolute;
     z-index: 99;
+  }
+  a.tooltip-small.info:hover:before{
+    content: "";
+    background-image: url('../assets/img/tooltip-i.png');
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .fd-link-visited{
     color: #777777;
