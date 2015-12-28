@@ -7,15 +7,16 @@ lead: Use buttons to signal actions.
 
 <div class="preview">
 
-  <h3>Primary Button</h3>
+  <h2>Primary Button</h2>
 
-  <h6>Green Primary and Secondary Buttons</h6>
+  <p class="even-margin">Main Styling</p>
   <div class="button_wrapper">
     <button class="fd-button-green">Default</button>
     <button class="fd-button-green fd-button-green-active">Active</button>
     <button class="fd-button-green fd-button-green-hover">Hover</button>
     <button class="fd-button-green fd-button-green-focus">Focus</button>
   </div>
+  <p class="even-margin">Ghost Styling</p>
   <div class="button_wrapper">
     <button class="fd-button-ghost-green">Default</button>
     <button class="fd-button-ghost-green fd-button-ghost-green-active">Active</button>
@@ -23,31 +24,30 @@ lead: Use buttons to signal actions.
     <button class="fd-button-ghost-green fd-button-ghost-green-focus">Focus</button>
   </div>
 
-  <h3>Button Variations</h3>
+  <h2>Button Variations</h2>
 
-  <h6>Button Sizes</h6>
+  <p class="even-margin">Button Sizes</p>
   <div class="button_wrapper">
     <button class="fd-button-green fd-button-small">Small</button>
     <button class="fd-button-green">Medium</button>
     <button class="fd-button-green fd-button-large">Large</button>
   </div> 
 
-  <h6>Wide Buttons</h6>
+  <p class="even-margin">Wide Buttons</p>
   <div class="button_wrapper">
     <button class="fd-button-green fd-button-small fd-button-wide">Small</button>
     <button class="fd-button-green fd-button-wide">Medium</button>
     <button class="fd-button-green fd-button-large fd-button-wide">Large</button>
   </div>
 
-  <h6>Large Button W/ Arrow</h6>
+  <p class="even-margin">Large Button W/ Arrow</p>
   <div class="button_wrapper">
     <button class="fd-button-orange fd-button-large-arrow fd-button-wide">Checkout</button>
   </div> 
 
-  <h3>Special Buttons</h3>
+  <h2>Special Buttons</h2>
 
-  <h6>Orange Button</h6>
-  <p>Use mainly for <strong>Checkout</strong> or <strong>Place Order</strong> actions.</p>
+  <h6>Orange Button</h6> <p class="even-margin">Use mainly for <strong>Checkout</strong> or <strong>Place Order</strong> actions.</p>
   <div class="button_wrapper">
     <button class="fd-button-orange">Default</button>
     <button class="fd-button-orange fd-button-orange-active">Active</button>
@@ -55,8 +55,7 @@ lead: Use buttons to signal actions.
     <button class="fd-button-orange fd-button-orange-focus">Focus</button>
   </div>
 
-  <h6>Purple Button</h6>
-  <p>Use in <strong>Reorder section</strong>, and related actions like <strong>Add to List</strong>.</p>
+  <h6>Purple Button</h6><p class="even-margin">Use in <strong>Reorder section</strong>, and related actions like <strong>Add to List</strong>.</p>
   <div class="button_wrapper">
     <button class="fd-button-ghost-purple">Default</button>
     <button class="fd-button-ghost-purple fd-button-ghost-purple-active">Active</button>
@@ -64,8 +63,7 @@ lead: Use buttons to signal actions.
     <button class="fd-button-ghost-purple fd-button-ghost-purple-focus">Focus</button>
   </div>
 
-  <h6>Red/Destructive Button</h6>
-  <p><strong>Only use this button in edge cases where the customer will delete data or cancel a service.</strong></p>
+  <h6>Red/Destructive Button</h6> <p class="even-margin"><strong>Only use this button in edge cases where the customer will delete data or cancel a service.</strong></p>
   <div class="button_wrapper">
     <button class="fd-button-ghost-red">Default</button>
     <button class="fd-button-ghost-red fd-button-ghost-red-active">Active</button>
@@ -197,7 +195,7 @@ lead: Use buttons to signal actions.
   .fd-button-screen-wide{
     width: 100%;
   } 
-  
+
 
 
   /* Orange Button: Default, Hover, Active, Focus */

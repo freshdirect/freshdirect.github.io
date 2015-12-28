@@ -1099,6 +1099,13 @@ $font-light: 300;
 .em-yellow-bg{
   background-color: #fff1d2;
 }
+.em-grey-bg{
+  background-color: #eeeeee;
+}
+p.em-grey-bg{
+  display: inline-block;
+  padding: 0 5px;
+}
 .em-badge{
   display: inline-block;
   font-size: 10px;
@@ -1114,5 +1121,12 @@ $font-light: 300;
   font-family: $font-sans;
   font-size: $base-font-size;
   font-weight: bold;  
+}
+
+.preview p.even-margin{
+  margin: 7px 0;
+}
+.preview h6{
+  margin-top: 30px;
 }
 
