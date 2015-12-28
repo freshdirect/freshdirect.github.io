@@ -16,8 +16,8 @@ lead: Text Links are used to trigger actions or lead users through the site. The
 
   <h4>Tooltip</h4>
   <p><a class="tooltip" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">Our Freshness Guarantee</a><br />Use this tooltip style within a sentence.</p>
-  <p><strong>Super Salmon</strong> <a class="tooltip-small" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">?</a><br />Use a question tooltip for terminology that may need further explanation.</p>
-  <p><strong>Sales Tax</strong> <a class="tooltip-small info" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">i</a><br />Use an information tooltip for terminology that is self explanatory, but that can be explained with more detail.</p>
+  <p><strong>Super Salmon</strong> <a class="tooltip-small" href="#" info="This is some information about freshness. Bread, cheese, red pepper, olives, lox, thyme, and more.">?</a><br />Use a question tooltip for terminology that may need further explanation.</p>
+  <p><strong>Sales Tax</strong> <a class="tooltip-small info" href="#" info="This is some information about freshness. Bread, cheese, red pepper, olives, lox, thyme, and more.">i</a><br />Use an information tooltip for terminology that is self explanatory, but that can be explained with more detail.</p>
 
 <!--   <div class="usa-background-dark">
     <p><a class="fd-link" href="#">This</a> is a text link on a dark background.</p>
