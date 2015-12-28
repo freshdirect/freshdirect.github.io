@@ -137,7 +137,7 @@ lead: Form controls allow users to enter information into a page.
 
 
   /* Text Input + Textarea Disabled */
-  input:disabled,
+  input:disabled, input[type="text"]:disabled,
   textarea:disabled{
     background-color: #eeeeee;
     border-top: 2px solid #eeeeee;
