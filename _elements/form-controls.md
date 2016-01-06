@@ -401,7 +401,7 @@ lead: Form controls allow users to enter information into a page.
 <style type="text/css">
 
   /* Default */ 
-  input[type="radio"]{ 
+  input[type="radio"]{
     position: absolute;
     left: -999em;
   }
