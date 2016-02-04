@@ -145,6 +145,7 @@ lead: Form controls allow users to enter information into a page.
   /* Text Input + Textarea Error */
   input.error,
   textarea.error{
+    background-color: #faf5f5;
     border-top: 2px solid #b93d3f;
     border-right: 2px solid #b93d3f;
     border-bottom: 2px solid #b93d3f;
@@ -249,6 +250,13 @@ lead: Form controls allow users to enter information into a page.
     <option value="3">Option 3</option>
   </select>
 
+  <label for="focused">Error Handling</label>
+  <select class="error">
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+
 </div>
 
 <div class="css-preview">
@@ -278,6 +286,17 @@ lead: Form controls allow users to enter information into a page.
     background-color: #eeeeee;
     cursor: not-allowed;
   }
+
+  /* Error */
+  select.error{
+    background-color: #faf5f5;
+    border-top: 2px solid #b93d3f;
+    border-right: 2px solid #b93d3f;
+    border-bottom: 2px solid #b93d3f;
+    border-left: 2px solid #b93d3f;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 2px;
 
 </style>
 
