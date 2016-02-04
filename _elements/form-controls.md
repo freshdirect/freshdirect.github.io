@@ -29,29 +29,35 @@ lead: Form controls allow users to enter information into a page.
   <h6>Text Input</h6>
   <div class="box">
     <label for="input-type-text">Default</label>
-    <input id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful">
+    <input name="input-type-text" type="text" placeholder="Something helpful">
   </div>
   <div class="box">
     <label for="input-type-text">Disabled</label>
-    <input id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful" disabled>
+    <input name="input-type-text" type="text" placeholder="Something helpful" disabled>
   </div>
   <div class="box">
     <label for="input-type-text">Focused</label>
-    <input class="focus" id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful">
+    <input class="focus" name="input-type-text" type="text" placeholder="Something helpful">
   </div>
 
   <h6>Text Area</h6>  
   <div class="box">
     <label class="optional" for="input-type-text">Default</label>
-    <textarea id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area"></textarea>
+    <textarea name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area"></textarea>
   </div>
   <div class="box">
     <label class="optional" for="input-type-text">Disabled</label>
-    <textarea id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area" disabled></textarea>
+    <textarea name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area" disabled></textarea>
   </div>
   <div class="box">
     <label class="optional" for="input-type-text">Focused</label>
-    <textarea class="focus" id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area"></textarea>
+    <textarea class="focus" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area"></textarea>
+  </div>
+  <h6>Error Handling</h6>
+  <div class="box">
+    <label for="input-type-text">Street Address</label>
+    <input class="error" name="input-type-text" type="text" placeholder="456 Main Street">
+    <span class="error-msg">Required</span>
   </div>
 </div>
 
@@ -136,6 +142,26 @@ lead: Form controls allow users to enter information into a page.
   }
 
 
+  /* Text Input + Textarea Error */
+  input.error,
+  textarea.error{
+    border-top: 2px solid #b93d3f;
+    border-right: 2px solid #b93d3f;
+    border-bottom: 2px solid #b93d3f;
+    border-left: 2px solid #b93d3f;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 2px;
+  }
+  .error-msg {
+    display: block;
+    color: #b93d3f;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: right;
+  }
+
+
   /* Text Input + Textarea Disabled */
   input:disabled, input[type="text"]:disabled,
   textarea:disabled{
@@ -161,7 +187,7 @@ lead: Form controls allow users to enter information into a page.
     <h4 class="usa-heading">Accessibility</h4>
     <p>If you customize the text inputs, ensure they continue to meet the the <a href="{{ site.baseurl }}/form-controls/"> accessibility requirements that apply to all form controls.</a></p>
     <ul class="usa-content-list">
-      <li>Avoid placeholder text for accessibility reasons. Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.</li>
+      <li>Avoid using placeholder text to label a form element. Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.</li>
       <li>Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.</li>
       <li>Only show error validation messages or stylings after a user has interacted with a particular field.</li>
     </ul>
