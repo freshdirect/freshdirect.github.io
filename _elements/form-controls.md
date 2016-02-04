@@ -256,6 +256,7 @@ lead: Form controls allow users to enter information into a page.
     <option value="2">Option 2</option>
     <option value="3">Option 3</option>
   </select>
+  <span class="dropdown-error-msg">Required</span>
 
 </div>
 
@@ -297,6 +298,15 @@ lead: Form controls allow users to enter information into a page.
     box-shadow: none;
     outline: none;
     margin-bottom: 2px;
+  }
+  .dropdown-error-msg {
+    display: block;
+    width: 350px;
+    color: #b93d3f;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: right;
+  }  
 
 </style>
 
