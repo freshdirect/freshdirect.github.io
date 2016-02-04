@@ -2254,30 +2254,59 @@
   <h6>Text Input</h6>
   <div class="box">
     <label for="input-type-text">Default</label>
-    <input id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful">
+    <input name="input-type-text" type="text" placeholder="Something helpful">
   </div>
   <div class="box">
     <label for="input-type-text">Disabled</label>
-    <input id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful" disabled>
+    <input name="input-type-text" type="text" placeholder="Something helpful" disabled>
   </div>
   <div class="box">
     <label for="input-type-text">Focused</label>
-    <input class="focus" id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful">
+    <input class="focus" name="input-type-text" type="text" placeholder="Something helpful">
   </div>
 
   <h6>Text Area</h6>  
   <div class="box">
     <label class="optional" for="input-type-text">Default</label>
-    <textarea id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area"></textarea>
+    <textarea name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area"></textarea>
   </div>
   <div class="box">
     <label class="optional" for="input-type-text">Disabled</label>
-    <textarea id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area" disabled></textarea>
+    <textarea name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area" disabled></textarea>
   </div>
   <div class="box">
     <label class="optional" for="input-type-text">Focused</label>
-    <textarea class="focus" id="input-type-text" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area"></textarea>
+    <textarea class="focus" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area"></textarea>
   </div>
+  <h6>Error Handling</h6>
+  <div class="box">
+    <label for="input-type-text">Street Address</label>
+    <input class="error" name="input-type-text" type="text" placeholder="456 Main Street">
+    <span class="error-msg">Required</span>
+  </div>
+  <h6>Character Restriction</h6>
+  <p class="full">In order to mitigate customer data entry mistakes, we can use a lightweight JQuery plugin called <a target="_blank" href="https://github.com/KevinSheedy/jquery.alphanum">Alphanum</a>. It allows us to set character restrictions for text inputs that have specific requirements (only letters and/or numbers for example). There's also the ability to customize these restrictions.</p>
+  <div class="box">
+    <label for="input-type-text">Only Letters</label>
+    <input class="alpha" name="input-type-text" type="text" placeholder="ABCDEFG">
+  </div> 
+  <div class="box">
+    <code class="code-editorial em-yellow-bg">$(input).alpha();</code>
+  </div>
+  <div class="box">
+    <label for="input-type-text">Only Numbers</label>
+    <input class="numeric" name="input-type-text" type="text" placeholder=".012345678,9">
+  </div> 
+  <div class="box">
+    <code class="code-editorial em-yellow-bg">$(input).numeric();</code>
+  </div>
+  <div class="box">
+    <label for="input-type-text">Both Letters and Numbers</label>
+    <input class="numeric" name="input-type-text" type="text" placeholder="C3P0">
+  </div> 
+  <div class="box">
+    <code class="code-editorial em-yellow-bg">$(input).alphanum();</code>
+  </div> 
 </div>
 
 <div class="css-preview">
@@ -2361,6 +2390,27 @@
   }
 
 
+  /* Text Input + Textarea Error */
+  input.error,
+  textarea.error{
+    background-color: #faf5f5;
+    border-top: 2px solid #b93d3f;
+    border-right: 2px solid #b93d3f;
+    border-bottom: 2px solid #b93d3f;
+    border-left: 2px solid #b93d3f;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 2px;
+  }
+  .error-msg {
+    display: block;
+    color: #b93d3f;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: right;
+  }
+
+
   /* Text Input + Textarea Disabled */
   input:disabled, input[type="text"]:disabled,
   textarea:disabled{
@@ -2386,9 +2436,10 @@
     <h4 class="usa-heading">Accessibility</h4>
     <p>If you customize the text inputs, ensure they continue to meet the the <a href="/form-controls/"> accessibility requirements that apply to all form controls.</a></p>
     <ul class="usa-content-list">
-      <li>Avoid placeholder text for accessibility reasons. Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.</li>
+      <li>Avoid using placeholder text to label a form element. Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.</li>
       <li>Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.</li>
       <li>Only show error validation messages or stylings after a user has interacted with a particular field.</li>
+      <li>If character restriction is applied, this needs to be disclosed to any customer using screen readers.</li>
     </ul>
   </div>
 </div>
@@ -2449,6 +2500,14 @@
     <option value="3">Option 3</option>
   </select>
 
+  <label for="focused">Error Handling</label>
+  <select class="error">
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+  <span class="dropdown-error-msg">Required</span>
+
 </div>
 
 <div class="css-preview">
@@ -2478,6 +2537,26 @@
     background-color: #eeeeee;
     cursor: not-allowed;
   }
+
+  /* Error */
+  select.error{
+    background-color: #faf5f5;
+    border-top: 2px solid #b93d3f;
+    border-right: 2px solid #b93d3f;
+    border-bottom: 2px solid #b93d3f;
+    border-left: 2px solid #b93d3f;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 2px;
+  }
+  .dropdown-error-msg {
+    display: block;
+    width: 350px;
+    color: #b93d3f;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: right;
+  }  
 
 </style>
 
@@ -3883,6 +3962,7 @@
 
 
       <script src="/assets/js/vendor/jquery-1.11.3.min.js"></script>
+  <script src="/assets/js/vendor/jquery.alphanum.js"></script>
   <!--[if lt IE 9]>
     <script src="/assets/js/vendor/selectivizr-min.js"></script>
     <script src="/assets/js/vendor/respond.js"></script>

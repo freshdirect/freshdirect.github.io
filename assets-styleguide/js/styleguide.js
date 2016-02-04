@@ -144,3 +144,11 @@ $('.sidenav').on('click', 'a', function(e) {
     }
   });
 });
+
+$(".alpha").alpha();
+$(".numeric").numeric();
+$(".alphanumeric").alphanum();
+
+
+
+

@@ -59,6 +59,29 @@ lead: Form controls allow users to enter information into a page.
     <input class="error" name="input-type-text" type="text" placeholder="456 Main Street">
     <span class="error-msg">Required</span>
   </div>
+  <h6>Character Restriction</h6>
+  <p class="full">In order to mitigate customer data entry mistakes, we can use a lightweight JQuery plugin called <a target="_blank" href="https://github.com/KevinSheedy/jquery.alphanum">Alphanum</a>. It allows us to set character restrictions for text inputs that have specific requirements (only letters and/or numbers for example). There's also the ability to customize these restrictions.</p>
+  <div class="box">
+    <label for="input-type-text">Only Letters</label>
+    <input class="alpha" name="input-type-text" type="text" placeholder="ABCDEFG">
+  </div> 
+  <div class="box">
+    <code class="code-editorial em-yellow-bg">$(input).alpha();</code>
+  </div>
+  <div class="box">
+    <label for="input-type-text">Only Numbers</label>
+    <input class="numeric" name="input-type-text" type="text" placeholder=".012345678,9">
+  </div> 
+  <div class="box">
+    <code class="code-editorial em-yellow-bg">$(input).numeric();</code>
+  </div>
+  <div class="box">
+    <label for="input-type-text">Both Letters and Numbers</label>
+    <input class="numeric" name="input-type-text" type="text" placeholder="C3P0">
+  </div> 
+  <div class="box">
+    <code class="code-editorial em-yellow-bg">$(input).alphanum();</code>
+  </div> 
 </div>
 
 <div class="css-preview">
@@ -191,6 +214,7 @@ lead: Form controls allow users to enter information into a page.
       <li>Avoid using placeholder text to label a form element. Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.</li>
       <li>Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.</li>
       <li>Only show error validation messages or stylings after a user has interacted with a particular field.</li>
+      <li>If character restriction is applied, this needs to be disclosed to any customer using screen readers.</li>
     </ul>
   </div>
 </div>
