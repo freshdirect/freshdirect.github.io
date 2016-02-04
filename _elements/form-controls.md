@@ -77,7 +77,7 @@ lead: Form controls allow users to enter information into a page.
   </div>
   <div class="box">
     <label for="input-type-text">Both Letters and Numbers</label>
-    <input class="numeric" name="input-type-text" type="text" placeholder="C3P0">
+    <input class="alphanumeric" name="input-type-text" type="text" placeholder="C3P0">
   </div> 
   <div class="box">
     <code class="code-editorial em-yellow-bg">$(input).alphanum();</code>
