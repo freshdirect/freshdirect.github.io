@@ -18,7 +18,13 @@ lead: Form controls allow users to enter information into a page.
   <li>Display form controls in the same order in HTML as they do on screen. Do not use CSS to rearrange the form controls. Screen readers narrate forms in the order they appear in the HTML.</li>
   <li>Group each set of thematically related controls in a fieldset element. Use the legend element to offer a label within each one. The fieldset and legend elements make it easier for screen reader users to navigate the form.</li>
   <li>A single legend is always required for fieldset. A common use of fieldset and legend is a question with radio button options for answers. The question text and radio buttons are wrapped in a fieldset, with the question itself being inside the legend tag.</li>
-  <li>You can embed multiple fieldsets and legends for more complex forms.</li> 
+  <li>You can embed multiple fieldsets and legends for more complex forms.</li>
+</ul>
+<h4>Error Handling</h4>
+<ul class="usa-content-list">
+  <li>Only show error validation messages or stylings after a user has interacted with a particular field.</li>
+  <li>When a validation error is detected, <em class="em-yellow-bg">aria-invalid="true"</em> should be set to each invalid form element. This attribute causes screen readers to identify the control as being "invalid" or in need of attention.</li>
+  <li>All required fields should have the <em class="em-yellow-bg">aria-required</em> attribute.</li>
 </ul>
 
 <h2 class="usa-heading" id="text-inputs">Text inputs</h2>
@@ -213,7 +219,6 @@ lead: Form controls allow users to enter information into a page.
     <ul class="usa-content-list">
       <li>Avoid using placeholder text to label a form element. Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.</li>
       <li>Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.</li>
-      <li>Only show error validation messages or stylings after a user has interacted with a particular field.</li>
       <li>If character restriction is applied, this needs to be disclosed to disabled customers using screen readers when entering characters excluded from the input.</li>
     </ul>
   </div>
