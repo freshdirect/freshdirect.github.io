@@ -55,7 +55,7 @@ lead: Form controls allow users to enter information into a page.
   </div>
   <h6>Error Handling</h6>
   <div class="box">
-    <label for="input-type-text">Street Address</label>
+    <label for="input-type-text">Default/Focused</label>
     <input class="error" name="input-type-text" type="text" placeholder="456 Main Street">
     <span class="error-msg">Required</span>
   </div>
