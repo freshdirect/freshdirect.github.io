@@ -14,7 +14,7 @@ lead: Text Links are used to trigger actions or lead users through the site. The
   <p>Text Links in a paragraph <a class="fd-link" href="#">look like this</a>. With pretty stories for which there's little good evidence quasar. Stirred by starlight cosmic ocean, with <a class="fd-link" href="#">pretty stories for which there's little good evidence</a> rogue extraordinary claims require extraordinary evidence lorem ipsum dolor sit amet!</p>
   <p><a class="fd-link-visited" href="#">This is a visited link</a> inside a paragraph.</p>
 
-  <h3>Tooltip</h3>
+  <h3>Information Link</h3>
   <p><a class="tooltip" href="#" info="This is some information about freshness. PLEASE, disregard the styling of this overlay.">Our Freshness Guarantee</a><br />Use this tooltip style within a sentence.</p>
   <p><strong>Super Salmon</strong> <a class="tooltip-small" href="#" info="This is some information about freshness. Bread, cheese, red pepper, olives, lox, thyme, and more.">?</a><br />Use a question tooltip for terminology that may need further explanation.</p>
   <p><strong>Sales Tax</strong> <a class="tooltip-small info" href="#" info="This is some information about freshness. Bread, cheese, red pepper, olives, lox, thyme, and more.">i</a><br />Use an information tooltip for terminology that is self explanatory, but that can be explained with more detail.</p>
