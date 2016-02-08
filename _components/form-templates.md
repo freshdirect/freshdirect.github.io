@@ -2,7 +2,7 @@
 layout: styleguide
 type: component
 title: Form templates
-lead: Patterns for some of the most commonly used forms on government websites
+lead: Patterns for some of the most commonly used forms
 ---
 
 <h3 class="usa-heading">Accessibility</h3>
@@ -19,28 +19,32 @@ lead: Patterns for some of the most commonly used forms on government websites
   <li>Keep your form blocks in a vertical pattern. It's an ideal approach for accessibility, due to limited vision that makes it hard to scan from right to left.</li>
 </ul>
 
-<h2 class="usa-heading" id="name-form">Name form</h2>
-<p class="usa-font-lead">A standard template for collecting a person’s full name</p>
+<h2 class="usa-heading" id="name-form">Sample form</h2>
+<!-- <p class="usa-font-lead">A standard template for collecting a person’s full name</p> -->
 
 <div class="preview">
 
   <form>
     <fieldset>
-      <legend>Name</legend>
+      <legend>Full Name</legend>
       <label for="title">Title</label>
-      <input class="usa-input-tiny" id="title" name="title" type="text">
+      <select id="title">
+        <option value="1">Mr.</option>
+        <option value="2">Ms.</option>
+        <option value="3">Mrs.</option>
+      </select>
 
-      <label for="first-name">First name <span class="usa-additional_text">Required</span></label>
-      <input id="first-name" name="first-name" type="text" required="" aria-required="true">
+      <label for="first-name">First Name <span>Required</span></label>
+      <input id="first-name" name="first-name" type="text" required="" aria-required="true" placeholder="Your Name">
 
-      <label for="middle-name">Middle name</label>
-      <input id="middle-name" name="middle-name" type="text">
+      <label for="middle-name">Middle Name</label>
+      <input id="middle-name" name="middle-name" type="text" placeholder="Middle Name">
 
-      <label for="last-name">Last name <span class="usa-additional_text">Required</span></label>
-      <input id="last-name" name="last-name" type="text" required="" aria-required="true">
+      <label for="last-name">Last Name <span>Required</span></label>
+      <input id="last-name" name="last-name" type="text" required="" aria-required="true" placeholder="Last Name">
 
       <label for="suffix">Suffix</label>
-      <input class="usa-input-tiny" id="suffix" name="suffix" type="text">
+      <input class="usa-input-tiny" id="suffix" name="suffix" type="text" placeholder="e.g., Ph.D. ">
     </fieldset>
   </form>
 
@@ -56,7 +60,7 @@ lead: Patterns for some of the most commonly used forms on government websites
     <ul class="usa-content-list">
       <li>As you customize this form template, ensure it continues to follow the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/form-controls/">accessibility guidelines for form controls</a>.</li>
     </ul>
-    <h4 class="usa-heading">Usability</h4>
+    <!-- <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">
       <li>When you need to collect users’ full names and store the parts separately in a database.</li>
@@ -69,11 +73,11 @@ lead: Patterns for some of the most commonly used forms on government websites
     <ul class="usa-content-list">
       <li>Leave the title and suffix fields as text boxes instead of offering drop downs. There are many possible titles and suffixes; text boxes accommodate them all.</li>
       <li>Do not restrict the types of characters users can enter in any of these fields. Names can include characters outside the standard Roman alphabet.</li>
-    </ul>
+    </ul> -->
   </div>
 </div>
 
-<h2 class="usa-heading" id="address-form">Address form</h2>
+<!-- <h2 class="usa-heading" id="address-form">Address form</h2>
 <p class="usa-font-lead">A standard template for entering a U.S. mailing or shipping address</p>
 
 <div class="preview">
@@ -320,4 +324,4 @@ lead: Patterns for some of the most commonly used forms on government websites
       <li>The requirements shown above are just provided as an example and should not be taken as recommendations.</li>
     </ul>
   </div>
-</div>
+</div> -->

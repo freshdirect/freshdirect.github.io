@@ -298,9 +298,9 @@ lead: Form controls allow users to enter information into a page.
     -webkit-appearance: none;
     background: transparent url('../assets/img/input-arrow-down.png') 97% center no-repeat;
     display: block;
-    height: 38px;
+    height: 34px;
     width: 30px;
-    padding: 6px 8px;
+    padding: 4px 8px;
     border: 2px solid #c2c2c2;
   }
 

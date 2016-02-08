@@ -327,3 +327,169 @@ input[type=range]:focus::-ms-thumb {
   width: 7rem;
 }
 */
+
+  legend {
+    font-size: 30px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+
+  /* Basic Input Styles */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="url"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="search"],
+  input[type="file"],
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  textarea,
+  select  {
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #c2c2c2;
+    border-left: 2px solid #ffffff;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #444444; 
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+    min-width: 40%;
+    width: 100%;
+    box-shadow: none;
+    height: 34px;
+    margin-bottom: 28px;
+    outline: none;
+    padding: 12px 8px;
+    appearance: none;
+  }
+
+
+  /* Textarea */
+  textarea{
+    height: auto;
+    min-height: 54px;
+    overflow: auto;
+  }
+
+
+  /* Label */
+  label{
+    font-size: 16px;
+    font-weight: bold;
+    color: #444444;
+  }
+
+
+  /* Label – Optional Tag */
+  label span{
+    color: #999999;
+    font-weight: normal;
+    font-style: normal;
+    float: right;
+  }
+  .optional:after {
+    content: "Optional";
+    display: block;
+    position: absolute;
+    color: #999999;
+    font-weight: normal;
+    right: 0px;
+    top: 0px;
+  }
+
+
+  /* Text Input + Textarea Focused */
+  input:focus,
+  textarea:focus{
+    border-top: 2px solid #68aa6d;
+    border-right: 2px solid #68aa6d;
+    border-bottom: 2px solid #68aa6d;
+    border-left: 2px solid #68aa6d;
+    box-shadow: none;
+    outline: none;
+  }
+
+
+  /* Text Input + Textarea Error */
+  input.error,
+  textarea.error{
+    background-color: #faf5f5;
+    border-top: 2px solid #b93d3f;
+    border-right: 2px solid #b93d3f;
+    border-bottom: 2px solid #b93d3f;
+    border-left: 2px solid #b93d3f;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 2px;
+  }
+  .error-msg {
+    display: block;
+    color: #b93d3f;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: right;
+  }
+
+
+  /* Text Input + Textarea Disabled */
+  input:disabled, input[type="text"]:disabled,
+  textarea:disabled{
+    background-color: #eeeeee;
+    border-top: 2px solid #eeeeee;
+    border-right: 2px solid #eeeeee;
+    border-bottom: 2px solid #c2c2c2;
+    border-left: 2px solid #eeeeee;
+    cursor: not-allowed;
+  }
+
+
+    /* Default */
+  select{
+    -webkit-appearance: none;
+    background: transparent url('../img/input-arrow-down.png') 93% center no-repeat;
+    display: block;
+    height: 34px;
+    width: 30px;
+    padding: 4px 8px;
+    border: 2px solid #c2c2c2;
+  }
+
+
+  /* Focused */
+  select:focus{
+    border: 2px solid #68aa6d;
+  }
+
+
+  /* Disabled */
+  select:disabled{
+    background-color: #eeeeee;
+    cursor: not-allowed;
+  }
+
+  /* Error */
+  select.error{
+    background-color: #faf5f5;
+    border-top: 2px solid #b93d3f;
+    border-right: 2px solid #b93d3f;
+    border-bottom: 2px solid #b93d3f;
+    border-left: 2px solid #b93d3f;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 2px;
+  }
+  .dropdown-error-msg {
+    display: block;
+    width: 350px;
+    color: #b93d3f;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: right;
+  }  
