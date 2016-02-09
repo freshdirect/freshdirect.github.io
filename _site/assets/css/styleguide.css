@@ -1164,7 +1164,7 @@ select {
   display: block;
   font-size: 18px;
   font-weight: normal;
-  min-width: 40%;
+  min-width: 100px;
   width: 100%;
   box-shadow: none;
   height: 34px;
@@ -1243,7 +1243,7 @@ textarea:disabled {
 /* Default */
 select {
   -webkit-appearance: none;
-  background: transparent url("../img/input-arrow-down.png") 93% center no-repeat;
+  background: transparent url("../img/input-arrow-down.png") right 8px center no-repeat;
   display: block;
   height: 34px;
   width: 30px;

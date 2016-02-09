@@ -227,7 +227,8 @@ lead: Form controls allow users to enter information into a page.
 <style type="text/css">
 
   /* Nothing to see here */
-  .preview .box{
+
+  .preview .box {
     display: inline-block;
     width: 45%;
     margin: 0 40px 0 0;
@@ -296,7 +297,7 @@ lead: Form controls allow users to enter information into a page.
   /* Default */
   select{
     -webkit-appearance: none;
-    background: transparent url('../assets/img/input-arrow-down.png') 97% center no-repeat;
+    background: transparent url('../assets/img/input-arrow-down.png') right 8px center no-repeat;
     display: block;
     height: 34px;
     width: 30px;
