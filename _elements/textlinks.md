@@ -211,7 +211,7 @@ lead: Text Links are used to trigger actions or lead users through the site. The
     height: 16px;
     margin: 0;
     padding: 0;
-    background-color: #9d9d9d;
+    background-color: #4fa157;
     border-radius: 16px;
     position: relative;
     content: "?";
