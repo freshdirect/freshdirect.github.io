@@ -118,8 +118,9 @@ lead: Form controls allow users to enter information into a page.
     box-sizing: border-box;
     color: #444444; 
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
+    font-family: verdana;
     min-width: 40%;
     width: 100%;
     box-shadow: none;
@@ -127,6 +128,7 @@ lead: Form controls allow users to enter information into a page.
     margin-bottom: 28px;
     outline: none;
     padding: 12px 8px;
+    -webkit-font-smoothing: antialiased;
     appearance: none;
   }
 
@@ -141,7 +143,8 @@ lead: Form controls allow users to enter information into a page.
 
   /* Label */
   label{
-    font-size: 16px;
+    font-size: 14px;
+    font-family: verdana;
     font-weight: bold;
     color: #444444;
   }

@@ -358,8 +358,9 @@ input[type=range]:focus::-ms-thumb {
     box-sizing: border-box;
     color: #444444; 
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
+    font-family: verdana;
     min-width: 100px;
     width: 100%;
     box-shadow: none;
@@ -367,6 +368,7 @@ input[type=range]:focus::-ms-thumb {
     margin-bottom: 28px;
     outline: none;
     padding: 12px 8px;
+    -webkit-font-smoothing: antialiased;
     appearance: none;
   }
 
@@ -381,7 +383,8 @@ input[type=range]:focus::-ms-thumb {
 
   /* Label */
   label{
-    font-size: 16px;
+    font-family: verdana;
+    font-size: 14px;
     font-weight: bold;
     color: #444444;
   }
