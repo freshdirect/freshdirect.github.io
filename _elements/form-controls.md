@@ -124,11 +124,13 @@ lead: Form controls allow users to enter information into a page.
     min-width: 40%;
     width: 100%;
     box-shadow: none;
-    height: 34px;
+    height: auto;
     margin-bottom: 28px;
     outline: none;
-    padding: 12px 8px;
+    padding: 6px 8px;
     -webkit-font-smoothing: antialiased;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
   }
 
@@ -299,7 +301,6 @@ lead: Form controls allow users to enter information into a page.
 
   /* Default */
   select{
-    -webkit-appearance: none;
     background: transparent url('../assets/img/input-arrow-down.png') right 8px center no-repeat;
     display: block;
     height: 34px;
