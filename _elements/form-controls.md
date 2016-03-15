@@ -415,7 +415,8 @@ lead: Form controls allow users to enter information into a page.
 
   /* Selected */
   input[type="checkbox"]:checked + label::before {
-    background: #4fa157 url('../assets/img/check.png') center center no-repeat;
+    background: #4fa157 url('../assets/img/checkmark-white.svg') center center no-repeat;
+    background-size: 80%;
     box-shadow: 0 0 0 1px #4fa157;
   }
 
