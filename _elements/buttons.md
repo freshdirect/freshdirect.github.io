@@ -164,8 +164,9 @@ lead: Use buttons to signal actions.
   .fd-button-large-arrow{
     font-size: 16px;
     padding: 15px 30px;
-    background-image: url('../assets/img/arrow-wht.png');
-    background-position: 95% center;
+    background-image: url('../assets/img/arrow-right-white.svg');
+    background-size: 10px auto;
+    background-position: right 15px center;
     background-repeat: no-repeat; 
   }
   .fd-button-small{

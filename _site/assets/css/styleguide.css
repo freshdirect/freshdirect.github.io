@@ -1168,10 +1168,10 @@ select {
   min-width: 100px;
   width: 100%;
   box-shadow: none;
-  height: 34px;
+  height: auto;
   margin-bottom: 28px;
   outline: none;
-  padding: 12px 8px;
+  padding: 6px 8px;
   -webkit-font-smoothing: antialiased;
   appearance: none; }
 
