@@ -65,6 +65,15 @@ lead: Form controls allow users to enter information into a page.
     <input class="error" name="input-type-text" type="text" placeholder="456 Main Street">
     <span class="error-msg">Required</span>
   </div>
+  <h6>Special Inputs</h6>
+  <p class="full">This text input and button combination is used for Promo and Gift Card code inputs.</p>
+  <div class="box">
+    <label for="input-button-combo">Gift Card</label>
+    <div class="input-button">
+      <input name="input-button-combo" type="text" placeholder="Enter Code">
+      <button class="fd-button-green fd-button-small">Add</button>
+    </div>
+  </div>
   <h6>Character Restriction</h6>
   <p class="full">In order to mitigate customer data entry mistakes, we can use a lightweight JQuery plugin called <a target="_blank" href="https://github.com/KevinSheedy/jquery.alphanum">Alphanum</a>. It allows us to set character restrictions for text inputs that have specific requirements (only letters and/or numbers for example). There's also the ability to customize these restrictions.</p>
   <div class="box">
@@ -87,7 +96,8 @@ lead: Form controls allow users to enter information into a page.
   </div> 
   <div class="box">
     <code class="code-editorial em-yellow-bg">$(input).alphanum();</code>
-  </div> 
+  </div>
+
 </div>
 
 <div class="css-preview">
@@ -112,7 +122,7 @@ lead: Form controls allow users to enter information into a page.
   select  {
     border-top: 2px solid #ffffff;
     border-right: 2px solid #ffffff;
-    border-bottom: 2px solid #c2c2c2;
+    border-bottom: 2px solid #d4d4d4;
     border-left: 2px solid #ffffff;
     border-radius: 0;
     box-sizing: border-box;
@@ -203,9 +213,32 @@ lead: Form controls allow users to enter information into a page.
     background-color: #eeeeee;
     border-top: 2px solid #eeeeee;
     border-right: 2px solid #eeeeee;
-    border-bottom: 2px solid #c2c2c2;
+    border-bottom: 2px solid #d4d4d4;
     border-left: 2px solid #eeeeee;
     cursor: not-allowed;
+  }
+
+
+  /* Text Input + Button Combo */
+  .input-button{
+    position: relative;
+  }
+  .input-button input,
+  .input-button button{
+    display: inline;
+  }
+  .input-button input{
+    width: 200px;
+    border-color: #d4d4d4;
+    padding: 6px 66px 7px 8px;
+  }
+  .input-button input:focus{
+    border-color: #68aa6d;
+  }
+  .input-button button{
+    position: absolute;
+    margin-left: -60px;
+    top: -2px;
   }
 
 
@@ -306,7 +339,7 @@ lead: Form controls allow users to enter information into a page.
     height: 34px;
     width: 30px;
     padding: 4px 8px;
-    border: 2px solid #c2c2c2;
+    border: 2px solid #d4d4d4;
   }
 
 
@@ -402,7 +435,7 @@ lead: Form controls allow users to enter information into a page.
   }
   input[type="checkbox"] + label::before{
     background: #fafafa;
-    box-shadow: 0 0 0 1px #c2c2c2;
+    box-shadow: 0 0 0 1px #d4d4d4;
     content: '\a0';
     display: inline-block;
     height: 17px;
@@ -433,7 +466,7 @@ lead: Form controls allow users to enter information into a page.
   }
   input[type="checkbox"]:disabled + label::before{
     background: #dddddd;
-    box-shadow: 0 0 0 1px #c2c2c2;
+    box-shadow: 0 0 0 1px #d4d4d4;
     cursor: not-allowed;
   }
 
@@ -501,7 +534,7 @@ lead: Form controls allow users to enter information into a page.
   }
   input[type="radio"] + label::before{
     background: #fafafa;
-    box-shadow: 0 0 0 1px #c2c2c2;
+    box-shadow: 0 0 0 1px #d4d4d4;
     content: '\a0';
     display: inline-block;
     height: 18px;
@@ -532,7 +565,7 @@ lead: Form controls allow users to enter information into a page.
   }
   input[type="radio"]:disabled + label::before{
     background: #dddddd;
-    box-shadow: 0 0 0 1px #c2c2c2;
+    box-shadow: 0 0 0 1px #d4d4d4;
     cursor: not-allowed;
   }
 
