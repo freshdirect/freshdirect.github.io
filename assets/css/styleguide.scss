@@ -1137,3 +1137,198 @@ a, p.example{
   font-size: 16px;
 }
 
+/*** Button Styles ***/
+
+  /* Basic Button Styles */
+  button,
+  button:visited{
+    display: inline-block;
+    appearance: none;
+    border: 0;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: verdana;
+    line-height: 1;
+    margin: .5em;
+    outline: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: background-color 0.12s ease-in-out 0s;
+  }
+  button:focus{
+    transition: background-color 0s ease-in-out 0s;
+  }
+
+
+
+  /* Green Button: Default, Hover, Active, Focus */
+  .fd-button-green{
+    background-color: #4fa157;
+    border: 1px solid #4fa157;  
+  }
+  .fd-button-green:hover{
+    background-color: #458d4e;
+    border-color: #458d4e;
+  }
+  .fd-button-green:active{
+    background-color: #5fb067;
+    border-color: #5fb067;
+  }
+  .fd-button-green:focus{
+    background-color: #5fb067;
+    border-color: #306238;
+    box-shadow: 0 0 1px #aaaaaa, 0 0 8px #aaaaaa;
+  }
+
+  
+
+  /* Secondary Green Ghost Button: Default, Hover, Active, Focus */
+  .fd-button-ghost-green{
+    color: #458b4c;
+    background-color: #ffffff;
+    border: 1px solid #4fa157;
+    padding: 10px 20px;
+  }
+  .fd-button-ghost-green:hover{
+    background-color: #edf5ee;
+  }
+  .fd-button-ghost-green:active{
+    background-color: #ffffff;
+  }
+  .fd-button-ghost-green:focus{
+    background-color: #ffffff;
+    border-color: #458b4c;
+    box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
+  }
+
+
+
+  /* Button Sizes */
+  .fd-button-large{
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+  .fd-button-large-arrow{
+    font-size: 16px;
+    padding: 15px 30px;
+    background-image: url('../assets/img/arrow-right-white.svg');
+    background-size: 10px auto;
+    background-position: right 15px center;
+    background-repeat: no-repeat; 
+  }
+  .fd-button-small{
+    font-size: 12px;
+    padding: 7px 14px;
+  }
+
+
+
+  /* Wide Buttons */
+  .fd-button-wide{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .fd-button-small.fd-button-wide{
+    padding-left: 30px;
+    padding-right: 30px;
+  }  
+  .fd-button-large.fd-button-wide{
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  .fd-button-large-arrow.fd-button-wide{
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  .fd-button-screen-wide{
+    width: 100%;
+  } 
+
+
+
+  /* Orange Button: Default, Hover, Active, Focus */
+  .fd-button-orange{
+    color: #ffffff;
+    background-color: #f68139;
+    border: 1px solid #f68139;
+  }
+  .fd-button-orange:hover{
+    background-color: #e77630;
+    border-color: #e77630;
+  }
+  .fd-button-orange:active{
+    background-color: #fc8e46;
+    border-color: #fc8e46;
+  }
+  .fd-button-orange:focus{
+    background-color: #fc8e46;
+    border-color: #a84c14;
+    box-shadow: 0 0 1px #aaaaaa, 0 0 8px #aaaaaa;
+  }
+
+
+
+  /* Secondary Purple Ghost Button: Default, Hover, Active, Focus */
+  .fd-button-ghost-purple{
+    color: #a367ab;
+    background-color: #ffffff;
+    border: 1px solid #a367ab;
+    padding: 10px 20px;
+  }
+  .fd-button-ghost-purple:hover{
+    background-color: #f7f2f8;
+  }
+  .fd-button-ghost-purple:active{
+    background-color: #ffffff;
+  }
+  .fd-button-ghost-purple:focus{
+    background-color: #ffffff;
+    border-color: #a367ab;
+    box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
+  }
+
+
+
+  /* Secondary Red Button: Default, Hover, Active, Focus */
+  .fd-button-ghost-red{
+    color: #b93d3f;
+    background-color: #f8ebeb;
+    border: 1px solid #b93d3f;
+    padding: 10px 20px;
+  }
+  .fd-button-ghost-red:hover{
+    color: #ffffff;
+    background-color: #b93d3f;
+  }
+  .fd-button-ghost-red:active{
+    background-color: #ffffff;
+  }
+  .fd-button-ghost-red:focus{
+    color: #ffffff;
+    background-color: #b93d3f;
+    border-color: #892e2f;
+    box-shadow: 0 0 1px #aaaaaa, 0 0 8px #999999;
+  } 
+
+  
+
+  /* Disabled Button: Default, Focus */
+  .fd-button-disabled,
+  .fd-button-disabled:focus{
+    color: #858585;  
+    background-color: #e8e8ea;
+    border: 2px solid #e8e8ea;
+    cursor: not-allowed;
+    box-shadow: none;    
+  }
+

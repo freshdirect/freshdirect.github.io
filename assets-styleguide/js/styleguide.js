@@ -149,6 +149,25 @@ $(".alpha").alpha();
 $(".numeric").numeric();
 $(".alphanumeric").alphanum();
 
+// Input + Button Combo
+// $(".input-button input").focusin(function(){
+//   $(".input-button button").css("visibility", "visible");
+// });
+
+// $(".input-button button").focusout(function(){
+//   $(".input-button button").css("visibility", "hidden");
+// });
+
+// $(".input-button input").focusout(function(){
+
+//   if ($(this).is(':focus')){
+    
+//   }else{
+
+//   }
+
+
+// });
 
 
 
