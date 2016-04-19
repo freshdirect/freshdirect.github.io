@@ -237,7 +237,7 @@ lead: Form controls allow users to enter information into a page.
   }
   .input-button button{
     position: absolute;
-    margin-left: -60px;
+    left: 134px;
     top: -2px;
   }
 
