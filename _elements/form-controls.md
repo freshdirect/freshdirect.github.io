@@ -80,21 +80,21 @@ lead: Form controls allow users to enter information into a page.
     <label for="input-type-text">Only Letters</label>
     <input class="alpha" name="input-type-text" type="text" placeholder="ABCDEFG">
   </div> 
-  <div class="box">
+  <div class="box code">
     <code class="code-editorial em-yellow-bg">$(input).alpha();</code>
   </div>
   <div class="box">
     <label for="input-type-text">Only Numbers</label>
     <input class="numeric" name="input-type-text" type="text" placeholder=".012345678,9">
   </div> 
-  <div class="box">
+  <div class="box code">
     <code class="code-editorial em-yellow-bg">$(input).numeric();</code>
   </div>
   <div class="box">
     <label for="input-type-text">Both Letters and Numbers</label>
     <input class="alphanumeric" name="input-type-text" type="text" placeholder="C3P0">
   </div> 
-  <div class="box">
+  <div class="box code">
     <code class="code-editorial em-yellow-bg">$(input).alphanum();</code>
   </div>
 
@@ -290,6 +290,30 @@ lead: Form controls allow users to enter information into a page.
     border: 2px solid #68aa6d;
   }
 
+  /* Desktops and laptops ----------- */
+  @media only screen and (max-width : 1270px) {
+    
+    .preview .box {
+      display: inline-block;
+      width: 70%;
+      margin: 0 40px 0 0;
+    }
+    .preview .box.code {
+      display: none;
+    }
+
+  }
+
+  @media only screen and (max-width : 530px) {
+    
+    .preview .box {
+      display: inline-block;
+      width: 100%;
+      margin: 0 40px 0 0;
+    }
+
+  }
+
 </style>
 
 <h2 class="usa-heading" id="dropdown">Dropdown</h2>
@@ -337,7 +361,8 @@ lead: Form controls allow users to enter information into a page.
     background: transparent url('../assets/img/input-arrow-down.png') right 8px center no-repeat;
     display: block;
     height: 34px;
-    width: 30px;
+    min-width: 250px;
+    width: 250px;
     padding: 4px 8px;
     border: 2px solid #d4d4d4;
   }
@@ -368,7 +393,7 @@ lead: Form controls allow users to enter information into a page.
   }
   .dropdown-error-msg {
     display: block;
-    width: 350px;
+    width: 250px;
     color: #b93d3f;
     font-weight: normal;
     font-size: 14px;
