@@ -311,6 +311,10 @@ lead: Form controls allow users to enter information into a page.
       width: 100%;
       margin: 0 40px 0 0;
     }
+    select{
+      min-width: 150px;
+      width: 150px;
+    }
 
   }
 
@@ -403,6 +407,22 @@ lead: Form controls allow users to enter information into a page.
 </style>
 
 </div>
+
+<style type="text/css">
+
+  @media only screen and (max-width : 530px) {
+    
+    select{
+      min-width: 200px;
+      width: 200px;
+    }
+    .dropdown-error-msg {
+      width: 200px;
+    }
+
+  }
+
+</style>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
