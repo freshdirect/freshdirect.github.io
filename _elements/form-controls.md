@@ -60,6 +60,7 @@ lead: Form controls allow users to enter information into a page.
     <textarea class="focus" name="input-type-text" type="text" placeholder="Something helpful about what to enter in this text area"></textarea>
   </div>
   <h6>Error Handling</h6>
+  <p class="full">All error messages should be tagged with <em class="em-yellow-bg">role="alert"</em>.</p>
   <div class="box">
     <label for="input-type-text">Default/Focused</label>
     <input class="error" name="input-type-text" type="text" placeholder="456 Main Street">
@@ -352,7 +353,7 @@ lead: Form controls allow users to enter information into a page.
     <option value="2">Option 2</option>
     <option value="3">Option 3</option>
   </select>
-  <span class="dropdown-error-msg">Required</span>
+  <span class="dropdown-error-msg" role="alert" >Required</span>
 
 </div>
 
