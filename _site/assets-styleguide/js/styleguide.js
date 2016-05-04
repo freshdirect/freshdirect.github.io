@@ -149,6 +149,12 @@ $(".alpha").alpha();
 $(".numeric").numeric();
 $(".alphanumeric").alphanum();
 
+$(".floatlabel").floatlabel({
+  slideInput: false,
+  labelStartTop: '10px',
+  labelEndTop: '2px'
+});
+
 // Input + Button Combo
 // $(".input-button input").focusin(function(){
 //   $(".input-button button").css("visibility", "visible");

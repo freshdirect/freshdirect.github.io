@@ -2307,6 +2307,12 @@
       <button class="fd-button-green fd-button-small">Add</button>
     </div>
   </div>
+  <h6>Floating Labels</h6>
+  <p class="full">Generally used for Sign In or Create Account pages. This example uses <a target="_blank" href="http://clubdesign.github.io/floatlabels.js/">Floatlabels.js</a> JQuery plugin.</p>
+  <div class="box">
+    <input class="floatlabel" name="input-type-text" type="text" placeholder="First Name">
+    <input class="floatlabel" name="input-type-text" type="text" placeholder="Last Name">
+  </div>
   <h6>Character Restriction</h6>
   <p class="full">In order to mitigate customer data entry mistakes, we can use a lightweight JQuery plugin called <a target="_blank" href="https://github.com/KevinSheedy/jquery.alphanum">Alphanum</a>. It allows us to set character restrictions for text inputs that have specific requirements (only letters and/or numbers for example). There's also the ability to customize these restrictions.</p>
   <div class="box">
@@ -2473,6 +2479,20 @@
     left: 134px;
     top: -2px;
   }
+
+
+  /* Float Labels */
+  input.floatlabel{
+    height: 46px;
+    margin-bottom: 14px;
+  }
+  input.floatlabel:focus{
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #68aa6d;
+    border-left: 2px solid #ffffff;
+  }
+
 
 
 </style>
