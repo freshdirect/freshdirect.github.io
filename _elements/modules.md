@@ -24,7 +24,7 @@ lead: A list of global modules around the store.
 <h2 class="usa-heading" id="text-inputs">Quantity Pickers</h2>
 <p class="usa-font-lead">Quantity pickers are present in product detail pages, product lists, and carousels around the store.</p>
 
-<!-- <div class="preview">
+<div class="preview">
 
   <h6>Default</h6>
 
@@ -121,7 +121,7 @@ lead: A list of global modules around the store.
   }
 
 </style>
-</div> -->
+</div>
 
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
