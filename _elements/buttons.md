@@ -419,7 +419,7 @@ lead: Use buttons to signal actions.
 
   /* Green Button: Default, Hover, Active, Focus */
   .fd-button-green-hover{
-    background-color: #fdf2ec;
+    background-color: #458d4e;
     border-color: #458d4e;
   }
   .fd-button-green-active{
@@ -427,7 +427,7 @@ lead: Use buttons to signal actions.
     border-color: #5fb067;
   }
   .fd-button-green-focus{
-    background-color: #fdf2ec;
+    background-color: #5fb067;
     border-color: #306238;
     box-shadow: 0 0 1px #aaaaaa, 0 0 8px #aaaaaa;
   }
