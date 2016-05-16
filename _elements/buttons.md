@@ -54,8 +54,20 @@ lead: Use buttons to signal actions.
     <button class="fd-button-orange fd-button-orange-hover">Hover</button>
     <button class="fd-button-orange fd-button-orange-focus">Focus</button>
   </div>
+  <div class="button_wrapper">
+    <button class="fd-button-ghost-orange">Default</button>
+    <button class="fd-button-ghost-orange fd-button-ghost-orange-active">Active</button>
+    <button class="fd-button-ghost-orange fd-button-ghost-orange-hover">Hover</button>
+    <button class="fd-button-ghost-orange fd-button-ghost-orange-focus">Focus</button>
+  </div>
 
   <h6>Purple Button</h6><p class="even-margin">Use in <strong>Reorder section</strong>, and related actions like <strong>Add to List</strong>.</p>
+  <div class="button_wrapper">
+    <button class="fd-button-purple">Default</button>
+    <button class="fd-button-purple fd-button-purple-active">Active</button>
+    <button class="fd-button-purple fd-button-purple-hover">Hover</button>
+    <button class="fd-button-purple fd-button-purple-focus">Focus</button>
+  </div>
   <div class="button_wrapper">
     <button class="fd-button-ghost-purple">Default</button>
     <button class="fd-button-ghost-purple fd-button-ghost-purple-active">Active</button>
@@ -221,6 +233,50 @@ lead: Use buttons to signal actions.
 
 
 
+  /* Ghost Orange Button: Default, Hover, Active, Focus */
+  .fd-button-ghost-orange{
+    color: #e45e0b;
+    background-color: #ffffff;
+    border: 1px solid #e45e0b;
+  }
+  .fd-button-ghost-orange:hover{
+    background-color: #fdf2ec;
+    border-color: #e77630;
+  }
+  .fd-button-ghost-orange:active{
+    background-color: #ffffff;
+    border-color: #fc8e46;
+  }
+  .fd-button-ghost-orange:focus{
+    background-color: #ffffff;
+    border-color: #a84c14;
+    box-shadow: 0 0 1px #aaaaaa, 0 0 8px #aaaaaa;
+  }
+
+
+
+  /* Purple Button: Default, Hover, Active, Focus */
+  .fd-button-purple{
+    color: #ffffff;
+    background-color: #a367ab;
+    border: 1px solid #a367ab;
+    padding: 10px 20px;
+  }
+  .fd-button-purple:hover{
+    background-color: #8e5a95;
+  }
+  .fd-button-purple:active{
+    background-color: #af7bb6;
+  }
+  .fd-button-purple:focus{
+    background-color: #af7bb6;
+    border-color: #824c89;
+    box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
+  }
+
+
+
+
   /* Secondary Purple Ghost Button: Default, Hover, Active, Focus */
   .fd-button-ghost-purple{
     color: #a367ab;
@@ -346,9 +402,24 @@ lead: Use buttons to signal actions.
     box-shadow: 0 0 1px #aaaaaa, 0 0 8px #aaaaaa;
   }
 
+  /* Ghost Orange Button: Default, Hover, Active, Focus */
+  .fd-button-ghost-orange-hover{
+    background-color: #fdf2ec;
+    border-color: #e45e0b;
+  }
+  .fd-button-ghost-orange-active{
+    background-color: #ffffff;
+    border-color: #e45e0b;
+  }
+  .fd-button-ghost-orange-focus{
+    background-color: #ffffff;
+    border-color: #e45e0b;
+    box-shadow: 0 0 1px #aaaaaa, 0 0 8px #aaaaaa;
+  }
+
   /* Green Button: Default, Hover, Active, Focus */
   .fd-button-green-hover{
-    background-color: #458d4e;
+    background-color: #fdf2ec;
     border-color: #458d4e;
   }
   .fd-button-green-active{
@@ -356,7 +427,7 @@ lead: Use buttons to signal actions.
     border-color: #5fb067;
   }
   .fd-button-green-focus{
-    background-color: #5fb067;
+    background-color: #fdf2ec;
     border-color: #306238;
     box-shadow: 0 0 1px #aaaaaa, 0 0 8px #aaaaaa;
   }
@@ -371,6 +442,19 @@ lead: Use buttons to signal actions.
   .fd-button-ghost-green-focus{
     background-color: #ffffff;
     border-color: #458b4c;
+    box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
+  }
+
+  /* Purple Button: Default, Hover, Active, Focus */
+  .fd-button-purple-hover{
+    background-color: #8e5a95;
+  }
+  .fd-button-purple-active{
+    background-color: #af7bb6;
+  }
+  .fd-button-purple-focus{
+    background-color: #af7bb6;
+    border-color: #824c89;
     box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
   }
 

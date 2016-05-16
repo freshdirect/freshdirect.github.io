@@ -3059,6 +3059,43 @@ button:focus {
   border-color: #a84c14;
   box-shadow: 0 0 1px #aaaaaa, 0 0 8px #aaaaaa; }
 
+/* Ghost Orange Button: Default, Hover, Active, Focus */
+.fd-button-ghost-orange {
+  color: #e45e0b;
+  background-color: #ffffff;
+  border: 1px solid #e45e0b; }
+
+.fd-button-ghost-orange:hover {
+  background-color: #fdf2ec;
+  border-color: #e77630; }
+
+.fd-button-ghost-orange:active {
+  background-color: #ffffff;
+  border-color: #fc8e46; }
+
+.fd-button-ghost-orange:focus {
+  background-color: #ffffff;
+  border-color: #a84c14;
+  box-shadow: 0 0 1px #aaaaaa, 0 0 8px #aaaaaa; }
+
+/* Purple Button: Default, Hover, Active, Focus */
+.fd-button-purple {
+  color: #ffffff;
+  background-color: #a367ab;
+  border: 1px solid #a367ab;
+  padding: 10px 20px; }
+
+.fd-button-purple:hover {
+  background-color: #8e5a95; }
+
+.fd-button-purple:active {
+  background-color: #af7bb6; }
+
+.fd-button-purple:focus {
+  background-color: #af7bb6;
+  border-color: #824c89;
+  box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb; }
+
 /* Secondary Purple Ghost Button: Default, Hover, Active, Focus */
 .fd-button-ghost-purple {
   color: #a367ab;
