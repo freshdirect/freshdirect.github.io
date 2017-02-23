@@ -7,6 +7,37 @@ lead: A list of global modules around the store.
 <h2 class="usa-heading" id="text-inputs">Overlays</h2>
 <p class="usa-font-lead">Overlays are used to present different kinds of information without loading a new page.</p>
 
+<div class="preview">
+
+  <h4>LARGE</h4>
+  <ul class="overlay-numbers">
+    <li><span>width:</span> 860px</li>
+    <li><span>min-height:</span> 514px</li>
+    <li><span>padding:</span> 40px / 60px</li>
+    <li><span>margin-top:</span> 256px</li>
+  </ul>
+  <button id="lg-overlay-btn" class="fd-button-ghost-green fd-button-small fd-button-wide">View Example</button>
+
+  <h4>MEDIUM</h4>
+  <ul class="overlay-numbers">
+    <li><span>width:</span> 630px</li>
+    <li><span>min-height:</span> 246px</li>
+    <li><span>padding:</span> 40px / 60px</li>
+    <li><span>margin-top:</span> 256px</li>
+  </ul>
+  <button id="md-overlay-btn" class="fd-button-ghost-green fd-button-small fd-button-wide">View Example</button>
+
+  <h4>SMALL</h4>
+  <ul class="overlay-numbers">
+    <li><span>width:</span> 460px</li>
+    <li><span>min-height:</span> 232px</li>
+    <li><span>padding:</span> 30px / 40px</li>
+    <li><span>margin-top:</span> 256px</li>
+  </ul>
+  <button id="sm-overlay-btn" class="fd-button-ghost-green fd-button-small fd-button-wide">View Example</button>
+
+</div>
+
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
       aria-expanded="true" aria-controls="collapsible-0">
@@ -136,3 +167,25 @@ lead: A list of global modules around the store.
     </ul>
   </div>
 </div>
+
+<div class="overlay-bg sm">
+  <div class="container-box">
+    <h1>Hellooooooo</h1>
+    <span class="close-btn"></span>
+  </div>
+</div>
+
+<div class="overlay-bg md">
+  <div class="container-box">
+    <h1>Hellooooooo</h1>
+    <span class="close-btn"></span>
+  </div>
+</div>
+
+<div class="overlay-bg lg">
+  <div class="container-box">
+    <h1>Hellooooooo</h1>
+    <span class="close-btn"></span>
+  </div>
+</div>
+
