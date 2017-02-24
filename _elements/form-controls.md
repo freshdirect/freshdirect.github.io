@@ -157,6 +157,7 @@ lead: Form controls allow users to enter information into a page.
     height: auto;
     min-height: 54px;
     overflow: auto;
+    border: 2px solid #d4d4d4;
   }
 
 

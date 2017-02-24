@@ -378,6 +378,7 @@ input[type=range]:focus::-ms-thumb {
     height: auto;
     min-height: 54px;
     overflow: auto;
+    border: 2px solid #d4d4d4;
   }
 
 
@@ -400,11 +401,10 @@ input[type=range]:focus::-ms-thumb {
   .optional:after {
     content: "Optional";
     display: block;
-    position: absolute;
+    position: relative;
     color: #999999;
     font-weight: normal;
-    right: 0px;
-    top: 0px;
+    float: right;
   }
 
 

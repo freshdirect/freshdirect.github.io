@@ -1179,7 +1179,8 @@ select {
 textarea {
   height: auto;
   min-height: 54px;
-  overflow: auto; }
+  overflow: auto;
+  border: 2px solid #d4d4d4; }
 
 /* Label */
 label {
@@ -1198,11 +1199,10 @@ label span {
 .optional:after {
   content: "Optional";
   display: block;
-  position: absolute;
+  position: relative;
   color: #999999;
   font-weight: normal;
-  right: 0px;
-  top: 0px; }
+  float: right; }
 
 /* Text Input + Textarea Focused */
 input:focus,
@@ -1515,6 +1515,9 @@ a.usa-label, a.usa-label-big {
     border-bottom: none;
     color: #ffffff; }
 
+.noscroll {
+  overflow: hidden; }
+
 .overlay-numbers {
   margin: 10px 0 5px 12px; }
 
@@ -1531,27 +1534,48 @@ a.usa-label, a.usa-label-big {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  right: 0;
+  bottom: 0;
   z-index: 999999;
+  overflow-y: scroll;
   background-color: rgba(255, 255, 255, 0.8); }
 
 .container-box {
   position: relative;
-  margin: 256px auto 0;
+  margin: 150px auto 30px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.3); }
 
-.container-box .close-btn {
-  position: absolute;
-  top: -28px;
-  right: -28px;
+.container-box h1, .container-box h2, .container-box h3, .container-box h4, .container-box h5, .container-box h6 {
+  font-family: Verdana;
+  margin: 0 0 15px 0; }
+.container-box input, .container-box select, .container-box textarea, .container-box label {
+  width: 100%;
+  margin: 0; }
+.container-box p {
+  max-width: none; }
+.container-box .form-row {
+  margin-bottom: 30px; }
+
+.overlay-bg .close-btn {
+  position: fixed;
+  top: 123px;
+  left: 50%;
+  margin-left: 317px;
   height: 22px;
   width: 22px;
   cursor: pointer;
   background: transparent url("../img/close.svg") center center no-repeat; }
+
+.overlay-bg.sm .close-btn {
+  left: 50%;
+  margin-left: 230px; }
+
+.overlay-bg.lg .close-btn {
+  left: 50%;
+  margin-left: 430px; }
 
 .sm .container-box {
   width: 460px;
@@ -1559,9 +1583,10 @@ a.usa-label, a.usa-label-big {
   padding: 30px; }
 
 .md .container-box {
+  opacity: 0;
   width: 630px;
   min-height: 246px;
-  padding: 40px; }
+  padding: 60px; }
 
 .lg .container-box {
   width: 860px;
@@ -1570,6 +1595,18 @@ a.usa-label, a.usa-label-big {
 
 .show {
   display: block; }
+
+.visible {
+  opacity: 1 !important; }
+
+.hide {
+  display: none; }
+
+.center {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 300px; }
 
 .skipnav {
   -webkit-transition: all 0.2s ease-in-out;
