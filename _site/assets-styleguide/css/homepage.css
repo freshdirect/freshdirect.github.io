@@ -1583,7 +1583,6 @@ a.usa-label, a.usa-label-big {
   padding: 30px; }
 
 .md .container-box {
-  opacity: 0;
   width: 630px;
   min-height: 246px;
   padding: 60px; }
@@ -1595,9 +1594,6 @@ a.usa-label, a.usa-label-big {
 
 .show {
   display: block; }
-
-.visible {
-  opacity: 1 !important; }
 
 .hide {
   display: none; }
