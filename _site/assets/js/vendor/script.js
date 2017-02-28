@@ -3,25 +3,25 @@
 
 /// Overlay
 
-var noscrollhide = $(this).click(function() {
-  	$("body").addClass('noscroll');
-	$("nav").addClass('hide');	
-});
+
 
 
 $("#sm-overlay-btn").click(function() {
 	$(".overlay-bg.sm").addClass('show');
-	noscrollhide;
+	$("body").addClass('noscroll');
+	$("nav").addClass('hide');	
 });
 
 $("#md-overlay-btn").click(function() {
 	$(".overlay-bg.md").addClass('show');
-	noscrollhide;
+	$("body").addClass('noscroll');
+	$("nav").addClass('hide');	
 });
 
 $("#lg-overlay-btn").click(function() {
 	$(".overlay-bg.lg").addClass('show');
-	noscrollhide;
+	$("body").addClass('noscroll');
+	$("nav").addClass('hide');	
 });
 
 $(".close-btn").click(function() {
