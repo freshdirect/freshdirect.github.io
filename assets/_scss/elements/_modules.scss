@@ -60,16 +60,23 @@
   cursor: pointer;
   background: transparent url('../img/close.svg') center center no-repeat;
 }
-.overlay-bg.sm .close-btn{
-  left: 50%;
-  margin-left: 232px;
+.overlay-bg.sm {
+    .close-btn{
+      left: 50%;
+      margin-left: 195px;
+    }
+    button{
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
 }
 .overlay-bg.lg .close-btn{
   left: 50%;
   margin-left: 432px;
 }
 .sm .container-box{
-  width: 460px;
+  width: 386px;
   min-height: 232px;
   padding: 30px;
 }
