@@ -38,7 +38,7 @@ lead: A list of global modules around the store.
 
   <h4>SMALL</h4>
   <ul class="overlay-numbers">
-    <li><span>width:</span> 460px</li>
+    <li><span>width:</span> 386px</li>
     <li><span>min-height:</span> 232px</li>
     <li><span>padding:</span> 30px / 40px</li>
     <li><span>margin-top:</span> 256px</li>
