@@ -1566,12 +1566,14 @@ a.usa-label, a.usa-label-big {
   margin-left: 317px;
   height: 22px;
   width: 22px;
+  text-indent: -9999px;
   cursor: pointer;
   background: transparent url("../img/close.svg") center center no-repeat; }
 
 .overlay-bg.sm .close-btn {
   left: 50%;
-  margin-left: 195px; }
+  margin-left: 195px;
+  width: 22px; }
 .overlay-bg.sm button {
   margin-left: 0;
   margin-right: 0;
