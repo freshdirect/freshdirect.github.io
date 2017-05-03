@@ -1137,6 +1137,12 @@ a, p.example{
   font-size: 16px;
 }
 
+.off-screen{
+  display: inline-block;
+  width: 0;
+  text-indent: -9999px;
+}
+
 /*** Button Styles ***/
 
   /* Basic Button Styles */
@@ -1364,6 +1370,7 @@ a, p.example{
   
 
   /* Disabled Button: Default, Focus */
+  button[disabled=disabled],
   .fd-button-disabled,
   .fd-button-disabled:focus{
     color: #858585;  
@@ -1371,5 +1378,106 @@ a, p.example{
     border: 2px solid #e8e8ea;
     cursor: not-allowed;
     box-shadow: none;    
+  }
+
+/*** Text links ***/
+
+  /* Text Link: Default, Hover */
+  a.fd-link{
+    color: #458b4c;
+  }
+  a.fd-link:hover{
+    color: #5fb069;
+  }
+  a.fd-link:focus,
+  .fd-link-visited:focus{
+    color: #5fb069;
+    text-decoration: underline;
+    outline-style: solid;
+    outline-color: white;
+    outline-width: thick;  
+  }
+
+
+
+  /* Visited Text Link: Default, Hover */
+  .fd-link:visited{
+    color: #777777;
+  }
+  .fd-link-visited:hover{
+    color: #5fb069;
+  }
+
+ 
+
+  /* Text Link in Sentence */
+  p .fd-link{
+    text-decoration: underline;
+  }
+
+
+
+  /* Text link in Dark BG: Default, Hover */
+  .usa-background-dark .fd-link{
+    color: #88c58f;
+  }
+  .usa-background-dark .fd-link:hover{
+    color: #b1d9b6;
+  }
+
+
+
+  /* Tooltip: Default, Hover */
+  a.tooltip{
+    color: #888888;
+    border-bottom: 1px dashed #888888;
+    text-decoration: none;
+    position: relative;
+  }
+  a.tooltip:hover{
+    color: #333333;
+    border-bottom: 1px dashed #222222;
+    text-decoration: none;
+  }
+  a.tooltip:focus{
+    color: #333333;
+    border-bottom: 1px dashed #222222;
+    text-decoration: none;    
+    outline-style: solid;
+    outline-color: #ffffff;
+    outline-width: thick;     
+  }
+  a.tooltip-small{
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #9d9d9d;
+    border-radius: 16px;
+    position: relative;
+    top: -10px;
+    z-index: 98;
+  }
+  a.tooltip-small.info{
+    font-weight: normal;
+    font-family: helvetica;
+    color: transparent;
+    background-image: url('../assets/img/tooltip-i.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  a.tooltip-small:hover{
+    background-color: #4fa157;
+  }
+  a.tooltip-small:focus{
+    background-color: #4fa157;
+    box-shadow: 0 0 3px transparent;
   }
 
