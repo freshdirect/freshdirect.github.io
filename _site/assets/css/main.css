@@ -1515,6 +1515,9 @@ a.usa-label, a.usa-label-big {
     border-bottom: none;
     color: #ffffff; }
 
+.modules p a {
+  font-size: inherit; }
+
 .noscroll {
   overflow: hidden; }
 
