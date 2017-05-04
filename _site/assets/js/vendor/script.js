@@ -70,7 +70,8 @@ noTabDots = function(){
 }
 
 
-//// find current slide and disable prev/next button
+//// set current slide, disable appropiate button, 
+//// make pagination buttons/dots inaccessible with keyboard
 $(document).ready(function() {
 
 	checkCurrent();
