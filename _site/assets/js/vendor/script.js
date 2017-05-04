@@ -65,9 +65,10 @@ focusFirstEl = function(){
 
 noTabDots = function(){
 
-	$(".multi-product .fd-carrousel__control__list a").attr("tabindex", -1);
+	$(".multi-product .fd-carrousel__control__list a, .multi-product .fd-carrousel__button__button").attr("tabindex", -1);
 
 }
+
 
 //// find current slide and disable prev/next button
 $(document).ready(function() {

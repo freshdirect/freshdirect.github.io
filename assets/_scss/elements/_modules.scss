@@ -124,6 +124,10 @@
     text-transform: uppercase;
     margin-bottom: 20px;
   }
+  .view-all{
+    float: right;
+    margin-top: -337px;
+  }
   .c-features li{
     &:before{
       display: none;
@@ -138,7 +142,6 @@
         vertical-align: text-bottom;
       }
     }    
-
   } 
 }
 
@@ -334,10 +337,6 @@
     &:focus, :hover{
       text-decoration: underline;
     }
-  }
-  .view-all{
-    margin: 0px 0 0 0;
-    float: right;
   }
 }
 

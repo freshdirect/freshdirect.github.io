@@ -231,7 +231,6 @@ lead: A list of global modules around the store.
   <div class="carousel-top">
     <!-- <a class="header-btn fd-link" href="#">Summer Time Blueberry Fix</a> -->
     <h3 tabindex="0">Summer Time Blueberry Fix</h3>
-    <button class="fd-button-ghost-green fd-button-small view-all">View All<span class="off-screen">Summer Time Blueverry Fix - 18 items</span></button>
   </div>
   
   <div id="t-carousel-1" class="multi-product carrousel relative">      
@@ -369,6 +368,7 @@ lead: A list of global modules around the store.
             
     </ul>
   </div>
+  <button class="fd-button-ghost-green fd-button-small view-all">View All<span class="off-screen">Summer Time Blueverry Fix - 18 items</span></button>
 
   <h4>Features include:</h4>
   

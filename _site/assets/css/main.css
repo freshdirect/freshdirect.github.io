@@ -1620,6 +1620,9 @@ a.usa-label, a.usa-label-big {
   font-weight: normal;
   text-transform: uppercase;
   margin-bottom: 20px; }
+.carousels .view-all {
+  float: right;
+  margin-top: -337px; }
 .carousels .c-features li:before {
   display: none; }
 .carousels .c-features li p {
@@ -1788,9 +1791,6 @@ a.usa-label, a.usa-label-big {
     padding: 0; }
     .carousel-top .header-btn.fd-link:focus, .carousel-top .header-btn.fd-link :hover, .carousel-top h3:focus, .carousel-top h3 :hover {
       text-decoration: underline; }
-  .carousel-top .view-all {
-    margin: 0px 0 0 0;
-    float: right; }
 
 .relative {
   position: relative; }
