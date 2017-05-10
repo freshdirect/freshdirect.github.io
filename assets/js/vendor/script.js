@@ -119,5 +119,5 @@ $(document).ready(function() {
  
 });
 
-console.log("push to repository");
+console.log("all good");
 
