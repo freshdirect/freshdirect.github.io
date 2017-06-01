@@ -2,37 +2,86 @@
 // Modules
 
 /// Overlay
-$("#sm-overlay-btn").click(function() {
-	$(".overlay-bg.sm").addClass('show');
+
+var smOverlay = $("#sm-box").outerHeight();
+
+var viewportHeight = $(window).height() -50;
+var vHeightPixels = viewportHeight + "px";
+
+
+overlayStart = function(){
+
 	$("body").addClass('noscroll');
-	$("nav").addClass('hide');	
+	$("nav").addClass('hide');
+
+}
+
+overlayEnd = function(){
+
+	$("body").removeClass('noscroll');
+	$("nav").removeClass('hide');
+
+}
+
+applyHeight = function(){
+
+	if ($(window).width() < 480) {
+
+		$(".md .container-box, .lg .container-box").css("min-height", vHeightPixels);
+
+	} else if ($(window).width() > 481) {
+
+		$(".container-box").removeAttr("style");
+
+	}
+
+}
+
+//// display overlays
+$("#sm-box button").click(function() {
+
+	alert(smOverlay);
+
+});
+
+$("#sm-overlay-btn").click(function() {
+
+	$(".overlay-bg.sm").addClass('show');
+	overlayStart();
+
 });
 
 $("#md-overlay-btn").click(function() {
+
 	$(".overlay-bg.md").addClass('show');
-	$("body").addClass('noscroll');
-	$("nav").addClass('hide');	
+	overlayStart();
+
 });
 
 $("#lg-overlay-btn").click(function() {
+
 	$(".overlay-bg.lg").addClass('show');
-	$("body").addClass('noscroll');
-	$("nav").addClass('hide');	
+	overlayStart();	
+
 });
 
+//// hide overlays
 $(".close-btn").click(function() {
+
 	$(".overlay-bg").removeClass('show');
-	$("body").removeClass('noscroll');
-	$("nav").removeClass('hide');	
+	overlayEnd();
+
 });
 
 $(document).keyup(function(e) {
- 	if (e.keyCode == 27) { // escape key maps to keycode `27`
+
+ 	if (e.keyCode == 27) { // ESC key maps to keycode `27`
     	$(".overlay-bg").removeClass('show');
-    	$("body").removeClass('noscroll');
-		$("nav").removeClass('hide');	
+    	overlayEnd();
 	}
+
 });
+
 
 /// Carousel
 
@@ -70,15 +119,6 @@ noTabDots = function(){
 }
 
 
-//// set current slide, disable appropiate button, 
-//// make pagination buttons/dots inaccessible with keyboard
-$(document).ready(function() {
-
-	checkCurrent();
-	noTabDots();
-
-});
-
 //// focus first item in current carousel slide
 $(".carousel-top .header-btn").click(function() {
 
@@ -86,38 +126,46 @@ $(".carousel-top .header-btn").click(function() {
 
 });
 
-//// previous/next [ENTER] key behavior
+//// all functions that need to fire on initial page load
 $(document).ready(function() {
+
+	// apply viewport height to md/lg overlays within a narrow width screen
+	applyHeight();
  
-  // previous button logic
-  $(".fd-carrousel__button__previous button").keyup(function(e) {
+ 	// set current slide, disable appropiate button, 
+	// make pagination buttons/dots inaccessible with keyboard
+	checkCurrent();
+	noTabDots();
+
+  	// carousel previous button logic
+  	$(".fd-carrousel__button__previous button").keyup(function(e) {
    
-    var code = e.keyCode || e.which;
+    	var code = e.keyCode || e.which;
        
-    if (code === 13) {
+    	if (code === 13) {
       
-      //console.log('left Tab pressed');
-      setTimeout(function(){ $(".current-slide a:last").focus();}, 500);
+      		//console.log('left Tab pressed');
+      		setTimeout(function(){ $(".current-slide a:last").focus();}, 500);
  
-    }
+    	}
  
-  });
+  	});
  
-  // next button logic
-  $(".fd-carrousel__button__next button").keyup(function(e) {
+  	// carousel next button logic
+  	$(".fd-carrousel__button__next button").keyup(function(e) {
   
-    var code = e.keyCode || e.which;  
+    	var code = e.keyCode || e.which;  
  
-    if (code === 13) {
+    	if (code === 13) {
       
-      //console.log('right Tab pressed');
-      setTimeout(function(){ $(".current-slide a:first").focus();}, 500);
+      	//console.log('right Tab pressed');
+      	setTimeout(function(){ $(".current-slide a:first").focus();}, 500);
     
-    }
+    	}
    
-  }); 
+  	}); 
  
 });
 
-console.log("all good");
+//console.log("all good");
 

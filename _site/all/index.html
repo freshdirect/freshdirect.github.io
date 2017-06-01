@@ -3011,6 +3011,7 @@
     <li>All overlays have a minimum height value</li>
     <li>All overlays have two inner padding values, which will be determined based on the layout</li>
     <li>Close button (X) is <strong>always visible</strong></li>
+    <li>Overlay background color value (CSS): <em class="em-yellow-bg"><code>rgba(255, 255, 255, 0.8);</code></em></li>
   </ul>
 
   <h4>SMALL</h4>
@@ -3421,7 +3422,7 @@
 
 <div class="overlay-bg sm" role="dialog" aria-labelledby="email-reminder">
   <button class="close-btn">Close</button>
-  <div class="container-box">
+  <div id="sm-box" class="container-box">
     <h3 id="email-reminder">Sign Up for Reminders</h3>
     <div class="form-row">
       <label>Email</label>

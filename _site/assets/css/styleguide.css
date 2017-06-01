@@ -1613,6 +1613,51 @@ a.usa-label, a.usa-label-big {
   position: relative;
   width: 300px; }
 
+@media (max-width: 481px) {
+  .overlay-bg .container-box button {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0; }
+  .overlay-bg .container-box input {
+    width: 100%; } }
+
+@media (max-width: 481px) {
+  .overlay-bg.md .container-box,
+  .overlay-bg.lg .container-box {
+    margin-top: 50px;
+    margin-bottom: 0;
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    padding: 20px 30px 30px; }
+  .overlay-bg.md .close-btn,
+  .overlay-bg.lg .close-btn {
+    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #f7f7f6;
+    background-size: 22px 22px;
+    background-position: 96% center;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99; } }
+
+@media (max-width: 481px) {
+  .overlay-bg.sm .container-box {
+    width: 90%; }
+  .overlay-bg.sm .close-btn {
+    top: 113px;
+    left: auto;
+    right: 5%;
+    margin-left: 0;
+    background-position: right center; } }
+
+@media (min-width: 481px) {
+  .overlay-bg.md .container-box {
+    min-height: 246px; } }
+
 .carousels h3.trans {
   margin-top: 90px; }
 .carousels h4 {
