@@ -9,14 +9,14 @@ var viewportHeight = $(window).height() -50;
 var vHeightPixels = viewportHeight + "px";
 
 
-overlayStart = function(){
+showOverlay = function(){
 
 	$("body").addClass('noscroll');
 	$("nav").addClass('hide');
 
 }
 
-overlayEnd = function(){
+hideOverlay = function(){
 
 	$("body").removeClass('noscroll');
 	$("nav").removeClass('hide');
@@ -37,31 +37,32 @@ applyHeight = function(){
 
 }
 
-//// display overlays
-$("#sm-box button").click(function() {
-
-	alert(smOverlay);
-
-});
-
+//// show overlays
 $("#sm-overlay-btn").click(function() {
 
 	$(".overlay-bg.sm").addClass('show');
-	overlayStart();
+	showOverlay();
 
 });
 
 $("#md-overlay-btn").click(function() {
 
 	$(".overlay-bg.md").addClass('show');
-	overlayStart();
+	showOverlay();
 
 });
 
 $("#lg-overlay-btn").click(function() {
 
 	$(".overlay-bg.lg").addClass('show');
-	overlayStart();	
+	showOverlay();	
+
+});
+
+$("#fs-overlay-btn").click(function() {
+
+	$(".overlay-bg.fs").addClass('show');
+	showOverlay();	
 
 });
 
@@ -69,7 +70,7 @@ $("#lg-overlay-btn").click(function() {
 $(".close-btn").click(function() {
 
 	$(".overlay-bg").removeClass('show');
-	overlayEnd();
+	hideOverlay();
 
 });
 
@@ -77,7 +78,7 @@ $(document).keyup(function(e) {
 
  	if (e.keyCode == 27) { // ESC key maps to keycode `27`
     	$(".overlay-bg").removeClass('show');
-    	overlayEnd();
+    	hideOverlay();
 	}
 
 });
