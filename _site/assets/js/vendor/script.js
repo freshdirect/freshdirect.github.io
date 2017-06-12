@@ -20,7 +20,6 @@ noScroll = function(){
 okScroll = function(){
 
 	$("header").removeClass('hide');
-	$("body").removeClass('noscroll');
 	$(".sidenav").removeClass('hideZ');
 	$(".skipnav").removeClass('hideZ');
 
@@ -81,6 +80,12 @@ $(".close-btn").click(function() {
 		okScroll();  
 
 	}, 200);
+
+	setTimeout(function() {
+
+		$("body").removeClass('noscroll');
+
+	}, 250);
 
 });
 
