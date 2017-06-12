@@ -6,6 +6,7 @@
 // Overlays
 
 .noscroll{
+  position: fixed; /**/
   overflow: hidden;
 }
 
@@ -336,9 +337,9 @@
       transform: translateY(-50%);
     }
     .close-btn{
-      // top: 113px;
-      top: 50%;
-      transform: translateY(-790%);
+      top: 113px;
+      // top: 50%;
+      // transform: translateY(-790%);
       left: auto;
       right: 5%;
       margin-left: 0;

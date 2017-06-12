@@ -19,7 +19,7 @@ lead: A list of global modules around the store.
     <li>Overlay background color value (CSS): <em class="em-yellow-bg"><code>rgba(255, 255, 255, 0.8);</code></em></li>
   </ul>
 
-  <h4>SMALL</h4>
+  <h4>SMALLS</h4>
   <ul class="overlay-numbers">
     <li><span>width:</span> 386px</li>
     <li><span>min-height:</span> 232px</li>

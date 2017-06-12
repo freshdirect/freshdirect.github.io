@@ -1519,6 +1519,8 @@ a.usa-label, a.usa-label-big {
   font-size: inherit; }
 
 .noscroll {
+  position: fixed;
+  /**/
   overflow: hidden; }
 
 .overlay-numbers {
@@ -1777,8 +1779,7 @@ a.usa-label, a.usa-label-big {
     top: 50%;
     transform: translateY(-50%); }
   .overlay-bg.sm .close-btn {
-    top: 50%;
-    transform: translateY(-790%);
+    top: 113px;
     left: auto;
     right: 5%;
     margin-left: 0;
