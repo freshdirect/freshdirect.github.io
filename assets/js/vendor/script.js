@@ -71,15 +71,14 @@ $("#fs-overlay-btn").click(function() {
 $(".close-btn").click(function() {
 
 	$(".overlay-bg").removeClass('showOp');
+    $(".container-box").removeClass('down');
 
 	setTimeout(function() {
 
     	$(".overlay-bg").removeClass('showZ');
-    	$(".container-box").removeClass('down');
+		okScroll();  
 
 	}, 200);
-
-	okScroll();
 
 });
 
