@@ -21,4 +21,7 @@
     position: absolute;
     top: 0;
   }
+  &.hideZ{
+    z-index: -1;
+  }
 }

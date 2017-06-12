@@ -333,8 +333,8 @@
   @media (max-width: $small-screen) {
     .container-box{
       width: 90%;
-      top: 50%;
-      transform: translateY(-50%);
+      // top: 50%;
+      // transform: translateY(-50%);
     }
     .close-btn{
       top: 113px;
