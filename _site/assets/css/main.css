@@ -1587,6 +1587,7 @@ a.usa-label, a.usa-label-big {
   margin-left: 317px;
   height: 22px;
   width: 22px;
+  border-radius: 0;
   text-indent: -9999px;
   cursor: pointer;
   background: transparent url("../img/close.svg") center center no-repeat;
