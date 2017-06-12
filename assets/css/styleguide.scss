@@ -190,8 +190,12 @@ $site-top:           124px;
   padding: 5rem 3rem 3rem 3rem;
   overflow: auto;
   display: none;
-  z-index: -1;
+  // z-index: -1;
+  z-index: 0;
   
+  &.hideZ{
+    z-index: -1;
+  }
   .lt-ie9 & {
     width: 25%;
   }

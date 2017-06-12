@@ -1666,6 +1666,9 @@ a.usa-label, a.usa-label-big {
 .showZ {
   z-index: 999999; }
 
+.hideZ {
+  z-index: -1; }
+
 .hide {
   display: none; }
 
@@ -1751,6 +1754,9 @@ a.usa-label, a.usa-label-big {
       z-index: 99;
       font-size: 20px;
       color: #fefefe; }
+    .overlay-bg.md .container-box textarea,
+    .overlay-bg.lg .container-box textarea {
+      min-height: 100px; }
   .overlay-bg.md .close-btn,
   .overlay-bg.lg .close-btn {
     background-color: #444444;

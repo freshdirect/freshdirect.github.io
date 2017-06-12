@@ -12,6 +12,7 @@ noScroll = function(){
 	$("body").addClass('noscroll');
 	$("header").addClass('hide');
 	$(".container-box").addClass('down');
+	$(".sidenav").addClass('hideZ');
 
 }
 
@@ -19,6 +20,7 @@ okScroll = function(){
 
 	$("header").removeClass('hide');
 	$("body").removeClass('noscroll');
+	$(".sidenav").removeClass('hideZ');
 
 }
 
