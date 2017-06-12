@@ -3,23 +3,22 @@
 
 /// Overlay
 
-var smOverlay = $("#sm-box").outerHeight();
-
 var viewportHeight = $(window).height() -50;
 var vHeightPixels = viewportHeight + "px";
 
 
-showOverlay = function(){
+noScroll = function(){
 
 	$("body").addClass('noscroll');
-	$("nav").addClass('hide');
+	$("header").addClass('hide');
+	$(".container-box").addClass('down');
 
 }
 
-hideOverlay = function(){
+okScroll = function(){
 
+	$("header").removeClass('hide');
 	$("body").removeClass('noscroll');
-	$("nav").removeClass('hide');
 
 }
 
@@ -40,45 +39,62 @@ applyHeight = function(){
 //// show overlays
 $("#sm-overlay-btn").click(function() {
 
-	$(".overlay-bg.sm").addClass('show');
-	showOverlay();
+	$(".overlay-bg.sm").addClass('showOp showZ');
+	noScroll();
 
 });
 
 $("#md-overlay-btn").click(function() {
 
-	$(".overlay-bg.md").addClass('show');
-	showOverlay();
+	$(".overlay-bg.md").addClass('showOp showZ');
+	noScroll();
 
 });
 
 $("#lg-overlay-btn").click(function() {
 
-	$(".overlay-bg.lg").addClass('show');
-	showOverlay();	
+	$(".overlay-bg.lg").addClass('showOp showZ');
+	noScroll();	
 
 });
 
 $("#fs-overlay-btn").click(function() {
 
-	$(".overlay-bg.fs").addClass('show');
-	showOverlay();	
+	$(".overlay-bg.fs").addClass('showOp showZ');
+	noScroll();	
 
 });
 
 //// hide overlays
 $(".close-btn").click(function() {
 
-	$(".overlay-bg").removeClass('show');
-	hideOverlay();
+	$(".overlay-bg").removeClass('showOp');
+
+	setTimeout(function() {
+
+    	$(".overlay-bg").removeClass('showZ');
+    	$(".container-box").removeClass('down');
+
+	}, 200);
+
+	okScroll();
 
 });
 
 $(document).keyup(function(e) {
 
  	if (e.keyCode == 27) { // ESC key maps to keycode `27`
-    	$(".overlay-bg").removeClass('show');
-    	hideOverlay();
+
+    	$(".overlay-bg").removeClass('showOp');
+    	$(".container-box").removeClass('down');
+
+		setTimeout(function() {
+
+    		$(".overlay-bg").removeClass('showZ');
+			okScroll();    
+
+		}, 200);
+
 	}
 
 });

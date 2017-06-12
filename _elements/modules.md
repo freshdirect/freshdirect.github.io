@@ -431,8 +431,9 @@ lead: A list of global modules around the store.
 
 <!-- overlays -->
 <div class="overlay-bg sm" role="dialog" aria-labelledby="email-reminder">
+
   <button class="close-btn">Close</button>
-  <div id="sm-box" class="container-box">
+  <div class="container-box">
     <h3 id="email-reminder">Sign Up for Reminders</h3>
     <div class="form-row">
       <label>Email</label>
@@ -442,6 +443,7 @@ lead: A list of global modules around the store.
       <button class="fd-button-green fd-button-large fd-button-wide center">Send</button>
     </div> 
   </div>
+
 </div>
 
 <div class="overlay-bg md" role="dialog" aria-labelledby="send-msg">
