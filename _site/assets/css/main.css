@@ -1154,10 +1154,10 @@ input[type="time"],
 input[type="week"],
 textarea,
 select {
-  border-top: 2px solid #ffffff;
-  border-right: 2px solid #ffffff;
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
   border-bottom: 2px solid #d4d4d4;
-  border-left: 2px solid #ffffff;
+  border-left: 2px solid transparent;
   border-radius: 0;
   box-sizing: border-box;
   color: #444444;
@@ -1521,7 +1521,8 @@ a.usa-label, a.usa-label-big {
 .noscroll {
   position: fixed;
   /**/
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100%; }
 
 .overlay-numbers {
   margin: 10px 0 5px 12px; }

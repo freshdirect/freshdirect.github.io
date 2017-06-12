@@ -350,10 +350,10 @@ input[type=range]:focus::-ms-thumb {
   input[type="week"],
   textarea,
   select  {
-    border-top: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
     border-bottom: 2px solid #d4d4d4;
-    border-left: 2px solid #ffffff;
+    border-left: 2px solid transparent;
     border-radius: 0;
     box-sizing: border-box;
     color: #444444; 
