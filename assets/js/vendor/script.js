@@ -103,6 +103,12 @@ $(document).keyup(function(e) {
 
 		}, 200);
 
+		setTimeout(function() {
+
+			$("body").removeClass('noscroll');
+
+		}, 250);
+
 	}
 
 });
