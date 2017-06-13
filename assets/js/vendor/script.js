@@ -85,7 +85,7 @@ $(".close-btn").click(function() {
 
 		$("body").removeClass('noscroll');
 
-	}, 250);
+	}, 300);
 
 });
 
@@ -107,7 +107,7 @@ $(document).keyup(function(e) {
 
 			$("body").removeClass('noscroll');
 
-		}, 250);
+		}, 300);
 
 	}
 
