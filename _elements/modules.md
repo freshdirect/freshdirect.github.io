@@ -15,34 +15,35 @@ lead: A list of global modules around the store.
     <li>There's no maximum height value. Height is determined by the amount of content inside the overlay</li>
     <li>All overlays have a minimum height value</li>
     <li>All overlays have two inner padding values, which will be determined based on the layout</li>
+    <li>All overlays will have <strong>the option to display the header "outside" of content area</strong>. Similarly to FoodKick.</li>
     <li>Close button (X) is <strong>always visible</strong></li>
     <li>Overlay background color value (CSS): <em class="em-yellow-bg"><code>rgba(255, 255, 255, 0.8);</code></em></li>
   </ul>
 
   <h4>SMALL</h4>
   <ul class="overlay-numbers">
-    <li><span>width:</span> 386px</li>
+    <li><span>width:</span> 400px</li>
     <li><span>min-height:</span> 232px</li>
     <li><span>padding:</span> 30px / 40px</li>
-    <li><span>margin-top:</span> 256px</li>
+    <li><span>top:</span> 150px</li>
   </ul>
   <button id="sm-overlay-btn" class="fd-button-ghost-green fd-button-small fd-button-wide">View Example</button>
 
   <h4>MEDIUM</h4>
   <ul class="overlay-numbers">
-    <li><span>width:</span> 630px</li>
+    <li><span>width:</span> 480px</li>
     <li><span>min-height:</span> 246px</li>
     <li><span>padding:</span> 40px / 60px</li>
-    <li><span>margin-top:</span> 256px</li>
+    <li><span>top:</span> 150px</li>
   </ul>
   <button id="md-overlay-btn" class="fd-button-ghost-green fd-button-small fd-button-wide">View Example</button>
 
   <h4>LARGE</h4>
   <ul class="overlay-numbers">
-    <li><span>width:</span> 860px</li>
+    <li><span>width:</span> 800px</li>
     <li><span>min-height:</span> 514px</li>
     <li><span>padding:</span> 40px / 60px</li>
-    <li><span>margin-top:</span> 256px</li>
+    <li><span>top:</span> 150px</li>
   </ul>
   <button id="lg-overlay-btn" class="fd-button-ghost-green fd-button-small fd-button-wide">View Example</button>
 

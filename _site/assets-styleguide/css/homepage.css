@@ -1585,7 +1585,7 @@ a.usa-label, a.usa-label-big {
   position: fixed;
   top: 123px;
   left: 50%;
-  margin-left: 317px;
+  margin-left: 240px;
   height: 22px;
   width: 22px;
   border-radius: 0;
@@ -1599,7 +1599,7 @@ a.usa-label, a.usa-label-big {
 
 .overlay-bg.sm .close-btn {
   left: 50%;
-  margin-left: 195px;
+  margin-left: 200px;
   width: 22px; }
 .overlay-bg.sm button {
   margin-left: 0;
@@ -1608,7 +1608,7 @@ a.usa-label, a.usa-label-big {
 
 .overlay-bg.lg .close-btn {
   left: 50%;
-  margin-left: 432px; }
+  margin-left: 400px; }
 
 .overlay-bg.fs {
   background-color: #ffffff; }
@@ -1621,17 +1621,17 @@ a.usa-label, a.usa-label-big {
     background-image: url("../img/close-white.svg"); }
 
 .sm .container-box {
-  width: 386px;
+  width: 400px;
   min-height: 232px;
   padding: 30px; }
 
 .md .container-box {
-  width: 630px;
+  width: 480px;
   min-height: 246px;
-  padding: 60px; }
+  padding: 40px; }
 
 .lg .container-box {
-  width: 860px;
+  width: 800px;
   min-height: 514px;
   padding: 60px; }
 
