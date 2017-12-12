@@ -31,7 +31,7 @@ lead: Text Links are used to trigger actions or lead users through the site. The
 
   /* Text Link: Default, Hover */
   a.fd-link{
-    color: #458b4c;
+    color: #408244;
   }
   a.fd-link:hover{
     color: #5fb069;

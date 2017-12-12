@@ -3499,7 +3499,9 @@ button:visited {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  transition: background-color 0.12s ease-in-out 0s; }
+  transition: background-color 0.12s ease-in-out 0s;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s; }
 
 button:focus {
   transition: background-color 0s ease-in-out 0s; }
@@ -3507,7 +3509,8 @@ button:focus {
 /* Green Button: Default, Hover, Active, Focus */
 .fd-button-green {
   background-color: #4fa157;
-  border: 1px solid #4fa157; }
+  border: 1px solid #4fa157;
+  text-shadow: 1px 1px 0 #3F8348; }
 
 .fd-button-green:hover {
   background-color: #458d4e;
@@ -3581,7 +3584,8 @@ button:focus {
 .fd-button-orange {
   color: #ffffff;
   background-color: #f68139;
-  border: 1px solid #f68139; }
+  border: 1px solid #f68139;
+  text-shadow: 1px 1px #C85C19; }
 
 .fd-button-orange:hover {
   background-color: #e77630;
@@ -3618,12 +3622,13 @@ button:focus {
 /* Purple Button: Default, Hover, Active, Focus */
 .fd-button-purple {
   color: #ffffff;
-  background-color: #a367ab;
+  background-color: #9E5EA6;
   border: 1px solid #a367ab;
-  padding: 10px 20px; }
+  padding: 10px 20px;
+  text-shadow: 1px 1px #985D98; }
 
 .fd-button-purple:hover {
-  background-color: #8e5a95; }
+  background-color: #855086; }
 
 .fd-button-purple:active {
   background-color: #af7bb6; }
@@ -3684,7 +3689,7 @@ button[disabled=disabled],
 /*** Text links ***/
 /* Text Link: Default, Hover */
 a.fd-link {
-  color: #458b4c; }
+  color: #408244; }
 
 a.fd-link:hover {
   color: #5fb069; }
