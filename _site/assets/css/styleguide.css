@@ -3510,7 +3510,8 @@ button:focus {
 .fd-button-green {
   background-color: #4fa157;
   border: 1px solid #4fa157;
-  text-shadow: 1px 1px 0 #3F8348; }
+  text-shadow: 1px 1px 0 #2D5D33;
+  /* global text shadow */ }
 
 .fd-button-green:hover {
   background-color: #458d4e;
@@ -3585,7 +3586,8 @@ button:focus {
   color: #ffffff;
   background-color: #f68139;
   border: 1px solid #f68139;
-  text-shadow: 1px 1px #C85C19; }
+  text-shadow: 1px 1px #923C07;
+  /* global text shadow */ }
 
 .fd-button-orange:hover {
   background-color: #e77630;
@@ -3625,7 +3627,8 @@ button:focus {
   background-color: #9E5EA6;
   border: 1px solid #a367ab;
   padding: 10px 20px;
-  text-shadow: 1px 1px #985D98; }
+  text-shadow: 1px 1px #73437A;
+  /* global text shadow */ }
 
 .fd-button-purple:hover {
   background-color: #855086; }
