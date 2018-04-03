@@ -1875,6 +1875,14 @@
 
   <h2>Special Buttons</h2>
 
+  <h6>White Ghost Button</h6> <p class="even-margin">Use over colored (non-white) backgrounds.</p>
+  <div class="button_wrapper dark">
+    <button class="fd-button-ghost-white">Default</button>
+    <button class="fd-button-ghost-white fd-button-ghost-white-active">Active</button>
+    <button class="fd-button-ghost-white fd-button-ghost-white-hover">Hover</button>
+    <button class="fd-button-ghost-white fd-button-ghost-white-focus">Focus</button>
+  </div>
+
   <h6>Orange Button</h6> <p class="even-margin">Use mainly for <strong>Checkout</strong> or <strong>Place Order</strong> actions.</p>
   <div class="button_wrapper">
     <button class="fd-button-orange">Default</button>
@@ -2152,6 +2160,26 @@
     box-shadow: 0 0 1px #aaaaaa, 0 0 8px #999999;
   } 
 
+
+
+  /* White Ghost Button: Default, Hover, Active, Focus */
+  .fd-button-ghost-white{
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 10px 20px;
+  }
+  .fd-button-ghost-white:hover{
+    background-color: rgba(0,0,0,0.1);
+  }
+  .fd-button-ghost-white:active{
+    background-color: rgba(0,0,0,0.2);
+  }
+  .fd-button-ghost-white:focus{
+    background-color: rgba(0,0,0,0.1);
+    box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
+  }
+
   
 
   /* Disabled Button: Default, Focus */
@@ -2302,6 +2330,18 @@
     background-color: #ffffff;
     border-color: #a367ab;
     box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
+  }
+
+  /* White Ghost Button: Default, Hover, Active, Focus */
+  .fd-button-ghost-white-hover{
+    background-color: rgba(0,0,0,0.1);
+  }
+  .fd-button-ghost-white-active{
+    background-color: rgba(0,0,0,0.2);
+  }
+  .fd-button-ghost-white-focus{
+    background-color: rgba(0,0,0,0.1);
+    box-shadow: 0 0 1px #cccccc, 0 0 8px #cccccc;
   }
 
   /* Secondary Red Button: Default, Hover, Active, Focus */

@@ -2995,6 +2995,8 @@ h3 + .button_wrapper {
   display: table;
   margin-left: -1rem;
   padding: 0rem 1rem; }
+  .button_wrapper.dark {
+    background-color: #777; }
   .button_wrapper:after {
     content: "\A";
     white-space: pre; }
@@ -3678,6 +3680,25 @@ button:focus {
   background-color: #b93d3f;
   border-color: #892e2f;
   box-shadow: 0 0 1px #aaaaaa, 0 0 8px #999999; }
+
+/* White Ghost Button: Default, Hover, Active, Focus */
+.fd-button-ghost-white {
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  padding: 10px 20px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  /* global text shadow */ }
+
+.fd-button-ghost-white:hover {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.fd-button-ghost-white:active {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.fd-button-ghost-white:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb; }
 
 /* Disabled Button: Default, Focus */
 button[disabled=disabled],
