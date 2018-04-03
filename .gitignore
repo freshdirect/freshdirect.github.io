@@ -1,0 +1,6 @@
+# Ignore sass-cache files
+.sass-cache
+.sass-cache/*
+.DS_Store
+_site/assets/img/logo-close.zip
+assets/img/logo-close.zip
