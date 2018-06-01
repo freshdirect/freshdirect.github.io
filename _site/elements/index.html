@@ -1434,9 +1434,15 @@
   </button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Accessibility</h4>
+    <p>In general, there are three kinds of content that can be displayed in overlays: <a id="sm-overlay-btn-2" href="#">Dialogue</a>, <a id="md-overlay-btn-2" href="#">Form</a>, and <a id="lg-overlay-btn-2" href="#">Rich Content</a>.</p>
+    <h4>Dialogue & Form Overlays</h4>
     <ul class="usa-content-list">
-      <li>All overlays should have <em class="em-yellow-bg"><code>role=”dialog”</code></em> attribute.</li>
-      <li>Make overlay copy accessible by using <em class="em-yellow-bg"><code>aria-labelledby=""</code></em> for headers, and <em class="em-yellow-bg"><code>aria-describedby=""</code></em> for paragraphs. This way screen readers will know to relay this information to the customer. <div><a href="https://www.w3.org/WAI/GL/wiki/Using_ARIA_role%3Ddialog_to_implement_a_modal_dialog_box">See code examples and resources</a></div> </li>
+      <li>Overlay should have <em class="em-yellow-bg"><code>role=”dialog”</code></em> attribute. <a href="https://www.w3.org/WAI/GL/wiki/Using_ARIA_role%3Ddialog_to_implement_a_modal_dialog_box">Learn more</a>.</li>
+    </ul>
+    <h4>All Overlays</h4>
+    <ul class="usa-content-list">
+      <li>Use <em class="em-yellow-bg"><code>aria-labelledby=""</code></em> for headers.
+      <li>Use <em class="em-yellow-bg"><code>aria-describedby=""</code></em> for content (paragraphs, lists, etc).</li> 
       <li>Close button should be an HTML button, not a div or span.</li>
       <li>All overlays should be accessible via the keyboard.</li>
     </ul>

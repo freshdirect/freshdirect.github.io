@@ -40,21 +40,21 @@ applyHeight = function(){
 }
 
 //// show overlays
-$("#sm-overlay-btn").click(function() {
+$("#sm-overlay-btn, #sm-overlay-btn-2").click(function() {
 
 	$(".overlay-bg.sm").addClass('showOp showZ');
 	noScroll();
 
 });
 
-$("#md-overlay-btn").click(function() {
+$("#md-overlay-btn, #md-overlay-btn-2").click(function() {
 
 	$(".overlay-bg.md").addClass('showOp showZ');
 	noScroll();
 
 });
 
-$("#lg-overlay-btn").click(function() {
+$("#lg-overlay-btn, #lg-overlay-btn-2").click(function() {
 
 	$(".overlay-bg.lg").addClass('showOp showZ');
 	noScroll();	

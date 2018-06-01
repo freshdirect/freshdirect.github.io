@@ -6,7 +6,7 @@
 // Overlays
 
 .noscroll{
-  position: fixed; /**/
+  // position: fixed; /* disabled since it was making the page jump to the top */
   overflow: hidden;
   width: 100%;
 }

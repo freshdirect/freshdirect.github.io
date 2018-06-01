@@ -1519,8 +1519,6 @@ a.usa-label, a.usa-label-big {
   font-size: inherit; }
 
 .noscroll {
-  position: fixed;
-  /**/
   overflow: hidden;
   width: 100%; }
 
