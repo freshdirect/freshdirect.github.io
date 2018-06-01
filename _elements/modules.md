@@ -71,7 +71,7 @@ lead: A list of global modules around the store.
     </ul>
     <h4>All Overlays</h4>
     <ul class="usa-content-list">
-      <li>Use <em class="em-yellow-bg"><code>aria-labelledby=""</code></em> for headers.
+      <li>Use <em class="em-yellow-bg"><code>aria-labelledby=""</code></em> for headers.</li>
       <li>Use <em class="em-yellow-bg"><code>aria-describedby=""</code></em> for content (paragraphs, lists, etc).</li> 
       <li>Close button should be an HTML button, not a div or span.</li>
       <li>All overlays should be accessible via the keyboard.</li>
