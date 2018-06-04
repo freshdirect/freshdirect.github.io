@@ -33,7 +33,7 @@ lead: A list of global modules around the store.
   <ul class="overlay-numbers">
     <li><span>width:</span> 480px</li>
     <li><span>min-height:</span> 246px</li>
-    <li><span>padding:</span> 40px / 60px</li>
+    <li><span>padding:</span> 30px / 40px / 60px</li>
     <li><span>top:</span> 150px</li>
   </ul>
   <button id="md-overlay-btn" class="fd-button-ghost-green fd-button-small fd-button-wide">View Example</button>
