@@ -836,6 +836,7 @@
     margin-bottom: 28px;
     outline: none;
     padding: 6px 8px;
+    transition: all 0.1s ease-in-out;
     -webkit-font-smoothing: antialiased;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -873,8 +874,10 @@
   }
 
 
-  /* Text Input + Textarea Focused */
+  /* Text Input + Textarea Hover/Focused */
+  input:hover,
   input:focus,
+  textarea:hover,
   textarea:focus{
     border-top: 2px solid #68aa6d;
     border-right: 2px solid #68aa6d;
@@ -931,6 +934,7 @@
     border-color: #d4d4d4;
     padding: 6px 66px 7px 8px;
   }
+  .input-button input:hover,
   .input-button input:focus{
     border-color: #68aa6d;
   }
@@ -946,6 +950,7 @@
     height: 46px;
     margin-bottom: 14px;
   }
+  input.floatlabel:hover,
   input.floatlabel:focus{
     border-top: 2px solid #ffffff;
     border-right: 2px solid #ffffff;
@@ -1087,13 +1092,15 @@
 
 
   /* Focused */
-  select:focus{
+  select:enabled:hover,
+  select:enabled:focus{
     border: 2px solid #68aa6d;
   }
 
 
   /* Disabled */
-  select:disabled{
+  select:disabled,
+  select:disabled:hover{
     background-color: #eeeeee;
     cursor: not-allowed;
   }
@@ -1160,22 +1167,22 @@
 <div class="preview">
 
   <ul class="usa-unstyled-list">
-      <li>
-        <input id="apple-pie" type="checkbox" name="apple-pie" value="apple-pie" checked>
-        <label for="apple-pie">Selected</label>
-      </li>
-      <li>
-        <input id="key-lime-pie" type="checkbox" name="key-lime-pie" value="key-lime-pie">
-        <label for="key-lime-pie">Oranges</label>
-      </li>
-      <li>
-        <input id="peach-pie" type="checkbox" name="peach-pie" value="peach-pie">
-        <label for="peach-pie">Pears</label>
-      </li>
-      <li>
-        <input id="disabled" type="checkbox" disabled="">
-        <label for="disabled">Disabled</label>
-      </li>
+    <li>
+      <input id="apple-pie" type="checkbox" name="apple-pie" value="apple-pie" checked>
+      <label for="apple-pie">Selected</label>
+    </li>
+    <li>
+      <input id="key-lime-pie" type="checkbox" name="key-lime-pie" value="key-lime-pie">
+      <label for="key-lime-pie">Oranges</label>
+    </li>
+    <li>
+      <input id="peach-pie" type="checkbox" name="peach-pie" value="peach-pie">
+      <label for="peach-pie">Pears</label>
+    </li>
+    <li>
+      <input id="disabled" type="checkbox" disabled="">
+      <label for="disabled">Disabled</label>
+    </li> 
   </ul>
 
 </div>
@@ -1211,6 +1218,12 @@
     background: #4fa157 url('../assets/img/checkmark-white.svg') center center no-repeat;
     background-size: 80%;
     box-shadow: 0 0 0 1px #4fa157;
+  }
+
+
+  /* Hovered */
+  input[type="checkbox"]:hover + label::before {
+    box-shadow: 0 0 0 2px #4fa157;
   }
 
 
@@ -1253,6 +1266,187 @@
   </div>
 </div>
 
+<h2 class="usa-heading" id="checkboxes">Toggle Switch</h2>
+
+<p class="usa-font-lead">Toggle switches are a 1-click activation/deactivation control for a service or feature.</p>
+
+<div class="preview">
+
+  <ul class="usa-unstyled-list">
+    <li>
+      <span class="switch-label">Cheeseburger Mode<span>The palatable sensation we lovingly refer to as The Cheeseburger has a distinguished and illustrious history. Get one every day.</span></span>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </li>  
+  </ul>
+
+</div>
+
+<div class="css-preview">
+
+<style type="text/css">
+
+  
+  /* General */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 49px;
+    height: 24px;
+    margin-top: 10px;
+  }
+
+  .switch input:focus {
+    border: 1px solid red;
+  }
+
+  .switch-label {
+    display: block;
+    font-family: verdana;
+    font-size: 18px;
+    color: #222222;
+  }
+
+  .switch-label span{
+    display: block;
+    font-size: 14px;
+    color: #666666;
+    width: 65%;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    border: 2px solid #666666;
+    -webkit-transition: .25s;
+    transition: .25s;
+  }
+
+  .slider.round {
+    border-radius: 22px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /* Status */
+  .slider:after{
+    position: relative;
+    content: 'Off';
+    float: none;
+    display: inline-block;
+    color: #222222;
+    font-size: 14px;
+    top: 0px;
+    left: 55px;
+    width: 300px;
+    letter-spacing: .2px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #666666;
+    -webkit-transition: .25s;
+    transition: .25s;
+  }
+
+  /* If Checked */
+  input:checked + .slider {
+    background-color: #4fa157;
+    border-color: #4fa157;
+  }
+
+  input:checked + .slider:after {
+    content: 'On';
+  }
+
+  /* Hovered */
+  input:hover + .slider{
+    border: 2px solid #4fa157;
+  }
+
+  input:focus:hover + .slider{
+    border: 2px solid #666666;
+  }
+
+  input:checked:focus:hover + .slider{
+    border: 2px solid #4fa157;
+  }
+
+  /* Focused */
+  input:focus + .slider {
+    box-shadow: 0 0 0 2px #666666;
+  }
+
+  input:checked:focus + .slider {
+    box-shadow: 0 0 0 2px #4fa157;
+  }
+
+  /* Slider States */
+  input:focus + .slider:before,
+  input:hover + .slider:before {
+    background-color: #4fa157; 
+  }
+
+  input:hover + .slider:before {
+    -webkit-transform: translateX(4px);
+    -ms-transform: translateX(4px);
+    transform: translateX(4px);    
+  }
+
+  input:checked + .slider:before {
+    background-color: #ffffff;
+    -webkit-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    transform: translateX(25px);
+  }
+
+  input:checked:focus + .slider:before,
+  input:checked:hover + .slider:before {
+    background-color: #ffffff;
+  }
+
+  input:checked:hover + .slider:before {
+    -webkit-transform: translateX(21px);
+    -ms-transform: translateX(21px);
+    transform: translateX(21px);
+  }
+
+
+</style>
+
+</div>
+
+<div class="usa-accordion-bordered usa-accordion-docs">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="collapsible-0">
+    Documentation
+  </button>
+  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Accessibility</h4>
+    <p>If you customize the text inputs, ensure they continue to meet the the <a href="/form-controls/"> accessibility requirements that apply to all form controls.</a></p>
+    <ul class="usa-content-list">
+      <li>All toggle switches should use <em class="em-yellow-bg"><code>role="switch"</code></em> attribute</code></em>.</li>
+      <li>Each input should have a semantic <em class="em-yellow-bg"><code>id</code></em> attribute, and its corresponding label should have the same value in it’s <em class="em-yellow-bg"><code>for</code></em> attribute.</li>
+      <li>The <em class="em-yellow-bg"><code>title</code></em> attribute can replace <em class="em-yellow-bg"><code>&lt;label&gt;</code></em>.</li>
+      <li>Users should be able to tap on or click on either the text label or the checkbox to select or deselect an option.</li>
+    </ul>
+  </div>
+</div>
+
 <h2 class="usa-heading" id="radiobuttons">Radio buttons</h2>
 
 <p class="usa-font-lead">Radio buttons allow users to see all available choices at once and select exactly one option.</p>
@@ -1275,7 +1469,7 @@
       <li>
         <input id="tomatoe" type="radio" name="soup" value="tomatoe" disabled>
         <label for="tomatoe">Disabled</label>
-      </li>      
+      </li>    
     </ul>
 
 </div>
@@ -1309,10 +1503,16 @@
 
   /* Selected */
   input[type="radio"]:checked + label::before {
-    background: #4fa157;
+    background: #4fa157 url('../assets/img/checkmark-white.svg') center center no-repeat;
+    background-size: 70%;
     box-shadow: 0 0 0 1px #4fa157;
   }
 
+
+  /* Hovered */
+  input[type="radio"]:hover + label::before {
+    box-shadow: 0 0 0 2px #4fa157;
+  }
 
   /* Focused */
   input[type="radio"]:focus + label::before {
@@ -1323,6 +1523,7 @@
   /* Disabled */
   input[type="radio"]:disabled + label {
     color: #858585;
+    cursor: not-allowed;
   }
   input[type="radio"]:disabled + label::before{
     background: #dddddd;
