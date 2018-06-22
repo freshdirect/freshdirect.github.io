@@ -574,7 +574,7 @@ lead: Form controls allow users to enter information into a page.
   </div>
 </div>
 
-<h2 class="usa-heading" id="checkboxes">Toggle Switch</h2>
+<h2 class="usa-heading" id="toggle">Toggle Switch</h2>
 <p class="usa-font-lead">Toggle switches are a 1-click activation/deactivation control for a service or feature.</p>
 
 <div class="preview">
