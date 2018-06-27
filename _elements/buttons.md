@@ -94,7 +94,31 @@ lead: Use buttons to signal actions.
   <h6>Disabled Button</h6>
   <div class="button_wrapper">
     <button class="fd-button-disabled">Default</button>
-  </div> 
+  </div>
+
+  <h2>High Contrast Styling</h2>
+  <p class="even-margin">These button colors are used while in <strong>High Contrast Mode</strong>.</p>
+  <h6>Green Button</h6>
+  <div class="button_wrapper">
+    <button class="fd-button-hc-green">Default</button>
+    <button class="fd-button-hc-green fd-button-hc-green-active">Active</button>
+    <button class="fd-button-hc-green fd-button-hc-green-hover">Hover</button>
+    <button class="fd-button-hc-green fd-button-hc-green-focus">Focus</button>
+  </div>
+  <h6>Orange Button</h6>
+  <div class="button_wrapper">
+    <button class="fd-button-hc-orange">Default</button>
+    <button class="fd-button-hc-orange fd-button-hc-orange-active">Active</button>
+    <button class="fd-button-hc-orange fd-button-hc-orange-hover">Hover</button>
+    <button class="fd-button-hc-orange fd-button-hc-orange-focus">Focus</button>
+  </div>
+  <h6>Purple Button</h6>
+  <div class="button_wrapper">
+    <button class="fd-button-hc-purple">Default</button>
+    <button class="fd-button-hc-purple fd-button-hc-purple-active">Active</button>
+    <button class="fd-button-hc-purple fd-button-hc-purple-hover">Hover</button>
+    <button class="fd-button-hc-purple fd-button-hc-purple-focus">Focus</button>
+  </div>
 
 </div>
 
@@ -181,6 +205,28 @@ lead: Use buttons to signal actions.
 
 
 
+  /* High Contrast Green Button: Default, Hover, Active, Focus */
+  .fd-button-hc-green{
+    color: #ffffff;
+    background-color: #096D19;
+    border: 1px solid #096D19;
+    padding: 10px 20px;
+  }
+  .fd-button-hc-green:hover{
+    background-color: #098A1E;
+    border-color: #098A1E;
+  }
+  .fd-button-hc-green:active{
+    background-color: #096D19;
+  }
+  .fd-button-hc-green:focus{
+    background-color: #098A1E;
+    border-color: rgba(0,0,0,0.4);
+    box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
+  }
+
+
+
   /* Button Sizes */
   .fd-button-large{
     font-size: 16px;
@@ -246,6 +292,28 @@ lead: Use buttons to signal actions.
 
 
 
+  /* High Contrast Orange Button: Default, Hover, Active, Focus */
+  .fd-button-hc-orange{
+    color: #ffffff;
+    background-color: #AF3D08;
+    border: 1px solid #AF3D08;
+    padding: 10px 20px;
+  }
+  .fd-button-hc-orange:hover{
+    background-color: #D04A0A;
+    border-color: #D04A0A;
+  }
+  .fd-button-hc-orange:active{
+    background-color: #AF3D08;
+  }
+  .fd-button-hc-orange:focus{
+    background-color: #D04A0A;
+    border-color: rgba(0,0,0,0.4);
+    box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
+  }
+
+
+
   /* Ghost Orange Button: Default, Hover, Active, Focus */
   .fd-button-ghost-orange{
     color: #e45e0b;
@@ -306,6 +374,28 @@ lead: Use buttons to signal actions.
   .fd-button-ghost-purple:focus{
     background-color: #ffffff;
     border-color: #a367ab;
+    box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
+  }
+
+
+
+  /* High Contrast Purple Button: Default, Hover, Active, Focus */
+  .fd-button-hc-purple{
+    color: #ffffff;
+    background-color: #7C4884;
+    border: 1px solid #7C4884;
+    padding: 10px 20px;
+  }
+  .fd-button-hc-purple:hover{
+    background-color: #98609F;
+    border-color: #098A1E;
+  }
+  .fd-button-hc-purple:active{
+    background-color: #7C4884;
+  }
+  .fd-button-hc-purple:focus{
+    background-color: #98609F;
+    border-color: rgba(0,0,0,0.4);
     box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
   }
 
@@ -450,6 +540,20 @@ lead: Use buttons to signal actions.
     box-shadow: 0 0 1px #aaaaaa, 0 0 8px #aaaaaa;
   }
 
+  /* High Contrast Orange Button: Default, Hover, Active, Focus */
+  .fd-button-hc-orange-hover{
+    background-color: #D04A0A;
+    border-color: #D04A0A;
+  }
+  .fd-button-hc-orange-active{
+    background-color: #AF3D08;
+  }
+  .fd-button-hc-orange-focus{
+    background-color: #D04A0A;
+    border-color: rgba(0,0,0,0.4);
+    box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
+  }
+
   /* Green Button: Default, Hover, Active, Focus */
   .fd-button-green-hover{
     background-color: #458d4e;
@@ -478,6 +582,20 @@ lead: Use buttons to signal actions.
     box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
   }
 
+  /* High Contrast Green Button: Default, Hover, Active, Focus */
+  .fd-button-hc-green-hover{
+    background-color: #098A1E;
+    border-color: #098A1E;
+  }
+  .fd-button-hc-green-active{
+    background-color: #096D19;
+  }
+  .fd-button-hc-green-focus{
+    background-color: #098A1E;
+    border-color: rgba(0,0,0,0.4);
+    box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
+  }
+
   /* Purple Button: Default, Hover, Active, Focus */
   .fd-button-purple-hover{
     background-color: #8e5a95;
@@ -501,6 +619,20 @@ lead: Use buttons to signal actions.
   .fd-button-ghost-purple-focus{
     background-color: #ffffff;
     border-color: #a367ab;
+    box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
+  }
+
+  /* High Contrast Purple Button: Default, Hover, Active, Focus */
+  .fd-button-hc-purple-hover{
+    background-color: #98609F;
+    border-color: #98609F;
+  }
+  .fd-button-hc-purple-active{
+    background-color: #7C4884;
+  }
+  .fd-button-hc-purple-focus{
+    background-color: #98609F;
+    border-color: rgba(0,0,0,0.4);
     box-shadow: 0 0 1px #bbbbbb, 0 0 8px #bbbbbb;
   }
 
