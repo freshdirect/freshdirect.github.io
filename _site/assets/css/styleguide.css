@@ -3474,6 +3474,59 @@ a, p.example {
   width: 0;
   text-indent: -9999px; }
 
+.usa-grid-full.verdana {
+  font-family: Verdana; }
+
+.fd-color-pallette.green .color-primary {
+  background-color: #4FA157; }
+.fd-color-pallette.green .color-primary-dark {
+  background-color: #458D4E; }
+.fd-color-pallette.green .color-primary-darker {
+  background-color: #408244; }
+.fd-color-pallette.green .color-primary-darkest {
+  background-color: #346A39; }
+.fd-color-pallette.green .color-primary-light {
+  background-color: #4FA157; }
+.fd-color-pallette.green .color-primary-lighter {
+  background-color: #5FB067; }
+.fd-color-pallette.green .color-primary-fade {
+  background-color: #EDF5EE; }
+
+.fd-color-pallette.orange .color-primary {
+  background-color: #F68139; }
+.fd-color-pallette.orange .color-primary-dark {
+  background-color: #E77630; }
+.fd-color-pallette.orange .color-primary-darker {
+  background-color: #D04A0A; }
+.fd-color-pallette.orange .color-primary-darkest {
+  background-color: #AF3D08; }
+.fd-color-pallette.orange .color-primary-light {
+  background-color: #F68139; }
+.fd-color-pallette.orange .color-primary-lighter {
+  background-color: #FC8E46; }
+.fd-color-pallette.orange .color-primary-fade {
+  background-color: #FDF2EC; }
+
+.fd-color-pallette.purple .color-secondary {
+  background-color: #9E5EA6; }
+.fd-color-pallette.purple .color-secondary-dark {
+  background-color: #855086; }
+.fd-color-pallette.purple .color-secondary-darker {
+  background-color: #7C4884; }
+.fd-color-pallette.purple .color-secondary-light {
+  background-color: #AF7BB6; }
+.fd-color-pallette.purple .color-secondary-fade {
+  background-color: #F7F2F8; }
+
+.fd-color-pallette.red .color-red {
+  background-color: #B93D3F; }
+.fd-color-pallette.red .color-red-fade {
+  background-color: #F8EBEB; }
+
+.top-pad {
+  padding-top: 25px;
+  margin-top: 0; }
+
 /*** Button Styles ***/
 /* Basic Button Styles */
 button,
