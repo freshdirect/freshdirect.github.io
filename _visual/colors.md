@@ -124,31 +124,31 @@ order: 02
     <div class="usa-color-short color-secondary">
     </div>
       <p class="usa-color-hex">#9E5EA6</p>
-      <p class="usa-color-name">secondary</p>
+      <p class="usa-color-name">secondary-purple</p>
   </div>
   <div class="color-small">
     <div class="usa-color-short color-secondary-dark">
     </div>
       <p class="usa-color-hex">#855086</p>
-      <p class="usa-color-name">secondary-dark</p>
+      <p class="usa-color-name">secondary-purple-dark</p>
   </div>
   <div class="color-small">
     <div class="usa-color-short color-secondary-darker">
     </div>
       <p class="usa-color-hex">#7C4884</p>
-      <p class="usa-color-name">secondary-darker</p>
+      <p class="usa-color-name">secondary-purple-darker</p>
   </div>
   <div class="color-small">
     <div class="usa-color-short color-secondary-light">
     </div>
       <p class="usa-color-hex">#AF7BB6</p>
-      <p class="usa-color-name">secondary-light</p>
+      <p class="usa-color-name">secondary-purple-light</p>
   </div>
   <div class="color-small">
     <div class="usa-color-short color-secondary-fade">
     </div>
       <p class="usa-color-hex">#F7F2F8</p>
-      <p class="usa-color-name">secondary-fade</p>
+      <p class="usa-color-name">secondary-purple-fade</p>
   </div>
 </div>
 
