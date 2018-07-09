@@ -186,7 +186,7 @@ lead: Use buttons to signal actions.
 
   /* Secondary Green Ghost Button: Default, Hover, Active, Focus */
   .fd-button-ghost-green{
-    color: #458b4c;
+    color: #408245;
     background-color: #ffffff;
     border: 1px solid #4fa157;
     padding: 10px 20px;
@@ -316,7 +316,7 @@ lead: Use buttons to signal actions.
 
   /* Ghost Orange Button: Default, Hover, Active, Focus */
   .fd-button-ghost-orange{
-    color: #e45e0b;
+    color: #C35009;
     background-color: #ffffff;
     border: 1px solid #e45e0b;
   }
@@ -360,7 +360,7 @@ lead: Use buttons to signal actions.
 
   /* Secondary Purple Ghost Button: Default, Hover, Active, Focus */
   .fd-button-ghost-purple{
-    color: #a367ab;
+    color: #9E5EA6;
     background-color: #ffffff;
     border: 1px solid #a367ab;
     padding: 10px 20px;
