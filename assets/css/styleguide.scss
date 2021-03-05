@@ -1141,7 +1141,7 @@ p.full{
   max-width: 100%;
 }
 a, p.example{
-  font-family: verdana;
+  font-family: inherit;
   font-size: 16px;
 }
 
@@ -1151,8 +1151,8 @@ a, p.example{
   text-indent: -9999px;
 }
 
-.usa-grid-full.verdana{
-  font-family: Verdana;
+.usa-grid-full.inherit{
+  font-family: inherit;
 }
 
 .fd-color-pallette.green{
@@ -1249,7 +1249,7 @@ a, p.example{
     display: inline-block;
     font-size: 14px;
     font-weight: bold;
-    font-family: verdana;
+    font-family: inherit;
     line-height: 1;
     margin: .5em;
     outline: none;
