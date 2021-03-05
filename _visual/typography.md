@@ -8,12 +8,12 @@ order: 01
 
 <!-- <h3 class="usa-heading" id="typefaces">Typefaces</h3>
  -->
-<h4 class="usa-heading-alt">Verdana</h4>
+<h4 class="usa-heading-alt">Roboto</h4>
 
-<div class="usa-grid-full verdana">
+<div class="usa-grid-full">
   <div class="usa-width-one-half">
-    <p>The Verdana™ Family of fonts was created specifically to address the challenges of on-screen display. Designed by world renowned type designer Matthew Carter, and hand-hinted by leading hinting expert, Tom Rickner, these sans serif fonts are unique examples of type design for the computer screen. The generous width and spacing of Verdana's characters is key to the legibility of these fonts on the screen. </p>
-    <p>Despite the quality of the Verdana font family at small sizes it is at higher resolutions that the fonts are best appreciated. In the words of Tom Rickner, ‘My hope now is that these faces will be enjoyed beyond just the computer screen. Although the screen size bitmaps were the most crucial in the production of these fonts [their] uses should not be limited to on screen typography. Character Set: Latin-1, WGL Pan-European (Eastern Europe, Cyrillic, Greek and Turkish).</p>
+    <p>Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.</p>
+    <p>This is the regular family, which can be used alongside the Roboto Condensed family and the Roboto Slab family.</p>
   </div>
 
   <div class="typography-sans-intro usa-width-one-half usa-end-row">
