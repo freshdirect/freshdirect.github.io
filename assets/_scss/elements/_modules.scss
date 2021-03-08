@@ -75,12 +75,15 @@
     width: 100%;
     margin: 0;
   }
+  input{
+    background-color: #fafafa;
+  }
   p{
     max-width: none;
     margin: 0 0 20px;
   }
   .form-row{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   &.down{
     top: 150px;

@@ -1570,11 +1570,13 @@ a.usa-label, a.usa-label-big {
     font-family: inherit;
     width: 100%;
     margin: 0; }
+  .container-box input {
+    background-color: #fafafa; }
   .container-box p {
     max-width: none;
     margin: 0 0 20px; }
   .container-box .form-row {
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
   .container-box.down {
     top: 150px; }
 
