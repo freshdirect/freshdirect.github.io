@@ -1541,7 +1541,7 @@ a.usa-label, a.usa-label-big {
   bottom: 0;
   z-index: -4;
   overflow-y: auto;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   -webkit-transition: opacity .4s ease-in-out;
   -moz-transition: opacity .4s ease-in-out;
   -ms-transition: opacity .4s ease-in-out;
@@ -1549,13 +1549,11 @@ a.usa-label, a.usa-label-big {
   opacity: 0; }
 
 .container-box {
+  font-family: Roboto;
   position: relative;
   margin: 0 auto 30px;
   top: 100px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.3);
   -webkit-transition-property: top, bottom;
   -webkit-transition-duration: 0.2s;
   -webkit-transition-timing-function: ease-in-out;
@@ -1566,9 +1564,10 @@ a.usa-label, a.usa-label-big {
   -ms-transition-duration: 0.2s;
   -ms-transition-timing-function: ease-in-out; }
   .container-box h1, .container-box h2, .container-box h3, .container-box h4, .container-box h5, .container-box h6 {
-    font-family: Verdana;
+    font-family: inherit;
     margin: 0 0 15px 0; }
   .container-box input, .container-box select, .container-box textarea, .container-box label {
+    font-family: inherit;
     width: 100%;
     margin: 0; }
   .container-box p {
@@ -1583,13 +1582,17 @@ a.usa-label, a.usa-label-big {
   position: fixed;
   top: 123px;
   left: 50%;
-  margin-left: 240px;
+  margin-left: 244px;
+  padding: 0;
   height: 22px;
   width: 22px;
   border-radius: 0;
   text-indent: -9999px;
   cursor: pointer;
-  background: transparent url("../img/close.svg") center center no-repeat;
+  background-color: white;
+  -webkit-mask-image: url("../img/close.svg");
+  mask-image: url("../img/close.svg");
+  background-repeat: no-repeat;
   -webkit-transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -ms-transition: opacity .2s ease-in-out;
@@ -1597,7 +1600,7 @@ a.usa-label, a.usa-label-big {
 
 .overlay-bg.sm .close-btn {
   left: 50%;
-  margin-left: 200px;
+  margin-left: 204px;
   width: 22px; }
 .overlay-bg.sm button {
   margin-left: 0;
@@ -1606,7 +1609,7 @@ a.usa-label, a.usa-label-big {
 
 .overlay-bg.lg .close-btn {
   left: 50%;
-  margin-left: 400px; }
+  margin-left: 404px; }
 
 .overlay-bg.fs {
   background-color: #ffffff; }
