@@ -82,6 +82,9 @@
     max-width: none;
     margin: 0 0 20px;
   }
+  button{
+    width: 100%;
+  }
   .form-row{
     margin-bottom: 20px;
   }
@@ -96,7 +99,7 @@
   position: fixed;
   top: 123px;
   left: 50%;
-  margin-left: 244px;
+  margin-left: 248px;
   padding: 0;
   height: 22px;
   width: 22px;
@@ -118,7 +121,7 @@
 .overlay-bg.sm {
   .close-btn{
     left: 50%;
-    margin-left: 204px;
+    margin-left: 208px;
     width: 22px;
   }
   button{
@@ -130,7 +133,7 @@
 .overlay-bg.lg {
   .close-btn{
     left: 50%;
-    margin-left: 404px;
+    margin-left: 408px;
   }
 }
 .overlay-bg.fs {
@@ -139,7 +142,7 @@
     position: relative;
     top: 7px;
     right: 0;
-    left: 95%;
+    left: 98%;
     margin-left: 0;
     background-image: url('../img/close-white.svg');
   }
@@ -152,15 +155,15 @@
 .md .container-box{
   width: 480px;
   min-height: 246px;
-  padding: 40px;
+  padding: 30px;
 }
 .lg .container-box{
   width: 800px;
   min-height: 514px;
-  padding: 60px;
+  padding: 40px;
 }
 .fs .container-box{
-  width: 976px;
+  width: 1368px;
   text-align: center;
   padding: 10px 0;
   margin: 0 auto 30px;
@@ -181,7 +184,7 @@
   background-color: #4fa157;
   z-index: 99;
   .close-btn-box{
-    width: 970px;
+    width: 1368px;
     height: inherit;
     margin: 0 auto;
     background-color: transparent;
@@ -553,7 +556,7 @@
 }
 .fs .fd-pcard{
   height: 294px;
-  width: 220px;
+  width: 24%;
   .img-box{
     height: 180px;
   }
