@@ -1593,10 +1593,7 @@ a.usa-label, a.usa-label-big {
   border-radius: 0;
   text-indent: -9999px;
   cursor: pointer;
-  background-color: white;
-  -webkit-mask-image: url("../img/close.svg");
-  mask-image: url("../img/close.svg");
-  background-repeat: no-repeat;
+  background: transparent url("../img/close-white.svg") center center no-repeat;
   -webkit-transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -ms-transition: opacity .2s ease-in-out;

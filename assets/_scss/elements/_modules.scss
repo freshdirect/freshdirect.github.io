@@ -106,12 +106,12 @@
   border-radius: 0;
   text-indent: -9999px;
   cursor: pointer;
-  //background: transparent url('../img/close.svg') center center no-repeat;
+  background: transparent url('../img/close-white.svg') center center no-repeat;
 
-  background-color: white;
-  -webkit-mask-image: url('../img/close.svg');
-  mask-image: url('../img/close.svg');
-  background-repeat: no-repeat;
+  // background-color: white;
+  // -webkit-mask-image: url('../img/close.svg');
+  // mask-image: url('../img/close.svg');
+  // background-repeat: no-repeat;
 
   -webkit-transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
